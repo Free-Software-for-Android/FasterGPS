@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="pref_ntp_server_key">ntpServer</string>
+    <string name="pref_ntp_server_custom_key">ntpServerCustom</string>
+
+    <string-array name="pref_ntp_server_entries_values">
+        <item>pool.ntp.org</item> <!-- Global -->
+        <item>menu</item> <!-- Continental -->
+        <item>europe.pool.ntp.org</item> <!-- Europe -->
+        <item>oceania.pool.ntp.org</item> <!-- Oceania -->
+        <item>asia.pool.ntp.org</item> <!-- Asia -->
+        <item>north-america.pool.ntp.org</item> <!-- North America -->
+        <item>south-america.pool.ntp.org</item> <!-- South America -->
+        <item>africa.pool.ntp.org</item> <!-- Africa -->
+        <item>menu</item> <!-- Local -->
+        <item>nl.pool.ntp.org</item> <!-- Netherlands -->
+        <item>cn.pool.ntp.org</item> <!-- China -->
+        <item>ru.pool.ntp.org</item> <!-- Russia -->
+        <item>in.pool.ntp.org</item> <!-- India -->
+        <item>uk.pool.ntp.org</item> <!-- UK -->
+        <item>de.pool.ntp.org</item> <!-- Germany -->
+        <item>fr.pool.ntp.org</item> <!-- France -->
+        <item>jp.pool.ntp.org</item> <!-- Japan -->
+        <item>it.pool.ntp.org</item> <!-- Italy -->
+        <item>pl.pool.ntp.org</item> <!-- Poland -->
+        <item>my.pool.ntp.org</item> <!-- Malaysia -->
+        <item>kr.pool.ntp.org</item> <!-- Korea -->
+        <item>menu</item>
+        <item>custom</item>
+    </string-array>
+
+    <string name="pref_advanced_settings_key">advancedSettings</string>
+    <string name="pref_about_key">about</string>
+    <string name="pref_donations_key">donations</string>
+
+</resources>

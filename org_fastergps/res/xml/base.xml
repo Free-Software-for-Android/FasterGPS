@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:summary="@string/app_introduction"
+        android:title="@string/app_name" />
+
+    <PreferenceCategory android:title="@string/pref_ntp" >
+        <ListPreference
+            android:entries="@array/pref_ntp_server_entries"
+            android:entryValues="@array/pref_ntp_server_entries_values"
+            android:key="@string/pref_ntp_server_key"
+            android:summary="@string/pref_ntp_server_summary"
+            android:title="@string/pref_ntp_server" >
+        </ListPreference>
+
+        <EditTextPreference
+            android:key="@string/pref_ntp_server_custom_key"
+            android:summary="@string/pref_ntp_server_custom_summary"
+            android:title="@string/pref_ntp_server_custom" >
+        </EditTextPreference>
+
+        <Preference
+            android:key="@string/pref_advanced_settings_key"
+            android:title="@string/pref_advanced_settings" />
+        <Preference
+            android:key="@string/pref_about_key"
+            android:title="@string/pref_about" />
+        <Preference
+            android:key="@string/pref_donations_key"
+            android:title="@string/pref_donations" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
