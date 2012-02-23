@@ -27,7 +27,7 @@ public class Constants {
      * DEBUG enables Log.d outputs, wrapped in org.adaway.util.Log and RootTools Debug Mode
      */
     public static final boolean DEBUG = false;
-    public static final boolean DEBUG_DISABLE_ROOT_CHECK = false;
+    public static final boolean DEBUG_DISABLE_ROOT_CHECK = true;
 
     // set RootTools to debug mode based on AdAway
     static {
