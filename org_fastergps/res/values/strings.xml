@@ -66,7 +66,7 @@
     </string-array>
 
     <string name="pref_ntp_server_custom">NTP Server Custom</string>
-    <string name="pref_ntp_server_custom_summary">If manual input is selected define your own NTP Server.</string>
+    <string name="pref_ntp_server_custom_summary">If manual input is selected you can define a custom NTP Server here.</string>
     <string name="pref_advanced_settings">Go to advanced settings</string>
     <string name="pref_about">About</string>
     <string name="pref_donations">Donations</string>
@@ -77,20 +77,20 @@
     <string name="pref_category_c2k">AGPS C2K</string>
     <string name="pref_category_carrier">AGPS Carrier</string>
     <string name="pref_category_other">Other</string>
-    <string name="DEBUG_LEVEL">DEBUG LEVELS: 0 - none, 1 - Error, 2 - Warning, 3 - Info, 4 - Debug, 5 - Verbose</string>
-    <string name="INTERMEDIATE_POS">Intermediate position report, 1=enable, 0=disable</string>
-    <string name="ACCURACY_THRES">Accuracy threshold for intermediate positions, less accurate positions are ignored, 0 for passing all positions</string>
-    <string name="REPORT_POSITION_USE_SUPL_REFLOC">Report supl ref location as position, 1=enable, 0=disable</string>
-    <string name="ENABLE_WIPER">Wiper (wifi positioning), 1=enable, 0=disable</string>
+    <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Warning, 3=Info, 4=Debug, 5=Verbose</string>
+    <string name="INTERMEDIATE_POS">Intermediate position report: 1=Enable, 0=Disable</string>
+    <string name="ACCURACY_THRES">Accuracy threshold for intermediate positions, less accurate positions are ignored: 0 for passing all positions</string>
+    <string name="REPORT_POSITION_USE_SUPL_REFLOC">Report supl ref location as position: 1=enable, 0=disable</string>
+    <string name="ENABLE_WIPER">Wiper (wifi positioning): 1=enable, 0=disable</string>
     <string name="SUPL_HOST"></string>
     <string name="SUPL_PORT"></string>
     <string name="SUPL_NO_SECURE_PORT"></string>
     <string name="SUPL_SECURE_PORT"></string>
     <string name="C2K_HOST"></string>
     <string name="C2K_PORT"></string>
-    <string name="CURRENT_CARRIER">possible value: common</string>
-    <string name="DEFAULT_AGPS_ENABLE">possible value: FALSE/TRUE</string>
-    <string name="DEFAULT_SSL_ENABLE">possible value: FALSE/TRUE</string>
+    <string name="CURRENT_CARRIER">possible values: common</string>
+    <string name="DEFAULT_AGPS_ENABLE">possible values: TRUE/FALSE</string>
+    <string name="DEFAULT_SSL_ENABLE">possible value: TRUE/FALSE</string>
     <string name="DEFAULT_USER_PLANE">TRUE for "User Plane", FALSE for "Control Plane"</string>
 
 </resources>

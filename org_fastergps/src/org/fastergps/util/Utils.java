@@ -279,19 +279,21 @@ public class Utils {
     }
 
     /**
-     * Displays config with Logcat
+     * Displays config with Logcat when DEBUG is enabled
      * 
      * @param config
      */
-    public static void logConfig(HashMap<String, String> config) {
-        // print config
-        Iterator<String> iterator = config.keySet().iterator();
+    public static void debugLogConfig(HashMap<String, String> config) {
+        if (Constants.DEBUG) {
+            // print config
+            Iterator<String> iterator = config.keySet().iterator();
 
-        while (iterator.hasNext()) {
-            String key = iterator.next().toString();
-            String value = config.get(key).toString();
+            while (iterator.hasNext()) {
+                String key = iterator.next().toString();
+                String value = config.get(key).toString();
 
-            Log.d(Constants.TAG, key + " = " + value);
+                Log.d(Constants.TAG, key + " = " + value);
+            }
         }
     }
 

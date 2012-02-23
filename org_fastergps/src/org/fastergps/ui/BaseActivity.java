@@ -45,29 +45,38 @@ public class BaseActivity extends PreferenceActivity {
     private Preference mAdvancedSettings;
     private Preference mAbout;
     private Preference mDonations;
+
     private HashMap<String, String> config;
 
-    private void updateCurrentNtpServer(String currentNtpServer) {
+    /**
+     * Sets summary on preferences based on currentNtpServer
+     * 
+     * @param currentNtpServer
+     */
+    private void setSummary(String currentNtpServer) {
         mNtpServer.setSummary(getString(R.string.pref_ntp_server_summary) + "\n"
                 + getString(R.string.pref_current_value) + " " + currentNtpServer);
         mNtpServerCustom.setText(currentNtpServer);
     }
 
-    /** Called when the activity is first created. */
+    /**
+     * Called when the activity is first created.
+     */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         mActivity = this;
 
+        // load preferences from xml
+        addPreferencesFromResource(R.xml.base);
+
         // only if android is rooted, else show dialog
         if (Utils.isAndroidRooted(mActivity)) {
 
+            // load config from /system/etc/gps.conf
             config = Utils.getConfig();
-
-            Utils.logConfig(config);
-
-            addPreferencesFromResource(R.xml.base);
+            Utils.debugLogConfig(config);
 
             // find preferences
             mNtpServerCustom = (EditTextPreference) findPreference(getString(R.string.pref_ntp_server_custom_key));
@@ -76,12 +85,13 @@ public class BaseActivity extends PreferenceActivity {
             mAbout = (Preference) findPreference(getString(R.string.pref_about_key));
             mDonations = (Preference) findPreference(getString(R.string.pref_donations_key));
 
-            String currentNtpServer = config.get("NTP_SERVER");
-            Log.d(Constants.TAG, "current ntp server: " + currentNtpServer);
-
             /* set default of list preference and custom ntp server from config */
+            String currentNtpServer = config.get("NTP_SERVER");
+
             if (currentNtpServer != null) {
-                updateCurrentNtpServer(currentNtpServer);
+                setSummary(currentNtpServer);
+
+                boolean ntpServerInList = false;
 
                 CharSequence[] ntpServerList = mNtpServer.getEntryValues();
                 String serverValue;
@@ -92,10 +102,14 @@ public class BaseActivity extends PreferenceActivity {
                     // if current ntp server is in our list of possible servers
                     if (currentNtpServer.equals(serverValue)) {
                         mNtpServer.setValue(currentNtpServer);
+
                         mNtpServerCustom.setEnabled(false);
-                    } else {
-                        mNtpServer.setValue("custom");
+                        ntpServerInList = true;
                     }
+                }
+                if (ntpServerInList == false) {
+                    Log.d(Constants.TAG, "current ntp server is not in the list!");
+                    mNtpServer.setValue("custom");
                 }
             }
 
@@ -112,16 +126,16 @@ public class BaseActivity extends PreferenceActivity {
                         mNtpServerCustom.setEnabled(false);
 
                         config.put("NTP_SERVER", (String) newValue);
-                        Utils.logConfig(config);
+                        Utils.debugLogConfig(config);
                         Utils.writeConfig(mActivity, config);
-                        updateCurrentNtpServer((String) newValue);
+                        setSummary((String) newValue);
                     }
 
                     return true;
                 }
             });
 
-            /* ntp server drop down */
+            /* ntp server custom */
             mNtpServerCustom.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 
                 @Override
@@ -129,9 +143,9 @@ public class BaseActivity extends PreferenceActivity {
                     Log.d(Constants.TAG, "mNtpServerCustom changed!");
 
                     config.put("NTP_SERVER", (String) newValue);
-                    Utils.logConfig(config);
+                    Utils.debugLogConfig(config);
                     Utils.writeConfig(mActivity, config);
-                    updateCurrentNtpServer((String) newValue);
+                    setSummary((String) newValue);
 
                     return true;
                 }
@@ -142,6 +156,7 @@ public class BaseActivity extends PreferenceActivity {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
                     Intent i = new Intent(mActivity, AdvancedSettingsActivity.class);
+                    // put the whole config into the extras of the intent
                     i.putExtra(AdvancedSettingsActivity.EXTRA_CONFIG, config);
                     startActivity(i);
 

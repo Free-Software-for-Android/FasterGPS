@@ -30,13 +30,10 @@ import org.fastergps.util.Log;
 import org.fastergps.util.Utils;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.preference.EditTextPreference;
-import android.preference.ListPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
-import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceCategory;
 import android.preference.PreferenceScreen;
@@ -51,6 +48,7 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
     private HashMap<String, String> configCopy;
 
     /** Called when the activity is first created. */
+    @SuppressWarnings("unchecked")
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,8 +61,8 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
 
                 config = (HashMap<String, String>) extras.getSerializable(EXTRA_CONFIG);
 
-                Log.i(Constants.TAG, "Result from intent extras:");
-                Utils.logConfig(config);
+                Log.d(Constants.TAG, "Result from intent extras:");
+                Utils.debugLogConfig(config);
             }
         }
 
@@ -77,8 +75,8 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
         // copy to remove from while building
         configCopy = (HashMap<String, String>) config.clone();
 
+        // build preference screen using the method below
         setPreferenceScreen(createPreferenceHierarchy());
-
     }
 
     /**
@@ -93,7 +91,7 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
         try {
             summary = Utils.getResourceString(key, mActivity);
         } catch (IllegalArgumentException e) {
-            Log.e(Constants.TAG, "No summary in strings.xml for " + key);
+            Log.d(Constants.TAG, "No summary in strings.xml for " + key);
         }
 
         if (summary.equals("")) {
@@ -137,7 +135,7 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
 
                         config.put(preference.getKey(), (String) newValue);
                         Log.d(Constants.TAG, "Following config will now be written:");
-                        Utils.logConfig(config);
+                        Utils.debugLogConfig(config);
                         Utils.writeConfig(mActivity, config);
                         setSummary(preference, preference.getKey(), (String) newValue);
 

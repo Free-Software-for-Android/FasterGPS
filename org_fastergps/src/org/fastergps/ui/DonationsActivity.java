@@ -283,7 +283,7 @@ public class DonationsActivity extends Activity {
          * ://www.dafer45.com/android/for_developers/including_a_flattr_button_in_an_application.
          * html
          */
-        String projectUrl = getString(R.string.about_url);
+        String flattrProjectUrl = getString(R.string.donations_flattr_project_url);
         String flattrUrl = getString(R.string.donations_flattr_url);
 
         // make text white and background black
@@ -300,7 +300,7 @@ public class DonationsActivity extends Activity {
                 + "t.parentNode.insertBefore(s, t);" + "})();" + "/* ]]> */" + "</script>";
         String htmlMiddle = "</head> <body> <div align=\"center\">";
         String flattrHtml = "<a class=\"FlattrButton\" style=\"display:none;\" href=\""
-                + projectUrl
+                + flattrProjectUrl
                 + "\" target=\"_blank\"></a> <noscript><a href=\""
                 + flattrUrl
                 + "\" target=\"_blank\"> <img src=\"http://api.flattr.com/button/flattr-badge-large.png\" alt=\"Flattr this\" title=\"Flattr this\" border=\"0\" /></a></noscript>";
