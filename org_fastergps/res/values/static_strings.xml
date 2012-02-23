@@ -5,6 +5,6 @@
     <string name="about_url">http://code.google.com/p/faster-gps/</string>
     <string name="no_root_url">http://www.cyanogenmod.com</string>
     <string name="donations_flattr_url">http://flattr.com/thing/526077/FasterGPS</string>
-    <string name="donations_flattr_project_url">https://gitorious.org/fastergps</string>
+    <string name="donations_flattr_project_url">http://code.google.com/p/faster-gps</string>
 
 </resources>
