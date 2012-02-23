@@ -42,12 +42,14 @@ public class BaseActivity extends PreferenceActivity {
     private Activity mActivity;
     private ListPreference mNtpServer;
     private EditTextPreference mNtpServerCustom;
+    private Preference mAdvancedSettings;
     private Preference mAbout;
     private Preference mDonations;
     private HashMap<String, String> config;
 
     private void updateCurrentNtpServer(String currentNtpServer) {
-        mNtpServer.setSummary(getString(R.string.pref_ntp_server_summary) + " " + currentNtpServer);
+        mNtpServer.setSummary(getString(R.string.pref_ntp_server_summary) + "\n"
+                + getString(R.string.pref_current_value) + " " + currentNtpServer);
         mNtpServerCustom.setText(currentNtpServer);
     }
 
@@ -70,6 +72,7 @@ public class BaseActivity extends PreferenceActivity {
             // find preferences
             mNtpServerCustom = (EditTextPreference) findPreference(getString(R.string.pref_ntp_server_custom_key));
             mNtpServer = (ListPreference) findPreference(getString(R.string.pref_ntp_server_key));
+            mAdvancedSettings = (Preference) findPreference(getString(R.string.pref_advanced_settings_key));
             mAbout = (Preference) findPreference(getString(R.string.pref_about_key));
             mDonations = (Preference) findPreference(getString(R.string.pref_donations_key));
 
@@ -132,6 +135,19 @@ public class BaseActivity extends PreferenceActivity {
 
                     return true;
                 }
+            });
+
+            mAdvancedSettings.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                    Intent i = new Intent(mActivity, AdvancedSettingsActivity.class);
+                    i.putExtra(AdvancedSettingsActivity.EXTRA_CONFIG, config);
+                    startActivity(i);
+
+                    return false;
+                }
+
             });
 
             mAbout.setOnPreferenceClickListener(new OnPreferenceClickListener() {

@@ -1,0 +1,52 @@
+Attention: DEVICE MUST BE ROOTED FOR THIS APPLICATION
+
+Description:
+With FasterGPS you can select a NTP Server matching your region to speed up the process of getting a GPS fix.
+This is an open source alternative to FasterFix!
+
+Requirements:
+• ROOT
+• Read/Write access on system-Partition
+
+Website and issue tracker:
+http://code.google.com/p/faster-gps
+
+Donate:
+You can donate money to support the development in-app with Flattr or Google Android Market
+
+License:
+GPLv3
+
+Permissions:
+• Root access: To write gps.conf file to system partition
+• Internet access: To allow donations
+
+
+
+
+
+
+
+GERMAN:
+
+
+Achtung: ANWENDUNG BRAUCHT ROOT-ZUGRIFF AUF DEM GERÄT
+
+Beschreibung:
+
+Anforderungen:
+• ROOT
+• Lese- und Schreibzugriff auf der system-Partition
+
+Webseite und Issue-Tracker:
+http://code.google.com/p/faster-gps
+
+Spenden:
+Du kannst die Entwicklung unterstützen indem du in der Anwendung über Flattr oder den Google Android Market spendest.
+
+Lizenz:
+GPLv3
+
+Berechtigungen:
+• Root-Zugriff: Um die gps.conf auf die System-Partition zu schreiben
+• Internet-Zugriff: Um Spenden zu ermöglichen

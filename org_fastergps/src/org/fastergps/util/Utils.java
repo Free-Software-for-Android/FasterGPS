@@ -99,6 +99,23 @@ public class Utils {
         return rootAvailable;
     }
 
+    /**
+     * Gets resource string from strings.xml
+     * 
+     * @param name
+     * @param context
+     * @return
+     */
+    public static String getResourceString(String name, Context context) {
+        int nameResourceID = context.getResources().getIdentifier(name, "string",
+                context.getApplicationInfo().packageName);
+        if (nameResourceID == 0) {
+            throw new IllegalArgumentException("No resource string found with name " + name);
+        } else {
+            return context.getString(nameResourceID);
+        }
+    }
+
     /*
      * simple parsing regex for key value pairs in gps.conf
      */
@@ -110,6 +127,11 @@ public class Utils {
         mGpsConfPattern = Pattern.compile(GPS_CONF_REGEX);
     }
 
+    /**
+     * Opens current gps.conf and parses the config into a HashMap
+     * 
+     * @return config as HashMap
+     */
     public static HashMap<String, String> getConfig() {
 
         HashMap<String, String> currentConfig = new HashMap<String, String>();
@@ -148,6 +170,7 @@ public class Utils {
     }
 
     /**
+     * Writes config to private files and then copies it using RootTools to system partition
      * 
      * @param config
      * @return true if writing worked
@@ -175,8 +198,11 @@ public class Utils {
                 HashMap.Entry<String, String> pairs = it.next();
 
                 Log.d(Constants.TAG, pairs.getKey() + " = " + pairs.getValue());
-                writer.write(pairs.getKey() + "=" + pairs.getValue() + Constants.LINE_SEPERATOR);
-                // it.remove(); // avoids a ConcurrentModificationException
+
+                // write only if pair has a value
+                if (pairs.getValue() != null && !pairs.getValue().equals("")) {
+                    writer.write(pairs.getKey() + "=" + pairs.getValue() + Constants.LINE_SEPERATOR);
+                }
             }
 
             // Close the output stream
@@ -216,14 +242,47 @@ public class Utils {
         return true;
     }
 
-    private static HashMap<String, String> getPossibleConfig() {
+    /**
+     * Returns HashMap with possible keys for gps.conf
+     * 
+     * @return
+     */
+    public static HashMap<String, String> getPossibleConfig() {
         HashMap<String, String> possibleConfig = new HashMap<String, String>();
         possibleConfig.put("NTP_SERVER", "");
-        // TODO: put all possible configs
+        possibleConfig.put("XTRA_SERVER_1", "");
+        possibleConfig.put("XTRA_SERVER_2", "");
+        possibleConfig.put("XTRA_SERVER_3", "");
+        possibleConfig.put("XTRA_SERVER_4", "");
+        possibleConfig.put("XTRA_SERVER_5", "");
+
+        possibleConfig.put("DEBUG_LEVEL", "");
+        possibleConfig.put("INTERMEDIATE_POS", "");
+        possibleConfig.put("ACCURACY_THRES", "");
+        possibleConfig.put("REPORT_POSITION_USE_SUPL_REFLOC", "");
+        possibleConfig.put("ENABLE_WIPER", "");
+
+        possibleConfig.put("SUPL_HOST", "");
+        possibleConfig.put("SUPL_PORT", "");
+        possibleConfig.put("SUPL_NO_SECURE_PORT", "");
+        possibleConfig.put("SUPL_SECURE_PORT", "");
+
+        possibleConfig.put("C2K_HOST", "");
+        possibleConfig.put("C2K_PORT", "");
+
+        possibleConfig.put("CURRENT_CARRIER", "");
+        possibleConfig.put("DEFAULT_AGPS_ENABLE", "");
+        possibleConfig.put("DEFAULT_SSL_ENABLE", "");
+        possibleConfig.put("DEFAULT_USER_PLANE", "");
 
         return possibleConfig;
     }
 
+    /**
+     * Displays config with Logcat
+     * 
+     * @param config
+     */
     public static void logConfig(HashMap<String, String> config) {
         // print config
         Iterator<String> iterator = config.keySet().iterator();

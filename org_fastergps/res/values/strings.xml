@@ -2,11 +2,42 @@
 <resources>
 
     <string name="app_introduction">With FasterGPS you can select a NTP Server matching your region to speed up the process of getting a GPS fix.</string>
+    <string name="activity_advanced_settings">Advanced Settings</string>
+    <string name="activity_about">About</string>
+    <string name="activity_donations">Donations</string>
     <string name="button_close">Close</string>
     <string name="button_exit">Exit</string>
+    <string name="about_description">With FasterGPS you can select a NTP Server matching your region to speed up the process of getting a GPS fix.</string>
+    <string name="about_license">License: GPL v3+</string>
+    <string name="about_version">Version:</string>
+    <string name="about_developer">Developer: Dominik Schürmann</string>
+    <string name="about_libs">AdAway uses \'RootTools\' (License: GPL v2) Library to handle root access.</string>
+    <string name="donations_description">Do you find this application useful?\nSupport it\'s development by flattring it or sending donations using Google Android Market!</string>
+    <string name="donations_flattr_description">• Flattr takes 10 % as a monthly fee!</string>
+    <string name="donations_flattr">Flattr</string>
+    <string name="donations_google_android_market">Google Android Market</string>
+    <string name="donations_google_android_market_not_supported_title">In-App Donations are not supported</string>
+    <string name="donations_google_android_market_not_supported">In-App Donations are not supported. Is Google Android Market installed correctly?</string>
+    <string name="donations_google_android_market_description">• Google takes 30 % off every donation!\n• There is no premium version for donators.</string>
+    <string name="donations_google_android_market_donate_button">Donate!</string>
+    <string name="donations_google_android_market_text">How much?</string>
+
+    <string-array name="donations_google_android_market_promt_array">
+        <item>1 Euro</item>
+        <item>2 Euros</item>
+        <item>3 Euros</item>
+        <item>5 Euros</item>
+        <item>8 Euros</item>
+        <item>13 Euros</item>
+    </string-array>
+
+    <string name="donations_thanks_dialog_title">Thanks!</string>
+    <string name="donations_thanks_dialog">Thanks for donating!\nI really appreciate this!</string>
+    <string name="no_root_description">Either the su binary could not be found or you did not allow root permission for AdAway.\n\nThis can happen when your device is not rooted.\nYou can find information about how to root your device on www.cyanogenmod.com or other Android websites.</string>
+    <string name="no_root_title">Rooted Android required</string>
     <string name="pref_ntp">NTP</string>
     <string name="pref_ntp_server">NTP Server</string>
-    <string name="pref_ntp_server_summary">Select your region!\nCurrent:</string>
+    <string name="pref_ntp_server_summary">Select your region!</string>
 
     <string-array name="pref_ntp_server_entries">
         <item>Global</item> <!-- Global -->
@@ -39,33 +70,27 @@
     <string name="pref_advanced_settings">Go to advanced settings</string>
     <string name="pref_about">About</string>
     <string name="pref_donations">Donations</string>
-    <string name="about_description">With FasterGPS you can select a NTP Server matching your region to speed up the process of getting a GPS fix.</string>
-    <string name="about_license">License: GPL v3+</string>
-    <string name="about_version">Version:</string>
-    <string name="about_developer">Developer: Dominik Schürmann</string>
-    <string name="about_libs">AdAway uses \'RootTools\' (License: GPL v2) Library to handle root access.</string>
-    <string name="donations_description">Do you find this application useful?\nSupport it\'s development by flattring it or sending donations using Google Android Market!</string>
-    <string name="donations_flattr_description">• Flattr takes 10 % as a monthly fee!</string>
-    <string name="donations_flattr">Flattr</string>
-    <string name="donations_google_android_market">Google Android Market</string>
-    <string name="donations_google_android_market_not_supported_title">In-App Donations are not supported</string>
-    <string name="donations_google_android_market_not_supported">In-App Donations are not supported. Is Google Android Market installed correctly?</string>
-    <string name="donations_google_android_market_description">• Google takes 30 % off every donation!\n• There is no premium version for donators.</string>
-    <string name="donations_google_android_market_donate_button">Donate!</string>
-    <string name="donations_google_android_market_text">How much?</string>
-
-    <string-array name="donations_google_android_market_promt_array">
-        <item>1 Euro</item>
-        <item>2 Euros</item>
-        <item>3 Euros</item>
-        <item>5 Euros</item>
-        <item>8 Euros</item>
-        <item>13 Euros</item>
-    </string-array>
-
-    <string name="donations_thanks_dialog_title">Thanks!</string>
-    <string name="donations_thanks_dialog">Thanks for donating!\nI really appreciate this!</string>
-    <string name="no_root_description">Either the su binary could not be found or you did not allow root permission for AdAway.\n\nThis can happen when your device is not rooted.\nYou can find information about how to root your device on www.cyanogenmod.com or other Android websites.</string>
-    <string name="no_root_title">Rooted Android required</string>
+    <string name="pref_current_value">Value:</string>
+    <string name="pref_category_general">General</string>
+    <string name="pref_category_xtra">XTRA Server</string>
+    <string name="pref_category_supl">AGPS SUPL</string>
+    <string name="pref_category_c2k">AGPS C2K</string>
+    <string name="pref_category_carrier">AGPS Carrier</string>
+    <string name="pref_category_other">Other</string>
+    <string name="DEBUG_LEVEL">DEBUG LEVELS: 0 - none, 1 - Error, 2 - Warning, 3 - Info, 4 - Debug, 5 - Verbose</string>
+    <string name="INTERMEDIATE_POS">Intermediate position report, 1=enable, 0=disable</string>
+    <string name="ACCURACY_THRES">Accuracy threshold for intermediate positions, less accurate positions are ignored, 0 for passing all positions</string>
+    <string name="REPORT_POSITION_USE_SUPL_REFLOC">Report supl ref location as position, 1=enable, 0=disable</string>
+    <string name="ENABLE_WIPER">Wiper (wifi positioning), 1=enable, 0=disable</string>
+    <string name="SUPL_HOST"></string>
+    <string name="SUPL_PORT"></string>
+    <string name="SUPL_NO_SECURE_PORT"></string>
+    <string name="SUPL_SECURE_PORT"></string>
+    <string name="C2K_HOST"></string>
+    <string name="C2K_PORT"></string>
+    <string name="CURRENT_CARRIER">possible value: common</string>
+    <string name="DEFAULT_AGPS_ENABLE">possible value: FALSE/TRUE</string>
+    <string name="DEFAULT_SSL_ENABLE">possible value: FALSE/TRUE</string>
+    <string name="DEFAULT_USER_PLANE">TRUE for "User Plane", FALSE for "Control Plane"</string>
 
 </resources>
