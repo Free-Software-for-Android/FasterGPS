@@ -222,11 +222,14 @@ public class Utils {
         List<String> output = null;
         try {
 
-            // copy file from /data/data/org.fastergps/gps.conf to /system/etc/gps.conf and make
-            // chmod 644 on it
-            output = RootTools.sendShell(new String[] {
-                    Constants.COMMAND_COPY + " " + privateFile + " " + Constants.GPS_CONF_PATH,
-                    Constants.COMMAND_CHMOD_644 + " " + Constants.GPS_CONF_PATH }, 1, -1);
+            // copy file from /data/data/org.fastergps/gps.conf to /system/etc/gps.conf
+            if (!RootTools.copyFile(privateFile, Constants.GPS_CONF_PATH)) {
+                return false;
+            }
+            
+            // chmod 644 it
+            output = RootTools.sendShell(new String[] { Constants.COMMAND_CHMOD_644 + " "
+                    + Constants.GPS_CONF_PATH }, 0, -1);
 
             Log.d(Constants.TAG, "output of sendShell commands: " + output.toString());
         } catch (Exception e) {

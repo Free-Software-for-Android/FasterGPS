@@ -29,7 +29,6 @@ import org.fastergps.util.Utils;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -59,12 +58,9 @@ public class BaseActivity extends PreferenceActivity {
         mNtpServerCustom.setText(currentNtpServer);
     }
 
-    /**
-     * Called when the activity is first created.
-     */
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onResume() {
+        super.onResume();
 
         mActivity = this;
 

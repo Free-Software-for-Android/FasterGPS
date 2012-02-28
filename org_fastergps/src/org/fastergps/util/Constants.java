@@ -27,7 +27,7 @@ public class Constants {
      * DEBUG enables Log.d outputs, wrapped in org.adaway.util.Log and RootTools Debug Mode
      */
     public static final boolean DEBUG = false;
-    public static final boolean DEBUG_DISABLE_ROOT_CHECK = true;
+    public static final boolean DEBUG_DISABLE_ROOT_CHECK = false;
 
     // set RootTools to debug mode based on AdAway
     static {
@@ -44,7 +44,6 @@ public class Constants {
     public static final String GPS_CONF_PATH = ANDROID_SYSTEM_PATH + FILE_SEPERATOR + "etc"
             + FILE_SEPERATOR + GPS_CONF;
 
-    public static final String COMMAND_COPY = "cp -f";
     public static final String COMMAND_CHMOD_644 = "chmod 644";
 
 }
