@@ -11,7 +11,7 @@
     <string name="about_license">License: GPL v3+</string>
     <string name="about_version">Version:</string>
     <string name="about_developer">Developer: Dominik Schürmann</string>
-    <string name="about_libs">AdAway uses \'RootTools\' (License: GPL v2) Library to handle root access.</string>
+    <string name="about_libs">FasterGPS uses \'RootTools\' (License: GPL v2) Library to handle root access.</string>
     <string name="donations_description">Do you find this application useful?\nSupport it\'s development by flattring it or sending donations using Google Android Market!</string>
     <string name="donations_flattr_description">• Flattr takes 10 % as a monthly fee!</string>
     <string name="donations_flattr">Flattr</string>
@@ -33,7 +33,7 @@
 
     <string name="donations_thanks_dialog_title">Thanks!</string>
     <string name="donations_thanks_dialog">Thanks for donating!\nI really appreciate this!</string>
-    <string name="no_root_description">Either the su binary could not be found or you did not allow root permission for AdAway.\n\nThis can happen when your device is not rooted.\nYou can find information about how to root your device on www.cyanogenmod.com or other Android websites.</string>
+    <string name="no_root_description">Either the su binary could not be found or you did not allow root permission for FasterGPS.\n\nThis can happen when your device is not rooted.\nYou can find information about how to root your device on www.cyanogenmod.com or other Android websites.</string>
     <string name="no_root_title">Rooted Android required</string>
     <string name="pref_ntp">NTP</string>
     <string name="pref_ntp_server">NTP Server</string>
