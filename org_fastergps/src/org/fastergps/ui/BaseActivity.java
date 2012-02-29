@@ -28,7 +28,10 @@ import org.fastergps.util.Log;
 import org.fastergps.util.Utils;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Bundle;
 import android.preference.EditTextPreference;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -37,11 +40,15 @@ import android.preference.Preference.OnPreferenceClickListener;
 import android.preference.PreferenceActivity;
 
 public class BaseActivity extends PreferenceActivity {
-
     private Activity mActivity;
+
     private ListPreference mNtpServer;
     private EditTextPreference mNtpServerCustom;
+
     private Preference mAdvancedSettings;
+    private Preference mRevert;
+
+    private Preference mHelp;
     private Preference mAbout;
     private Preference mDonations;
 
@@ -58,56 +65,74 @@ public class BaseActivity extends PreferenceActivity {
         mNtpServerCustom.setText(currentNtpServer);
     }
 
+    /**
+     * Sets NTP Server based on loaded config HashMap
+     */
+    private void setNtpServerBasedOnConfig() {
+        /* set default of list preference and custom ntp server from config */
+        String currentNtpServer = config.get("NTP_SERVER");
+
+        if (currentNtpServer != null) {
+            setSummary(currentNtpServer);
+
+            boolean ntpServerInList = false;
+
+            CharSequence[] ntpServerList = mNtpServer.getEntryValues();
+            String serverValue;
+            for (int i = 0; i < ntpServerList.length; i++) {
+                serverValue = ntpServerList[i].toString();
+                Log.d(Constants.TAG, "possible value: " + serverValue);
+
+                // if current ntp server is in our list of possible servers
+                if (currentNtpServer.equals(serverValue)) {
+                    mNtpServer.setValue(currentNtpServer);
+
+                    mNtpServerCustom.setEnabled(false);
+                    ntpServerInList = true;
+                }
+            }
+            if (ntpServerInList == false) {
+                Log.d(Constants.TAG, "current ntp server is not in the list!");
+                mNtpServer.setValue("custom");
+            }
+        }
+    }
+
+    /**
+     * Called when the activity is first created.
+     */
     @Override
-    protected void onResume() {
-        super.onResume();
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
 
         mActivity = this;
 
         // load preferences from xml
-        addPreferencesFromResource(R.xml.base);
+        addPreferencesFromResource(R.xml.base_preference);
 
         // only if android is rooted, else show dialog
         if (Utils.isAndroidRooted(mActivity)) {
 
             // load config from /system/etc/gps.conf
-            config = Utils.getConfig();
+            Log.i(Constants.TAG, "Loading /system/etc/gps.conf...");
+            config = Utils.getConfig(Constants.GPS_CONF_PATH);
             Utils.debugLogConfig(config);
+
+            // make backup of current config in private files, this backup is used for revert
+            Utils.makeBackup(mActivity, config);
 
             // find preferences
             mNtpServerCustom = (EditTextPreference) findPreference(getString(R.string.pref_ntp_server_custom_key));
             mNtpServer = (ListPreference) findPreference(getString(R.string.pref_ntp_server_key));
             mAdvancedSettings = (Preference) findPreference(getString(R.string.pref_advanced_settings_key));
+            mRevert = (Preference) findPreference(getString(R.string.pref_revert_key));
+            mHelp = (Preference) findPreference(getString(R.string.pref_help_key));
             mAbout = (Preference) findPreference(getString(R.string.pref_about_key));
             mDonations = (Preference) findPreference(getString(R.string.pref_donations_key));
 
-            /* set default of list preference and custom ntp server from config */
-            String currentNtpServer = config.get("NTP_SERVER");
-
-            if (currentNtpServer != null) {
-                setSummary(currentNtpServer);
-
-                boolean ntpServerInList = false;
-
-                CharSequence[] ntpServerList = mNtpServer.getEntryValues();
-                String serverValue;
-                for (int i = 0; i < ntpServerList.length; i++) {
-                    serverValue = ntpServerList[i].toString();
-                    Log.d(Constants.TAG, "possible value: " + serverValue);
-
-                    // if current ntp server is in our list of possible servers
-                    if (currentNtpServer.equals(serverValue)) {
-                        mNtpServer.setValue(currentNtpServer);
-
-                        mNtpServerCustom.setEnabled(false);
-                        ntpServerInList = true;
-                    }
-                }
-                if (ntpServerInList == false) {
-                    Log.d(Constants.TAG, "current ntp server is not in the list!");
-                    mNtpServer.setValue("custom");
-                }
-            }
+            // set ntp server based on config
+            Log.i(Constants.TAG, "Update displayed NTP Server from config...");
+            setNtpServerBasedOnConfig();
 
             /* ntp server drop down */
             mNtpServer.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
@@ -151,10 +176,52 @@ public class BaseActivity extends PreferenceActivity {
 
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
-                    Intent i = new Intent(mActivity, AdvancedSettingsActivity.class);
-                    // put the whole config into the extras of the intent
-                    i.putExtra(AdvancedSettingsActivity.EXTRA_CONFIG, config);
-                    startActivity(i);
+                    startActivity(new Intent(mActivity, AdvancedSettingsActivity.class));
+
+                    return false;
+                }
+
+            });
+
+            mRevert.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(mActivity);
+                    builder.setIcon(android.R.drawable.ic_dialog_alert);
+                    builder.setPositiveButton(mActivity.getString(R.string.button_yes),
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    // load backup from /data/data/org.fasterfix/files/old_gps.conf
+                                    config = Utils.getConfig(mActivity.getFileStreamPath(
+                                            Constants.OLD_GPS_CONF).getAbsolutePath());
+                                    // update display
+                                    setNtpServerBasedOnConfig();
+                                    // write old config
+                                    Utils.writeConfig(mActivity, config);
+                                }
+                            });
+                    builder.setNegativeButton(mActivity.getString(R.string.button_no),
+                            new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    dialog.dismiss();
+                                }
+                            });
+
+                    builder.setTitle(R.string.revert_dialog_title);
+                    builder.setMessage(mActivity.getString(R.string.revert_dialog));
+                    AlertDialog alertDialog = builder.create();
+                    alertDialog.show();
+                    return false;
+                }
+
+            });
+
+            mHelp.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                    startActivity(new Intent(mActivity, HelpActivity.class));
 
                     return false;
                 }

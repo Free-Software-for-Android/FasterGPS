@@ -40,14 +40,13 @@ import android.preference.PreferenceScreen;
 
 public class AdvancedSettingsActivity extends PreferenceActivity {
 
-    // Intent extras to config read in base activity
-    public static final String EXTRA_CONFIG = "org.fastergps.config";
-
     private Activity mActivity;
     private HashMap<String, String> config;
     private HashMap<String, String> configCopy;
 
-    /** Called when the activity is first created. */
+    /**
+     * Called when the activity is first created.
+     */
     @SuppressWarnings("unchecked")
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -55,16 +54,9 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
 
         mActivity = this;
 
-        Bundle extras = getIntent().getExtras();
-        if (extras != null) {
-            if (extras.containsKey(EXTRA_CONFIG)) {
-
-                config = (HashMap<String, String>) extras.getSerializable(EXTRA_CONFIG);
-
-                Log.d(Constants.TAG, "Result from intent extras:");
-                Utils.debugLogConfig(config);
-            }
-        }
+        // load config from /system/etc/gps.conf
+        config = Utils.getConfig(Constants.GPS_CONF_PATH);
+        Utils.debugLogConfig(config);
 
         // add possible other config options
         HashMap<String, String> possibleConfig = Utils.getPossibleConfig();

@@ -2,8 +2,9 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <Preference
-        android:summary="@string/app_introduction"
-        android:title="@string/app_name" />
+        android:selectable="false"
+        android:summary="@string/pref_introduction_summary"
+        android:title="@string/pref_introduction" />
 
     <PreferenceCategory android:title="@string/pref_ntp" >
         <ListPreference
@@ -19,10 +20,20 @@
             android:summary="@string/pref_ntp_server_custom_summary"
             android:title="@string/pref_ntp_server_custom" >
         </EditTextPreference>
-
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_further_options" >
         <Preference
             android:key="@string/pref_advanced_settings_key"
             android:title="@string/pref_advanced_settings" />
+        <Preference
+            android:key="@string/pref_revert_key"
+            android:summary="@string/pref_revert_summary"
+            android:title="@string/pref_revert" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_help" >
+        <Preference
+            android:key="@string/pref_help_key"
+            android:title="@string/pref_help" />
         <Preference
             android:key="@string/pref_about_key"
             android:title="@string/pref_about" />

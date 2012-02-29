@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="pref_ntp_server_key">ntpServer</string>
-    <string name="pref_ntp_server_custom_key">ntpServerCustom</string>
+    <string name="pref_ntp_server_key" translate="false">ntpServer</string>
+    <string name="pref_ntp_server_custom_key" translate="false">ntpServerCustom</string>
 
-    <string-array name="pref_ntp_server_entries_values">
+    <string-array name="pref_ntp_server_entries_values" translate="false">
         <item>pool.ntp.org</item> <!-- Global -->
         <item>menu</item> <!-- Continental -->
         <item>europe.pool.ntp.org</item> <!-- Europe -->
@@ -30,8 +30,10 @@
         <item>custom</item>
     </string-array>
 
-    <string name="pref_advanced_settings_key">advancedSettings</string>
-    <string name="pref_about_key">about</string>
-    <string name="pref_donations_key">donations</string>
+    <string name="pref_advanced_settings_key" translate="false">advancedSettings</string>
+    <string name="pref_revert_key" translate="false">revert</string>
+    <string name="pref_help_key" translate="false">help</string>
+    <string name="pref_about_key" translate="false">about</string>
+    <string name="pref_donations_key" translate="false">donations</string>
 
 </resources>

@@ -44,6 +44,8 @@ public class Constants {
     public static final String GPS_CONF_PATH = ANDROID_SYSTEM_PATH + FILE_SEPERATOR + "etc"
             + FILE_SEPERATOR + GPS_CONF;
 
+    public static final String OLD_GPS_CONF = "old_gps.conf";
+
     public static final String COMMAND_CHMOD_644 = "chmod 644";
 
 }

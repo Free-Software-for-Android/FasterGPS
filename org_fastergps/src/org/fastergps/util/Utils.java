@@ -22,11 +22,13 @@ package org.fastergps.util;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.ByteArrayOutputStream;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.HashMap;
@@ -100,6 +102,33 @@ public class Utils {
     }
 
     /**
+     * Reads html files from /res/raw/example.html to output them as string. See
+     * http://www.monocube.com/2011/02/08/android-tutorial-html-file-in-webview/
+     * 
+     * @param context
+     *            current context
+     * @param resourceID
+     *            of html file to read
+     * @return content of html file with formatting
+     */
+    public static String readContentFromResource(Context context, int resourceID) {
+        InputStream raw = context.getResources().openRawResource(resourceID);
+        ByteArrayOutputStream stream = new ByteArrayOutputStream();
+        int i;
+        try {
+            i = raw.read();
+            while (i != -1) {
+                stream.write(i);
+                i = raw.read();
+            }
+            raw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return stream.toString();
+    }
+
+    /**
      * Gets resource string from strings.xml
      * 
      * @param name
@@ -132,13 +161,13 @@ public class Utils {
      * 
      * @return config as HashMap
      */
-    public static HashMap<String, String> getConfig() {
+    public static HashMap<String, String> getConfig(String gpsConfPath) {
 
         HashMap<String, String> currentConfig = new HashMap<String, String>();
 
         // read gps.conf line by line and parse it into config hash map
         try {
-            FileInputStream fstream = new FileInputStream(Constants.GPS_CONF_PATH);
+            FileInputStream fstream = new FileInputStream(gpsConfPath);
             DataInputStream in = new DataInputStream(fstream);
             BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 
@@ -177,6 +206,11 @@ public class Utils {
      */
     public static boolean writeConfig(Context context, HashMap<String, String> config) {
 
+        /* write to /data/data/org.fastergps/files/gps.conf */
+        if (!writePrivateConfig(context, config, Constants.GPS_CONF)) {
+            return false;
+        }
+
         /* remount for write access */
         Log.i(Constants.TAG, "Remounting for RW...");
         if (!RootTools.remount(Constants.GPS_CONF_PATH, "RW")) {
@@ -185,10 +219,52 @@ public class Utils {
             return false;
         }
 
-        Log.i(Constants.TAG, "Writing gps.conf to private files...");
+        Log.i(Constants.TAG, "Copying gps.conf from private files to system partition...");
+
+        String privateDir = context.getFilesDir().getAbsolutePath();
+        String privateFile = privateDir + Constants.FILE_SEPERATOR + Constants.GPS_CONF;
+
+        List<String> output = null;
+        try {
+
+            // copy file from /data/data/org.fastergps/gps.conf to /system/etc/gps.conf
+            if (!RootTools.copyFile(privateFile, Constants.GPS_CONF_PATH)) {
+                return false;
+            }
+
+            // chmod 644 it
+            output = RootTools.sendShell(new String[] { Constants.COMMAND_CHMOD_644 + " "
+                    + Constants.GPS_CONF_PATH }, 0, -1);
+
+            Log.d(Constants.TAG, "output of sendShell commands: " + output.toString());
+        } catch (Exception e) {
+            Log.e(Constants.TAG, "Exception: " + e);
+            e.printStackTrace();
+
+            return false;
+        } finally {
+            // after all remount system back as read only
+            Log.i(Constants.TAG, "Remounting back to RO...");
+            RootTools.remount(Constants.GPS_CONF_PATH, "RO");
+        }
+
+        return true;
+    }
+
+    /**
+     * Writes current config into private files of app with given filename
+     * 
+     * @param context
+     * @param config
+     * @param filename
+     * @return
+     */
+    private static boolean writePrivateConfig(Context context, HashMap<String, String> config,
+            String filename) {
+        Log.i(Constants.TAG, "Writing " + filename + " to private files...");
 
         try {
-            FileOutputStream fos = context.openFileOutput(Constants.GPS_CONF, Context.MODE_PRIVATE);
+            FileOutputStream fos = context.openFileOutput(filename, Context.MODE_PRIVATE);
             OutputStreamWriter ow = new OutputStreamWriter(fos);
             BufferedWriter writer = new BufferedWriter(ow);
 
@@ -207,42 +283,29 @@ public class Utils {
 
             // Close the output stream
             writer.close();
+
+            return true;
         } catch (Exception e) {
-            Log.e(Constants.TAG, "Error while writing gps.conf: " + e.getMessage());
+            Log.e(Constants.TAG,
+                    "Error while writing " + filename + " to private files: " + e.getMessage());
             e.printStackTrace();
 
             return false;
         }
+    }
 
-        Log.i(Constants.TAG, "Copying gps.conf from private files to system partition...");
-
-        String privateDir = context.getFilesDir().getAbsolutePath();
-        String privateFile = privateDir + Constants.FILE_SEPERATOR + Constants.GPS_CONF;
-
-        List<String> output = null;
-        try {
-
-            // copy file from /data/data/org.fastergps/gps.conf to /system/etc/gps.conf
-            if (!RootTools.copyFile(privateFile, Constants.GPS_CONF_PATH)) {
-                return false;
-            }
-            
-            // chmod 644 it
-            output = RootTools.sendShell(new String[] { Constants.COMMAND_CHMOD_644 + " "
-                    + Constants.GPS_CONF_PATH }, 0, -1);
-
-            Log.d(Constants.TAG, "output of sendShell commands: " + output.toString());
-        } catch (Exception e) {
-            Log.e(Constants.TAG, "Exception: " + e);
-            e.printStackTrace();
-
-            return false;
-        } finally {
-            // after all remount system back as read only
-            RootTools.remount(Constants.GPS_CONF_PATH, "RO");
+    /**
+     * Writes backup of current config to private app files if not already existing
+     * 
+     * @param context
+     * @param config
+     */
+    public static void makeBackup(Context context, HashMap<String, String> config) {
+        // write to /data/data/org.fastergps/files/gps.conf if not already existing
+        if (!context.getFileStreamPath(Constants.OLD_GPS_CONF).exists()) {
+            Log.i(Constants.TAG, "Making backup, becaue no backup exists...");
+            writePrivateConfig(context, config, Constants.OLD_GPS_CONF);
         }
-
-        return true;
     }
 
     /**

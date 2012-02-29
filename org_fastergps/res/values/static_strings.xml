@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">FasterGPS</string>
-    <string name="about_url">http://code.google.com/p/faster-gps/</string>
-    <string name="no_root_url">http://www.cyanogenmod.com</string>
-    <string name="donations_flattr_url">http://flattr.com/thing/526077/FasterGPS</string>
-    <string name="donations_flattr_project_url">http://code.google.com/p/faster-gps</string>
+    <string name="app_name" translate="false">FasterGPS</string>
+    <string name="about_url" translate="false">http://code.google.com/p/faster-gps/</string>
+    <string name="no_root_url" translate="false">http://www.cyanogenmod.com</string>
+    <string name="donations_flattr_url" translate="false">http://flattr.com/thing/526077/FasterGPS</string>
+    <string name="donations_flattr_project_url" translate="false">http://code.google.com/p/faster-gps</string>
 
 </resources>
