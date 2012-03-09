@@ -57,6 +57,7 @@
             android:name=".ui.DonationsActivity"
             android:excludeFromRecents="true"
             android:label="@string/activity_donations"
+            android:launchMode="singleTask"
             android:theme="@android:style/Theme.Dialog" />
 
         <!-- - Google Android Market donations -->

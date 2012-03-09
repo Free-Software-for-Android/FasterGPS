@@ -22,13 +22,13 @@ package org.fastergps.ui;
 
 import org.fastergps.R;
 import org.fastergps.google.donations.BillingService;
-import org.fastergps.google.donations.BillingConstants;
+import org.fastergps.google.donations.Consts;
 import org.fastergps.google.donations.PurchaseObserver;
 import org.fastergps.google.donations.ResponseHandler;
 import org.fastergps.google.donations.BillingService.RequestPurchase;
 import org.fastergps.google.donations.BillingService.RestoreTransactions;
-import org.fastergps.google.donations.BillingConstants.PurchaseState;
-import org.fastergps.google.donations.BillingConstants.ResponseCode;
+import org.fastergps.google.donations.Consts.PurchaseState;
+import org.fastergps.google.donations.Consts.ResponseCode;
 import org.fastergps.util.Constants;
 import org.fastergps.util.Log;
 
@@ -159,7 +159,7 @@ public class DonationsActivity extends Activity {
         index = mGoogleAndroidMarketSpinner.getSelectedItemPosition();
         Log.d(Constants.TAG, "selected item in spinner: " + index);
 
-        if (!BillingConstants.DEBUG) {
+        if (!Consts.DEBUG) {
             if (!mBillingService.requestPurchase(CATALOG[index], null)) {
                 showDialog(DIALOG_BILLING_NOT_SUPPORTED_ID);
             }

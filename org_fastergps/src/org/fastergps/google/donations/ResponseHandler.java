@@ -1,11 +1,25 @@
-// Copyright 2010 Google Inc. All Rights Reserved.
+/*
+ * Copyright (C) 2010 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 
 package org.fastergps.google.donations;
 
 import org.fastergps.google.donations.BillingService.RequestPurchase;
 import org.fastergps.google.donations.BillingService.RestoreTransactions;
-import org.fastergps.google.donations.BillingConstants.PurchaseState;
-import org.fastergps.google.donations.BillingConstants.ResponseCode;
+import org.fastergps.google.donations.Consts.PurchaseState;
+import org.fastergps.google.donations.Consts.ResponseCode;
 
 import android.app.PendingIntent;
 import android.content.Context;
@@ -78,7 +92,7 @@ public class ResponseHandler {
      */
     public static void buyPageIntentResponse(PendingIntent pendingIntent, Intent intent) {
         if (sPurchaseObserver == null) {
-            if (BillingConstants.DEBUG) {
+            if (Consts.DEBUG) {
                 Log.d(TAG, "UI is not running");
             }
             return;
