@@ -12,14 +12,12 @@
             android:entryValues="@array/pref_ntp_server_entries_values"
             android:key="@string/pref_ntp_server_key"
             android:summary="@string/pref_ntp_server_summary"
-            android:title="@string/pref_ntp_server" >
-        </ListPreference>
+            android:title="@string/pref_ntp_server" />
 
         <EditTextPreference
             android:key="@string/pref_ntp_server_custom_key"
             android:summary="@string/pref_ntp_server_custom_summary"
-            android:title="@string/pref_ntp_server_custom" >
-        </EditTextPreference>
+            android:title="@string/pref_ntp_server_custom" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_further_options" >
         <Preference
