@@ -6,9 +6,6 @@ from HTMLParser import HTMLParser
 class MyHTMLParser(HTMLParser):
 
     def __init__(self, url, name):
-        """
-        {fh} must be an input stream returned by open() or urllib2.urlopen()
-        """
         HTMLParser.__init__(self)
         self.name = name
         self.names = []
