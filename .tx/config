@@ -9,5 +9,5 @@ source_lang = en
 
 [fastergps.help]
 file_filter = org_fastergps/res/raw-<lang>/help.html
-source_file = org_fastergps/res/raw/help_faq.html
+source_file = org_fastergps/res/raw/help.html
 source_lang = en
