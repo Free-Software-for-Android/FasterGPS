@@ -1,25 +1,25 @@
-Attention: DEVICE MUST BE ROOTED FOR THIS APPLICATION
+<b>Attention: DEVICE MUST BE ROOTED FOR THIS APPLICATION</b>
 
-Description:
+<b>Description</b>
 With FasterGPS you can select a NTP Server matching your region to speed up the process of getting a GPS fix.
 This is an open source alternative to FasterFix!
 
-Requirements:
+<b>Requirements</b>
 • ROOT
 • Read/Write access on system-Partition
 
-Website and issue tracker:
+<b>Website and issue tracker</b>
 http://code.google.com/p/faster-gps
 
-Donate:
+<b>Donate</b>
 You can donate money to support the development in-app with Flattr or Google Android Market
 
-License:
+<b>License</b>
 GPLv3
 
-Permissions:
-• Root access: To write gps.conf file to system partition
-• Internet access: To allow donations
+<b>Permissions</b>
+• <i>Root access:</i> To write gps.conf file to system partition
+• <i>Internet access:</i> To allow donations
 
 
 
@@ -30,23 +30,23 @@ Permissions:
 GERMAN:
 
 
-Achtung: ANWENDUNG BRAUCHT ROOT-ZUGRIFF AUF DEM GERÄT
+<b>Achtung: ANWENDUNG BRAUCHT ROOT-ZUGRIFF AUF DEM GERÄT</b>
 
-Beschreibung:
+<b>Beschreibung</b>
 
-Anforderungen:
+<b>Anforderungen</b>
 • ROOT
 • Lese- und Schreibzugriff auf der system-Partition
 
-Webseite und Issue-Tracker:
+<b>Webseite und Issue-Tracker</b>
 http://code.google.com/p/faster-gps
 
-Spenden:
+<b>Spenden</b>
 Du kannst die Entwicklung unterstützen indem du in der Anwendung über Flattr oder den Google Android Market spendest.
 
-Lizenz:
+<b>Lizenz</b>
 GPLv3
 
-Berechtigungen:
-• Root-Zugriff: Um die gps.conf auf die System-Partition zu schreiben
-• Internet-Zugriff: Um Spenden zu ermöglichen
+<b>Berechtigungen</b>
+• <i>Root-Zugriff:</i> Um die gps.conf auf die System-Partition zu schreiben
+• <i>Internet-Zugriff:</i> Um Spenden zu ermöglichen
