@@ -1,6 +1,9 @@
 Please report bugs on the following website instead of writing bad reviews:
 http://code.google.com/p/faster-gps/issues
 
+1.3
+* Much more NTP server
+
 1.2
 * Now makes backup of old gps.conf to allow reverting
 - Fixed bug which causes options to appear multiple times
