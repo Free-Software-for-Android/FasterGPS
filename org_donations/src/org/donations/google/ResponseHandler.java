@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2010 The Android Open Source Project
+ * Copyright (C) 2011 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package org.fastergps.google.donations;
+package org.donations.google;
 
-import org.fastergps.google.donations.BillingService.RequestPurchase;
-import org.fastergps.google.donations.BillingService.RestoreTransactions;
-import org.fastergps.google.donations.Consts.PurchaseState;
-import org.fastergps.google.donations.Consts.ResponseCode;
+import org.donations.google.BillingService.RequestPurchase;
+import org.donations.google.BillingService.RestoreTransactions;
+import org.donations.google.Consts.PurchaseState;
+import org.donations.google.Consts.ResponseCode;
 
 import android.app.PendingIntent;
 import android.content.Context;

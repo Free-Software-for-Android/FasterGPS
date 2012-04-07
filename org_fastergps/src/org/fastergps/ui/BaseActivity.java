@@ -22,6 +22,7 @@ package org.fastergps.ui;
 
 import java.util.HashMap;
 
+import org.donations.DonationsActivity;
 import org.fastergps.R;
 import org.fastergps.util.Constants;
 import org.fastergps.util.Log;

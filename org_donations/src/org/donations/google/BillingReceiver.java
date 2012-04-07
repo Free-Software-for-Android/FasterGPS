@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package org.fastergps.google.donations;
+package org.donations.google;
 
-import org.fastergps.google.donations.Consts.ResponseCode;
+import org.donations.google.Consts.ResponseCode;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

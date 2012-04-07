@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.fastergps.google.donations;
+package org.donations.google;
 
 import com.android.vending.billing.IMarketBillingService;
 
@@ -36,9 +36,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 
-import org.fastergps.google.donations.Consts.PurchaseState;
-import org.fastergps.google.donations.Consts.ResponseCode;
-import org.fastergps.google.donations.Security.VerifiedPurchase;
+import org.donations.google.Consts.PurchaseState;
+import org.donations.google.Consts.ResponseCode;
+import org.donations.google.Security.VerifiedPurchase;
 
 /**
  * Extra fixes from here: http://code.google.com/p/marketbilling/issues/detail?id=25 to overcome:
@@ -198,8 +198,10 @@ public class BillingService extends Service implements ServiceConnection {
             Bundle request = makeRequestBundle("CHECK_BILLING_SUPPORTED");
             try {
                 Bundle response = mService.sendBillingRequest(request);
+                // fix from
+                // http://stackoverflow.com/questions/5576733/in-app-billing-is-not-working-on-g1
                 int responseCode = response.containsKey(Consts.BILLING_RESPONSE_RESPONSE_CODE) ? response
-                        .getInt(Consts.BILLING_RESPONSE_RESPONSE_CODE)
+                        .getInt(Consts.BILLING_RESPONSE_RESPONSE_CODE, -123)
                         : ResponseCode.RESULT_BILLING_UNAVAILABLE.ordinal();
                 if (Consts.DEBUG) {
                     Log.i(TAG,
