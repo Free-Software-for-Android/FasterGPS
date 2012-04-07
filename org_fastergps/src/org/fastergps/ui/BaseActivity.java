@@ -43,7 +43,9 @@ import android.preference.PreferenceActivity;
 public class BaseActivity extends PreferenceActivity {
     private Activity mActivity;
 
-    private ListPreference mNtpServer;
+    private Preference mCurrentNtp;
+    private ListPreference mNtpContinent;
+    private ListPreference mNtpRegion;
     private EditTextPreference mNtpServerCustom;
 
     private Preference mAdvancedSettings;
@@ -60,42 +62,20 @@ public class BaseActivity extends PreferenceActivity {
      * 
      * @param currentNtpServer
      */
-    private void setSummary(String currentNtpServer) {
-        mNtpServer.setSummary(getString(R.string.pref_ntp_server_summary) + "\n"
-                + getString(R.string.pref_current_value) + " " + currentNtpServer);
+    private void setCurrentNtpSummary(String currentNtpServer) {
+        mCurrentNtp.setSummary(getString(R.string.pref_current_value) + " " + currentNtpServer);
         mNtpServerCustom.setText(currentNtpServer);
     }
 
     /**
      * Sets NTP Server based on loaded config HashMap
      */
-    private void setNtpServerBasedOnConfig() {
+    private void setCurrentNtpBasedOnConfig() {
         /* set default of list preference and custom ntp server from config */
         String currentNtpServer = config.get("NTP_SERVER");
 
         if (currentNtpServer != null) {
-            setSummary(currentNtpServer);
-
-            boolean ntpServerInList = false;
-
-            CharSequence[] ntpServerList = mNtpServer.getEntryValues();
-            String serverValue;
-            for (int i = 0; i < ntpServerList.length; i++) {
-                serverValue = ntpServerList[i].toString();
-                Log.d(Constants.TAG, "possible value: " + serverValue);
-
-                // if current ntp server is in our list of possible servers
-                if (currentNtpServer.equals(serverValue)) {
-                    mNtpServer.setValue(currentNtpServer);
-
-                    mNtpServerCustom.setEnabled(false);
-                    ntpServerInList = true;
-                }
-            }
-            if (ntpServerInList == false) {
-                Log.d(Constants.TAG, "current ntp server is not in the list!");
-                mNtpServer.setValue("custom");
-            }
+            setCurrentNtpSummary(currentNtpServer);
         }
     }
 
@@ -123,34 +103,66 @@ public class BaseActivity extends PreferenceActivity {
             Utils.makeBackup(mActivity, config);
 
             // find preferences
+            mCurrentNtp = (Preference) findPreference(getString(R.string.pref_current_ntp_key));
             mNtpServerCustom = (EditTextPreference) findPreference(getString(R.string.pref_ntp_server_custom_key));
-            mNtpServer = (ListPreference) findPreference(getString(R.string.pref_ntp_server_key));
+            mNtpContinent = (ListPreference) findPreference(getString(R.string.pref_ntp_continent_key));
+            mNtpRegion = (ListPreference) findPreference(getString(R.string.pref_ntp_region_key));
             mAdvancedSettings = (Preference) findPreference(getString(R.string.pref_advanced_settings_key));
             mRevert = (Preference) findPreference(getString(R.string.pref_revert_key));
             mHelp = (Preference) findPreference(getString(R.string.pref_help_key));
             mAbout = (Preference) findPreference(getString(R.string.pref_about_key));
             mDonations = (Preference) findPreference(getString(R.string.pref_donations_key));
 
-            // set ntp server based on config
-            Log.i(Constants.TAG, "Update displayed NTP Server from config...");
-            setNtpServerBasedOnConfig();
+            // set current ntp summary based on config
+            setCurrentNtpBasedOnConfig();
 
-            /* ntp server drop down */
-            mNtpServer.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            // select default entry of drop down
+            mNtpContinent.setValue("null");
+
+            /* ntp continent drop down */
+            mNtpContinent.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
 
                 @Override
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
-                    Log.d(Constants.TAG, "mNtpServer changed!");
+                    Log.d(Constants.TAG, "ntp continent changed!");
+                    String stringValue = (String) newValue;
 
-                    if (newValue.equals("custom") || newValue.equals("menu")) {
+                    if (stringValue.equals("custom")) {
                         mNtpServerCustom.setEnabled(true);
+                        mNtpRegion.setEnabled(false);
+                    } else if (stringValue.equals("null")) {
+                        mNtpServerCustom.setEnabled(false);
+                        mNtpRegion.setEnabled(false);
                     } else {
                         mNtpServerCustom.setEnabled(false);
 
+                        // load entries and entry values based on selection
+                        mNtpRegion.setEntries(Utils.getResourceStringArray(
+                                "pref_ntp_region_entries_" + stringValue, mActivity));
+                        mNtpRegion.setEntryValues(Utils.getResourceStringArray(
+                                "pref_ntp_region_entries_" + stringValue + "_values", mActivity));
+                        mNtpRegion.setEnabled(true);
+                        // select default entry
+                        mNtpRegion.setValue("null");
+                    }
+
+                    return true;
+                }
+            });
+
+            /* ntp region drop down */
+            mNtpRegion.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    Log.d(Constants.TAG, "ntp region changed!");
+                    String stringValue = (String) newValue;
+
+                    if (!stringValue.equals("null")) {
                         config.put("NTP_SERVER", (String) newValue);
                         Utils.debugLogConfig(config);
                         Utils.writeConfig(mActivity, config);
-                        setSummary((String) newValue);
+                        setCurrentNtpSummary((String) newValue);
                     }
 
                     return true;
@@ -162,12 +174,12 @@ public class BaseActivity extends PreferenceActivity {
 
                 @Override
                 public boolean onPreferenceChange(Preference preference, Object newValue) {
-                    Log.d(Constants.TAG, "mNtpServerCustom changed!");
+                    Log.d(Constants.TAG, "ntp custom changed!");
 
                     config.put("NTP_SERVER", (String) newValue);
                     Utils.debugLogConfig(config);
                     Utils.writeConfig(mActivity, config);
-                    setSummary((String) newValue);
+                    setCurrentNtpSummary((String) newValue);
 
                     return true;
                 }
@@ -197,7 +209,7 @@ public class BaseActivity extends PreferenceActivity {
                                     config = Utils.getConfig(mActivity.getFileStreamPath(
                                             Constants.OLD_GPS_CONF).getAbsolutePath());
                                     // update display
-                                    setNtpServerBasedOnConfig();
+                                    setCurrentNtpBasedOnConfig();
                                     // write old config
                                     Utils.writeConfig(mActivity, config);
                                 }

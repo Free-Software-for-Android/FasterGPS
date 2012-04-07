@@ -1,33 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="pref_ntp_server_key" translate="false">ntpServer</string>
+    <string name="pref_current_ntp_key" translate="false">currentNtp</string>
+    <string name="pref_ntp_continent_key" translate="false">ntpContinent</string>
+    <string name="pref_ntp_region_key" translate="false">ntpRegion</string>
     <string name="pref_ntp_server_custom_key" translate="false">ntpServerCustom</string>
 
-    <string-array name="pref_ntp_server_entries_values" translate="false">
-        <item>pool.ntp.org</item> <!-- Global -->
-        <item>menu</item> <!-- Continental -->
-        <item>europe.pool.ntp.org</item> <!-- Europe -->
-        <item>oceania.pool.ntp.org</item> <!-- Oceania -->
-        <item>asia.pool.ntp.org</item> <!-- Asia -->
-        <item>north-america.pool.ntp.org</item> <!-- North America -->
-        <item>south-america.pool.ntp.org</item> <!-- South America -->
-        <item>africa.pool.ntp.org</item> <!-- Africa -->
-        <item>menu</item> <!-- Local -->
-        <item>nl.pool.ntp.org</item> <!-- Netherlands -->
-        <item>cn.pool.ntp.org</item> <!-- China -->
-        <item>ru.pool.ntp.org</item> <!-- Russia -->
-        <item>in.pool.ntp.org</item> <!-- India -->
-        <item>uk.pool.ntp.org</item> <!-- UK -->
-        <item>de.pool.ntp.org</item> <!-- Germany -->
-        <item>fr.pool.ntp.org</item> <!-- France -->
-        <item>jp.pool.ntp.org</item> <!-- Japan -->
-        <item>it.pool.ntp.org</item> <!-- Italy -->
-        <item>pl.pool.ntp.org</item> <!-- Poland -->
-        <item>my.pool.ntp.org</item> <!-- Malaysia -->
-        <item>kr.pool.ntp.org</item> <!-- Korea -->
-        <item>menu</item>
+    <string-array name="pref_ntp_continent_entries_values">
+        <item>null</item>
         <item>custom</item>
+        <item>europe</item>
+        <item>oceania</item>
+        <item>asia</item>
+        <item>north_america</item>
+        <item>south_america</item>
+        <item>africa</item>
     </string-array>
 
     <string name="pref_advanced_settings_key" translate="false">advancedSettings</string>
@@ -35,5 +22,108 @@
     <string name="pref_help_key" translate="false">help</string>
     <string name="pref_about_key" translate="false">about</string>
     <string name="pref_donations_key" translate="false">donations</string>
+
+    <string-array name="pref_ntp_region_entries_europe_values" translate="false">
+        <item>null</item>
+        <item>at.pool.ntp.org</item>
+        <item>ch.pool.ntp.org</item>
+        <item>de.pool.ntp.org</item>
+        <item>dk.pool.ntp.org</item>
+        <item>es.pool.ntp.org</item>
+        <item>fr.pool.ntp.org</item>
+        <item>it.pool.ntp.org</item>
+        <item>lu.pool.ntp.org</item>
+        <item>nl.pool.ntp.org</item>
+        <item>no.pool.ntp.org</item>
+        <item>pl.pool.ntp.org</item>
+        <item>se.pool.ntp.org</item>
+        <item>si.pool.ntp.org</item>
+        <item>uk.pool.ntp.org</item>
+        <item>fi.pool.ntp.org</item>
+        <item>ie.pool.ntp.org</item>
+        <item>ru.pool.ntp.org</item>
+        <item>be.pool.ntp.org</item>
+        <item>pt.pool.ntp.org</item>
+        <item>gr.pool.ntp.org</item>
+        <item>hu.pool.ntp.org</item>
+        <item>bg.pool.ntp.org</item>
+        <item>ro.pool.ntp.org</item>
+        <item>cz.pool.ntp.org</item>
+        <item>yu.pool.ntp.org</item>
+        <item>ee.pool.ntp.org</item>
+        <item>by.pool.ntp.org</item>
+        <item>sk.pool.ntp.org</item>
+        <item>ua.pool.ntp.org</item>
+        <item>lt.pool.ntp.org</item>
+        <item>mk.pool.ntp.org</item>
+        <item>md.pool.ntp.org</item>
+        <item>lv.pool.ntp.org</item>
+        <item>hr.pool.ntp.org</item>
+        <item>rs.pool.ntp.org</item>
+        <item>ba.pool.ntp.org</item>
+        <item>am.pool.ntp.org</item>
+    </string-array>
+    <string-array name="pref_ntp_region_entries_asia_values" translate="false">
+        <item>null</item>
+        <item>ph.pool.ntp.org</item>
+        <item>my.pool.ntp.org</item>
+        <item>tr.pool.ntp.org</item>
+        <item>sg.pool.ntp.org</item>
+        <item>in.pool.ntp.org</item>
+        <item>hk.pool.ntp.org</item>
+        <item>ae.pool.ntp.org</item>
+        <item>jp.pool.ntp.org</item>
+        <item>bd.pool.ntp.org</item>
+        <item>il.pool.ntp.org</item>
+        <item>kr.pool.ntp.org</item>
+        <item>th.pool.ntp.org</item>
+        <item>ir.pool.ntp.org</item>
+        <item>tw.pool.ntp.org</item>
+        <item>cn.pool.ntp.org</item>
+        <item>id.pool.ntp.org</item>
+        <item>vn.pool.ntp.org</item>
+        <item>pk.pool.ntp.org</item>
+        <item>om.pool.ntp.org</item>
+        <item>uz.pool.ntp.org</item>
+        <item>lk.pool.ntp.org</item>
+        <item>kg.pool.ntp.org</item>
+        <item>kh.pool.ntp.org</item>
+        <item>qa.pool.ntp.org</item>
+        <item>sa.pool.ntp.org</item>
+        <item>iq.pool.ntp.org</item>
+        <item>kz.pool.ntp.org</item>
+    </string-array>
+    <string-array name="pref_ntp_region_entries_oceania_values" translate="false">
+        <item>null</item>
+        <item>au.pool.ntp.org</item>
+        <item>nz.pool.ntp.org</item>
+        <item>nc.pool.ntp.org</item>
+    </string-array>
+    <string-array name="pref_ntp_region_entries_north_america_values" translate="false">
+        <item>null</item>
+        <item>ca.pool.ntp.org</item>
+        <item>us.pool.ntp.org</item>
+        <item>mx.pool.ntp.org</item>
+        <item>gt.pool.ntp.org</item>
+        <item>pa.pool.ntp.org</item>
+        <item>bs.pool.ntp.org</item>
+        <item>cr.pool.ntp.org</item>
+        <item>sv.pool.ntp.org</item>
+    </string-array>
+    <string-array name="pref_ntp_region_entries_south_america_values" translate="false">
+        <item>null</item>
+        <item>br.pool.ntp.org</item>
+        <item>cl.pool.ntp.org</item>
+        <item>ar.pool.ntp.org</item>
+        <item>ve.pool.ntp.org</item>
+    </string-array>
+    <string-array name="pref_ntp_region_entries_africa_values" translate="false">
+        <item>null</item>
+        <item>tz.pool.ntp.org</item>
+        <item>za.pool.ntp.org</item>
+        <item>ao.pool.ntp.org</item>
+        <item>mg.pool.ntp.org</item>
+        <item>ug.pool.ntp.org</item>
+    </string-array>
 
 </resources>

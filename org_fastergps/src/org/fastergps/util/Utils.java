@@ -144,6 +144,23 @@ public class Utils {
             return context.getString(nameResourceID);
         }
     }
+    
+    /**
+     * Gets resource string-array from strings.xml
+     * 
+     * @param name
+     * @param context
+     * @return
+     */
+    public static String[] getResourceStringArray(String name, Context context) {
+        int nameResourceID = context.getResources().getIdentifier(name, "array",
+                context.getApplicationInfo().packageName);
+        if (nameResourceID == 0) {
+            throw new IllegalArgumentException("No resource string-array found with name " + name);
+        } else {
+            return context.getResources().getStringArray(nameResourceID);
+        }
+    }
 
     /*
      * simple parsing regex for key value pairs in gps.conf

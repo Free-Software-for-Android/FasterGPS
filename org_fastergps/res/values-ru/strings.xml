@@ -1,121 +1,105 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="activity_advanced_settings">Дополнительные настройки</string>
-  <string name="activity_help">Справка</string>
-  <string name="activity_about">О программе</string>
-  <string name="activity_donations">Пожертвование</string>
-  <string name="button_close">Закрыть</string>
-  <string name="button_exit">Выход</string>
-  <string name="about_description">Чтобы ускорить получение правильных данных GPS, вы можете выбрать NTP сервер вашего региона при помощи FasterGPS.</string>
-  <string name="about_license">Лицензия: GPL v3+</string>
-  <string name="about_version">Версия:</string>
-  <string name="about_developer">Разработчик: Dominik Schürmann\nРусский перевод: TopDome</string>
-  <string name="about_libs">FasterGPS использует библиотеку \'RootTools\' (Лицензия: GPL v2) для получения  прав администратора.</string>
-  <string name="donations_description">Считаете ли вы приложение полезным? \n Поддержите разработчика через flattring или отправьте пожертвование через Google Play Store!</string>
-  <string name="donations_flattr_description">• Flattr взимает 10 % комиссионных!</string>
-  <string name="donations_flattr">Flattr</string>
-  <string name="donations_google_android_market">Google Play Store</string>
-  <string name="donations_google_android_market_not_supported_title">In-App пожертвования не поддерживаются</string>
-  <string name="donations_google_android_market_not_supported">In-App пожертвования не поддерживаются. Google Play Store установлен правильно?</string>
-  <string name="donations_google_android_market_description">• Google взимает 30 % с каждого пожертвования! \n • Специальной версии для людей, внесших пожертвования, не существует..</string>
-  <string name="donations_google_android_market_donate_button">Пожертвовать!</string>
-  <string name="donations_google_android_market_text">Сколько?</string>
-  <string-array name="donations_google_android_market_promt_array">
-    <item>1 Евро</item>
-    <item>2 Евро</item>
-    <item>3 Евро</item>
-    <item>5 Евро</item>
-    <item>8 Евро</item>
-    <item>13 Евро</item>
-  </string-array>
-  <string name="donations_thanks_dialog_title">Благодарю!</string>
-  <string name="donations_thanks_dialog">Благодарю за пожертвование!\nЯ очень это ценю!</string>
-  <string name="no_root_description">Либо программный файл SuperUser не найден, либо FasterGPS не были предоставлены разрешения root.\n\nЭто может произойти, когда на устройстве нет прав Root.\nО том, как получить права Root на устройстве вы можете найти на www.cyanogenmod.com или других веб-сайтах по Android.</string>
-  <string name="no_root_title">Для Android требуются права Root</string>
-  <string name="revert_dialog_title">Восстановить?</string>
-  <string name="revert_dialog">Вы хотите восстановить ваш старый gps.conf?</string>
-  <string name="button_yes">Да</string>
-  <string name="button_no">Нет</string>
-  <string name="pref_introduction">Что сделать?</string>
-  <string name="pref_introduction_summary">Пожалуйста, выберите ближайший к вам сервер NTP. Чем он ближе, тем быстрее произойдет коррекция GPS. FasterGPS сразу запишет настройки.</string>
-  <string name="pref_revert">Восстановление старого gps.conf</string>
-  <string name="pref_revert_summary">При первом запуске FasterGPS сохраняет ваш текущий gps.conf.\nИспользуя восстановление, вы можете его вернуть.</string>
-  <string name="pref_further_options">Дополнительные опции</string>
-  <string name="pref_ntp">NTP</string>
-  <string name="pref_ntp_server">Сервер NTP</string>
-  <string name="pref_ntp_server_summary">Выберите свой регион!</string>
-  <string-array name="pref_ntp_server_entries">
-    <item>Общий</item>
-    <item>--Континентальный--</item>
-    <item>Европа</item>
-    <item>Океания</item>
-    <item>Азия</item>
-    <item>Северная Америка</item>
-    <item>Южная Америка</item>
-    <item>Африка</item>
-    <item>--Местный--</item>
-    <item>Нидерланды</item>
-    <item>Китай</item>
-    <item>Россия</item>
-    <item>Индия</item>
-    <item>Великобритания</item>
-    <item>Германия</item>
-    <item>Франция</item>
-    <item>Япония</item>
-    <item>Италия</item>
-    <item>Польша</item>
-    <item>Малайзия</item>
-    <item>Корея</item>
-    <item>---</item>
-    <item>Ввести вручную</item>
-  </string-array>
-  <!--Global-->
-  <!--Continental-->
-  <!--Europe-->
-  <!--Oceania-->
-  <!--Asia-->
-  <!--North America-->
-  <!--South America-->
-  <!--Africa-->
-  <!--Local-->
-  <!--Netherlands-->
-  <!--China-->
-  <!--Russia-->
-  <!--India-->
-  <!--UK-->
-  <!--Germany-->
-  <!--France-->
-  <!--Japan-->
-  <!--Italy-->
-  <!--Poland-->
-  <!--Malaysia-->
-  <!--Korea-->
-  <string name="pref_ntp_server_custom">Пользовательский сервер NTP</string>
-  <string name="pref_ntp_server_custom_summary">Если выбран пользовательский сервер, то здесь вы можете указать свой сервер NTP.</string>
-  <string name="pref_advanced_settings">К расширенным настройкам</string>
-  <string name="pref_help">Справка</string>
-  <string name="pref_about">О программе</string>
-  <string name="pref_donations">Пожертвование</string>
-  <string name="pref_current_value">Значение:</string>
-  <string name="pref_category_general">Общие</string>
-  <string name="pref_category_xtra">Сервер XTRA</string>
-  <string name="pref_category_supl">AGPS SUPL</string>
-  <string name="pref_category_c2k">AGPS C2K</string>
-  <string name="pref_category_carrier">AGPS Carrier</string>
-  <string name="pref_category_other">Дополнительно</string>
-  <string name="DEBUG_LEVEL">Уровень отладки: 0=Нет, 1=Ошибка, 2=Предупреждения, 3=Информация, 4=Отладка, 5=Подробно</string>
-  <string name="INTERMEDIATE_POS">Отчет о промежуточных позициях: 1=Включено, 0=Выключено</string>
-  <string name="ACCURACY_THRES">Порог точности для промежуточных позиций, менее точные игнорируются: 0 для учета всех позиций</string>
-  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Отчет supl о местоположении: 1=Включено, 0=Выключено</string>
-  <string name="ENABLE_WIPER">Wiper (использовать информацию WiFi): 1=Включено, 0=Выключено</string>
-  <string name="SUPL_HOST"/>
-  <string name="SUPL_PORT"/>
-  <string name="SUPL_NO_SECURE_PORT"/>
-  <string name="SUPL_SECURE_PORT"/>
-  <string name="C2K_HOST"/>
-  <string name="C2K_PORT"/>
-  <string name="CURRENT_CARRIER">Возможное значение: common</string>
-  <string name="DEFAULT_AGPS_ENABLE">Возможное значение: TRUE/FALSE</string>
-  <string name="DEFAULT_SSL_ENABLE">Возможное значение: TRUE/FALSE</string>
-  <string name="DEFAULT_USER_PLANE">TRUE для \"User Plane\", FALSE для \"Control Plane\"</string>
+
+    <string name="activity_advanced_settings">Дополнительные настройки</string>
+    <string name="activity_help">Справка</string>
+    <string name="activity_about">О программе</string>
+    <string name="activity_donations">Пожертвование</string>
+    <string name="button_close">Закрыть</string>
+    <string name="button_exit">Выход</string>
+    <string name="about_description">Чтобы ускорить получение правильных данных GPS, вы можете выбрать NTP сервер вашего региона при помощи FasterGPS.</string>
+    <string name="about_license">Лицензия: GPL v3+</string>
+    <string name="about_version">Версия:</string>
+    <string name="about_developer">Разработчик: Dominik Schürmann\nРусский перевод: TopDome</string>
+    <string name="about_libs">FasterGPS использует библиотеку \'RootTools\' (Лицензия: GPL v2) для получения  прав администратора.</string>
+    <string name="no_root_description">Либо программный файл SuperUser не найден, либо FasterGPS не были предоставлены разрешения root.\n\nЭто может произойти, когда на устройстве нет прав Root.\nО том, как получить права Root на устройстве вы можете найти на www.cyanogenmod.com или других веб-сайтах по Android.</string>
+    <string name="no_root_title">Для Android требуются права Root</string>
+    <string name="revert_dialog_title">Восстановить?</string>
+    <string name="revert_dialog">Вы хотите восстановить ваш старый gps.conf?</string>
+    <string name="button_yes">Да</string>
+    <string name="button_no">Нет</string>
+    <string name="pref_introduction">Что сделать?</string>
+    <string name="pref_introduction_summary">Пожалуйста, выберите ближайший к вам сервер NTP. Чем он ближе, тем быстрее произойдет коррекция GPS. FasterGPS сразу запишет настройки.</string>
+    <string name="pref_revert">Восстановление старого gps.conf</string>
+    <string name="pref_revert_summary">При первом запуске FasterGPS сохраняет ваш текущий gps.conf.\nИспользуя восстановление, вы можете его вернуть.</string>
+    <string name="pref_further_options">Дополнительные опции</string>
+    <string name="pref_ntp">NTP</string>
+    <string name="pref_ntp_server">Сервер NTP</string>
+    <string name="pref_ntp_server_summary">Выберите свой регион!</string>
+
+    <string-array name="pref_ntp_server_entries">
+        <item>Общий</item>
+        <item>--Континентальный--</item>
+        <item>Европа</item>
+        <item>Океания</item>
+        <item>Азия</item>
+        <item>Северная Америка</item>
+        <item>Южная Америка</item>
+        <item>Африка</item>
+        <item>--Местный--</item>
+        <item>Нидерланды</item>
+        <item>Китай</item>
+        <item>Россия</item>
+        <item>Индия</item>
+        <item>Великобритания</item>
+        <item>Германия</item>
+        <item>Франция</item>
+        <item>Япония</item>
+        <item>Италия</item>
+        <item>Польша</item>
+        <item>Малайзия</item>
+        <item>Корея</item>
+        <item>---</item>
+        <item>Ввести вручную</item>
+    </string-array>
+    <!-- Global -->
+    <!-- Continental -->
+    <!-- Europe -->
+    <!-- Oceania -->
+    <!-- Asia -->
+    <!-- North America -->
+    <!-- South America -->
+    <!-- Africa -->
+    <!-- Local -->
+    <!-- Netherlands -->
+    <!-- China -->
+    <!-- Russia -->
+    <!-- India -->
+    <!-- UK -->
+    <!-- Germany -->
+    <!-- France -->
+    <!-- Japan -->
+    <!-- Italy -->
+    <!-- Poland -->
+    <!-- Malaysia -->
+    <!-- Korea -->
+    <string name="pref_ntp_server_custom">Пользовательский сервер NTP</string>
+    <string name="pref_ntp_server_custom_summary">Если выбран пользовательский сервер, то здесь вы можете указать свой сервер NTP.</string>
+    <string name="pref_advanced_settings">К расширенным настройкам</string>
+    <string name="pref_help">Справка</string>
+    <string name="pref_about">О программе</string>
+    <string name="pref_donations">Пожертвование</string>
+    <string name="pref_current_value">Значение:</string>
+    <string name="pref_category_general">Общие</string>
+    <string name="pref_category_xtra">Сервер XTRA</string>
+    <string name="pref_category_supl">AGPS SUPL</string>
+    <string name="pref_category_c2k">AGPS C2K</string>
+    <string name="pref_category_carrier">AGPS Carrier</string>
+    <string name="pref_category_other">Дополнительно</string>
+    <string name="DEBUG_LEVEL">Уровень отладки: 0=Нет, 1=Ошибка, 2=Предупреждения, 3=Информация, 4=Отладка, 5=Подробно</string>
+    <string name="INTERMEDIATE_POS">Отчет о промежуточных позициях: 1=Включено, 0=Выключено</string>
+    <string name="ACCURACY_THRES">Порог точности для промежуточных позиций, менее точные игнорируются: 0 для учета всех позиций</string>
+    <string name="REPORT_POSITION_USE_SUPL_REFLOC">Отчет supl о местоположении: 1=Включено, 0=Выключено</string>
+    <string name="ENABLE_WIPER">Wiper (использовать информацию WiFi): 1=Включено, 0=Выключено</string>
+    <string name="SUPL_HOST" />
+    <string name="SUPL_PORT" />
+    <string name="SUPL_NO_SECURE_PORT" />
+    <string name="SUPL_SECURE_PORT" />
+    <string name="C2K_HOST" />
+    <string name="C2K_PORT" />
+    <string name="CURRENT_CARRIER">Возможное значение: common</string>
+    <string name="DEFAULT_AGPS_ENABLE">Возможное значение: TRUE/FALSE</string>
+    <string name="DEFAULT_SSL_ENABLE">Возможное значение: TRUE/FALSE</string>
+    <string name="DEFAULT_USER_PLANE">TRUE для \"User Plane\", FALSE для \"Control Plane\"</string>
+
 </resources>

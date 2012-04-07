@@ -70,11 +70,11 @@ class MyHTMLParser(HTMLParser):
             self.data_count = 0
             
     def print_xml(self):
-        print "<string-array name=\"pref_ntp_server_entries_%s\">" % self.name
+        print "<string-array name=\"pref_ntp_region_entries_%s\">" % self.name
         for name in self.names:
             print "<item>%s</item>" % name
         print "</string-array>"
-        print "<string-array name=\"pref_ntp_server_entries_%s_values\" translate=\"false\">" % self.name
+        print "<string-array name=\"pref_ntp_region_entries_%s_values\" translate=\"false\">" % self.name
         for server in self.servers:
             print "<item>%s</item>" % server
         print "</string-array>"

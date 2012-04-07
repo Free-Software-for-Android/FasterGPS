@@ -2,41 +2,62 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
     <Preference
+        android:persistent="false"
         android:selectable="false"
         android:summary="@string/pref_introduction_summary"
         android:title="@string/pref_introduction" />
+    <Preference
+        android:key="@string/pref_current_ntp_key"
+        android:persistent="false"
+        android:selectable="false"
+        android:summary=""
+        android:title="@string/pref_current_ntp" />
 
     <PreferenceCategory android:title="@string/pref_ntp" >
         <ListPreference
-            android:entries="@array/pref_ntp_server_entries"
-            android:entryValues="@array/pref_ntp_server_entries_values"
-            android:key="@string/pref_ntp_server_key"
-            android:summary="@string/pref_ntp_server_summary"
-            android:title="@string/pref_ntp_server" />
+            android:entries="@array/pref_ntp_continent_entries"
+            android:entryValues="@array/pref_ntp_continent_entries_values"
+            android:key="@string/pref_ntp_continent_key"
+            android:persistent="false"
+            android:summary="@string/pref_ntp_continent_summary"
+            android:title="@string/pref_ntp_continent" />
+        <ListPreference
+            android:enabled="false"
+            android:key="@string/pref_ntp_region_key"
+            android:persistent="false"
+            android:summary="@string/pref_ntp_region_summary"
+            android:title="@string/pref_ntp_region" />
 
         <EditTextPreference
+            android:enabled="false"
             android:key="@string/pref_ntp_server_custom_key"
+            android:persistent="false"
             android:summary="@string/pref_ntp_server_custom_summary"
             android:title="@string/pref_ntp_server_custom" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_further_options" >
         <Preference
             android:key="@string/pref_advanced_settings_key"
+            android:persistent="false"
             android:title="@string/pref_advanced_settings" />
         <Preference
             android:key="@string/pref_revert_key"
+            android:persistent="false"
             android:summary="@string/pref_revert_summary"
             android:title="@string/pref_revert" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_help" >
         <Preference
             android:key="@string/pref_help_key"
+            android:persistent="false"
             android:title="@string/pref_help" />
         <Preference
             android:key="@string/pref_about_key"
+            android:persistent="false"
             android:title="@string/pref_about" />
         <Preference
             android:key="@string/pref_donations_key"
+            android:persistent="false"
             android:title="@string/pref_donations" />
     </PreferenceCategory>
 

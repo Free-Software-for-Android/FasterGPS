@@ -20,40 +20,132 @@
     <string name="button_no">No</string>
     <string name="pref_introduction">What to do?</string>
     <string name="pref_introduction_summary">Please select a NTP Server that is near to your current position. The nearer it is, the faster you get a GPS fix. FasterGPS will immediately write your settings.</string>
+    <string name="pref_current_ntp">Current NTP Server</string>
     <string name="pref_revert">Revert to old gps.conf</string>
     <string name="pref_revert_summary">When FasterGPS is started the first time, it backups your current gps.conf. Using revert you can restore this one.</string>
     <string name="pref_further_options">Further options</string>
-    <string name="pref_ntp">NTP</string>
-    <string name="pref_ntp_server">NTP Server</string>
-    <string name="pref_ntp_server_summary">Select your region!</string>
+    <string name="pref_ntp">Select NTP Server</string>
+    <string name="pref_ntp_continent">Continent</string>
+    <string name="pref_ntp_continent_summary">Select your continent!</string>
 
-    <string-array name="pref_ntp_server_entries">
-        <item>Global</item> <!-- Global -->
-        <item>--Continental--</item> <!-- Continental -->
-        <item>Europe</item> <!-- Europe -->
-        <item>Oceania</item> <!-- Oceania -->
-        <item>Asia</item> <!-- Asia -->
-        <item>North America</item> <!-- North America -->
-        <item>South America</item> <!-- South America -->
-        <item>Africa</item> <!-- Africa -->
-        <item>--Local--</item> <!-- Local -->
-        <item>Netherlands</item> <!-- Netherlands -->
-        <item>China</item> <!-- China -->
-        <item>Russia</item> <!-- Russia -->
-        <item>India</item> <!-- India -->
-        <item>UK</item> <!-- UK -->
-        <item>Germany</item> <!-- Germany -->
-        <item>France</item> <!-- France -->
-        <item>Japan</item> <!-- Japan -->
-        <item>Italy</item> <!-- Italy -->
-        <item>Poland</item> <!-- Poland -->
-        <item>Malaysia</item> <!-- Malaysia -->
-        <item>Korea</item> <!-- Korea -->
-        <item>---</item>
-        <item>Manual input</item>
+    <string-array name="pref_ntp_continent_entries">
+        <item>- Nothing selected -</item>
+        <item>- Custom Server -</item>
+        <item>Europe</item>
+        <item>Oceania</item>
+        <item>Asia</item>
+        <item>North America</item>
+        <item>South America</item>
+        <item>Africa</item>
     </string-array>
 
-    <string name="pref_ntp_server_custom">NTP Server Custom</string>
+    <string name="pref_ntp_region">Region</string>
+    <string name="pref_ntp_region_summary">Select a region close to you!</string>
+
+    <string-array name="pref_ntp_region_entries_europe">
+        <item>- Nothing selected -</item>
+        <item>Austria</item>
+        <item>Switzerland</item>
+        <item>Germany</item>
+        <item>Denmark</item>
+        <item>Spain</item>
+        <item>France</item>
+        <item>Italy</item>
+        <item>Luxembourg</item>
+        <item>Netherlands</item>
+        <item>Norway</item>
+        <item>Poland</item>
+        <item>Sweden</item>
+        <item>Slovenia</item>
+        <item>United Kingdom</item>
+        <item>Finland</item>
+        <item>Ireland</item>
+        <item>Russian Federation</item>
+        <item>Belgium</item>
+        <item>Portugal</item>
+        <item>Greece</item>
+        <item>Hungary</item>
+        <item>Bulgaria</item>
+        <item>Romania</item>
+        <item>Czech Republic</item>
+        <item>Yugoslavia</item>
+        <item>Estonia</item>
+        <item>Belarus</item>
+        <item>Slovakia</item>
+        <item>Ukraine</item>
+        <item>Lithuania</item>
+        <item>Macedonia</item>
+        <item>Moldova</item>
+        <item>Latvia</item>
+        <item>Croatia</item>
+        <item>Republic of Serbia</item>
+        <item>Bosnia and Herzegovina</item>
+        <item>Armenia</item>
+    </string-array>
+    <string-array name="pref_ntp_region_entries_asia">
+        <item>- Nothing selected -</item>
+        <item>Philippines</item>
+        <item>Malaysia</item>
+        <item>Turkey</item>
+        <item>Singapore</item>
+        <item>India</item>
+        <item>Hong Kong</item>
+        <item>United Arab Emirates</item>
+        <item>Japan</item>
+        <item>Bangladesh</item>
+        <item>Israel</item>
+        <item>Korea</item>
+        <item>Thailand</item>
+        <item>Iran</item>
+        <item>Taiwan</item>
+        <item>China</item>
+        <item>Indonesia</item>
+        <item>Vietnam</item>
+        <item>Pakistan</item>
+        <item>Oman</item>
+        <item>Uzbekistan</item>
+        <item>Sri Lanka</item>
+        <item>Kyrgyzstan</item>
+        <item>Cambodia</item>
+        <item>Qatar</item>
+        <item>Saudi Arabia</item>
+        <item>Iraq</item>
+        <item>Kazakhstan</item>
+    </string-array>
+    <string-array name="pref_ntp_region_entries_oceania">
+        <item>- Nothing selected -</item>
+        <item>Australia</item>
+        <item>New Zealand</item>
+        <item>New Caledonia</item>
+    </string-array>
+    <string-array name="pref_ntp_region_entries_north_america">
+        <item>- Nothing selected -</item>
+        <item>Canada</item>
+        <item>United States</item>
+        <item>Mexico</item>
+        <item>Guatemala</item>
+        <item>Panama</item>
+        <item>Bahamas</item>
+        <item>Costa Rica</item>
+        <item>El Salvador</item>
+    </string-array>
+    <string-array name="pref_ntp_region_entries_south_america">
+        <item>- Nothing selected -</item>
+        <item>Brazil</item>
+        <item>Chile</item>
+        <item>Argentina</item>
+        <item>Venezuela</item>
+    </string-array>
+    <string-array name="pref_ntp_region_entries_africa">
+        <item>- Nothing selected -</item>
+        <item>Tanzania</item>
+        <item>South Africa</item>
+        <item>Angola</item>
+        <item>Madagascar</item>
+        <item>Uganda</item>
+    </string-array>
+
+    <string name="pref_ntp_server_custom">Custom</string>
     <string name="pref_ntp_server_custom_summary">If manual input is selected you can define a custom NTP Server here.</string>
     <string name="pref_advanced_settings">Go to advanced settings</string>
     <string name="pref_help">Help</string>

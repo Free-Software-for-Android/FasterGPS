@@ -112,6 +112,7 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
                     && (pairs.getKey().contains(keyContains) || keyContains.equals(""))) {
                 // add edit text preference
                 EditTextPreference preference = new EditTextPreference(this);
+                preference.setPersistent(false);
                 preference.setDialogTitle(pairs.getKey());
                 preference.setKey(pairs.getKey());
                 preference.setTitle(pairs.getKey());

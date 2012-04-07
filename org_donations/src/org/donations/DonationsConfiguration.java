@@ -20,7 +20,7 @@ public class DonationsConfiguration {
 
     public static final String TAG = "Donations";
 
-    public static final boolean DEBUG = true;
+    public static final boolean DEBUG = false;
 
     /** Flattr */
 
@@ -40,6 +40,6 @@ public class DonationsConfiguration {
     // mapping from the possible donations of 1,2,3,5,8 and 13 eur to your in-app items defined in
     // the publisher account of google play
     public static final String[] GOOGLE_CATALOG = new String[] { "fastergps.donation.1",
-        "fastergps.donation.2", "fastergps.donation.3", "fastergps.donation.5",
-        "fastergps.donation.8", "fastergps.donation.13" };
+            "fastergps.donation.2", "fastergps.donation.3", "fastergps.donation.5",
+            "fastergps.donation.8", "fastergps.donation.13" };
 }
