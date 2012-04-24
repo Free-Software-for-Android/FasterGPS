@@ -107,9 +107,8 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
 
             Log.d(Constants.TAG, pairs.getKey() + " = " + pairs.getValue());
 
-            // add preference not for NTP_SERVER and only for those who contain String keyContains
-            if (!pairs.getKey().equals("NTP_SERVER")
-                    && (pairs.getKey().contains(keyContains) || keyContains.equals(""))) {
+            // add preference only for those who contain String keyContains
+            if ((pairs.getKey().contains(keyContains) || keyContains.equals(""))) {
                 // add edit text preference
                 EditTextPreference preference = new EditTextPreference(this);
                 preference.setPersistent(false);
@@ -162,6 +161,13 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
         addPreferencesToCategory(generalCat, "ACCURACY_THRES");
         addPreferencesToCategory(generalCat, "REPORT_POSITION_USE_SUPL_REFLOC");
         addPreferencesToCategory(generalCat, "ENABLE_WIPER");
+
+        // NTP
+        PreferenceCategory ntpCat = new PreferenceCategory(mActivity);
+        ntpCat.setTitle(R.string.pref_ntp);
+        root.addPreference(ntpCat);
+
+        addPreferencesToCategory(ntpCat, "NTP_SERVER");
 
         // XTRA
         PreferenceCategory xtraCat = new PreferenceCategory(mActivity);
