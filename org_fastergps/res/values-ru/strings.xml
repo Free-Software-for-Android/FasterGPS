@@ -1,29 +1,36 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
+  <!--Activities-->
   <string name="activity_advanced_settings">Расширенные настройки</string>
   <string name="activity_help">Справка</string>
   <string name="activity_about">О программе</string>
   <string name="activity_donations">Пожертвование</string>
+  <!--Buttons-->
   <string name="button_close">Закрыть</string>
   <string name="button_exit">Выход</string>
+  <string name="button_yes">Да</string>
+  <string name="button_no">Нет</string>
+  <!--About-->
   <string name="about_description">Чтобы ускорить получение правильных данных GPS, вы можете выбрать NTP сервер вашего региона при помощи FasterGPS.</string>
   <string name="about_license">Лицензия: GPL v3+</string>
   <string name="about_version">Версия:</string>
-  <string name="about_developer">Разработчик: Dominik Schürmann\nРусский перевод: TopDome</string>
+  <string name="about_developer">Разработчик:</string>
+  <string name="about_translators">Перевод на Русский язык:</string>
   <string name="about_libs">FasterGPS использует библиотеку \'RootTools\' (Лицензия: GPL v2) для получения  прав администратора.</string>
+  <!--Dialogs-->
   <string name="no_root_description">Либо программный файл SuperUser не найден, либо FasterGPS не были предоставлены разрешения root.\n\nЭто может произойти, когда на устройстве нет прав Root.\nО том, как получить права Root на устройстве вы можете найти на www.cyanogenmod.com или других веб-сайтах по Android.</string>
   <string name="no_root_title">Для Android требуются права Root</string>
   <string name="revert_dialog_title">Восстановить?</string>
   <string name="revert_dialog">Вы хотите восстановить ваш исходный gps.conf?</string>
-  <string name="button_yes">Да</string>
-  <string name="button_no">Нет</string>
+  <string name="applying_successful">gps.conf был записан успешно!</string>
+  <!--Preferences-->
   <string name="pref_introduction">С чего начать?</string>
   <string name="pref_introduction_summary">Пожалуйста, выберите ближайший к вам сервер NTP. Чем он ближе, тем быстрее произойдет коррекция GPS. FasterGPS сразу запишет настройки.</string>
-  <string name="pref_current_ntp">Текущий сервер NTP</string>
+  <string name="pref_ntp_current">Текущий сервер:</string>
   <string name="pref_revert">Восстановление исходного gps.conf</string>
   <string name="pref_revert_summary">При первом запуске FasterGPS сохраняет ваш текущий gps.conf.\nИспользуя восстановление, вы можете его вернуть.</string>
   <string name="pref_further_options">Дополнительные опции</string>
-  <string name="pref_ntp">NTP</string>
+  <string name="pref_ntp">Выберите сервер NTP </string>
   <string name="pref_ntp_continent">Континент</string>
   <string name="pref_ntp_continent_summary">Выберите свой континент!</string>
   <string-array name="pref_ntp_continent_entries">
@@ -140,8 +147,8 @@
     <item> Мадагаскар </item>
     <item> Уганда </item>
   </string-array>
-  <string name="pref_ntp_server_custom">Пользовательский сервер NTP</string>
-  <string name="pref_ntp_server_custom_summary">Если выбран пользовательский сервер, то здесь вы можете указать свой сервер NTP.</string>
+  <string name="pref_ntp_custom">Ручной ввод имени сервера</string>
+  <string name="pref_ntp_custom_summary">Если выбран ручной ввод имени сервера, то здесь вы можете указать свой сервер NTP.</string>
   <string name="pref_advanced_settings">К расширенным настройкам</string>
   <string name="pref_help">Справка</string>
   <string name="pref_about">О программе</string>
