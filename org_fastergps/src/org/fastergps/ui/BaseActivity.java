@@ -76,13 +76,15 @@ public class BaseActivity extends PreferenceActivity {
     private void setListPreferenceSummary(ListPreference listPref, String newValue) {
         String newEntry = null;
 
-        int index = listPref.findIndexOfValue(newValue.toString());
-        if (index != -1) {
-            newEntry = (String) listPref.getEntries()[index];
-        }
+        if (newValue != null) {
+            int index = listPref.findIndexOfValue(newValue.toString());
+            if (index != -1) {
+                newEntry = (String) listPref.getEntries()[index];
+            }
 
-        if (newValue != null && !newValue.equals("null")) {
-            listPref.setSummary(getString(R.string.pref_current_value) + " " + newEntry);
+            if (newValue != null && !newValue.equals("null")) {
+                listPref.setSummary(getString(R.string.pref_current_value) + " " + newEntry);
+            }
         }
     }
 
@@ -105,7 +107,10 @@ public class BaseActivity extends PreferenceActivity {
         /* set default of list preference and custom ntp server from config */
         String currentNtpServer = config.get("NTP_SERVER");
 
+        Log.d(Constants.TAG, "val: " + mNtpContinent.getValue());
+
         if (currentNtpServer != null) {
+
             boolean ntpServerInList = false;
 
             String[] continents = Utils.getResourceStringArray("pref_ntp_continent_entries_values",
