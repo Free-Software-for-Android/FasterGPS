@@ -47,7 +47,7 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
     /**
      * Called when the activity is first created.
      */
-    @SuppressWarnings("unchecked")
+    @SuppressWarnings({ "unchecked", "deprecation" })
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -147,6 +147,7 @@ public class AdvancedSettingsActivity extends PreferenceActivity {
      * 
      * @return
      */
+    @SuppressWarnings("deprecation")
     private PreferenceScreen createPreferenceHierarchy() {
         // Root
         PreferenceScreen root = getPreferenceManager().createPreferenceScreen(mActivity);

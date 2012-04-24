@@ -46,14 +46,15 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Toast;
 
 import com.stericson.RootTools.RootTools;
 
 public class Utils {
 
     /**
-     * Check if Android is rooted, check for su binary and busybox and display possible solutions if
-     * they are not available
+     * Check if Android is rooted, check for su binary and display possible solutions if they are
+     * not available
      * 
      * @param activity
      * @return true if phone is rooted
@@ -144,7 +145,7 @@ public class Utils {
             return context.getString(nameResourceID);
         }
     }
-    
+
     /**
      * Gets resource string-array from strings.xml
      * 
@@ -219,7 +220,7 @@ public class Utils {
      * Writes config to private files and then copies it using RootTools to system partition
      * 
      * @param config
-     * @return true if writing worked
+     * @return true when writing was successful
      */
     public static boolean writeConfig(Context context, HashMap<String, String> config) {
 
@@ -265,6 +266,9 @@ public class Utils {
             RootTools.remount(Constants.GPS_CONF_PATH, "RO");
         }
 
+        Toast toast = Toast.makeText(context, R.string.applying_successful, Toast.LENGTH_LONG);
+        toast.show();
+
         return true;
     }
 
@@ -274,7 +278,7 @@ public class Utils {
      * @param context
      * @param config
      * @param filename
-     * @return
+     * @return true when writing was successful
      */
     private static boolean writePrivateConfig(Context context, HashMap<String, String> config,
             String filename) {
@@ -318,7 +322,7 @@ public class Utils {
      * @param config
      */
     public static void makeBackup(Context context, HashMap<String, String> config) {
-        // write to /data/data/org.fastergps/files/gps.conf if not already existing
+        // write to /data/data/org.fastergps/files/old_gps.conf if not already existing
         if (!context.getFileStreamPath(Constants.OLD_GPS_CONF).exists()) {
             Log.i(Constants.TAG, "Making backup, becaue no backup exists...");
             writePrivateConfig(context, config, Constants.OLD_GPS_CONF);
@@ -326,9 +330,9 @@ public class Utils {
     }
 
     /**
-     * Returns HashMap with possible keys for gps.conf
+     * Returns HashMap with possible keys seen in many gps.conf files
      * 
-     * @return
+     * @return possible keys as HashMap
      */
     public static HashMap<String, String> getPossibleConfig() {
         HashMap<String, String> possibleConfig = new HashMap<String, String>();
@@ -365,6 +369,7 @@ public class Utils {
      * Displays config with Logcat when DEBUG is enabled
      * 
      * @param config
+     *            to print
      */
     public static void debugLogConfig(HashMap<String, String> config) {
         if (Constants.DEBUG) {

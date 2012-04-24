@@ -6,12 +6,6 @@
         android:selectable="false"
         android:summary="@string/pref_introduction_summary"
         android:title="@string/pref_introduction" />
-    <Preference
-        android:key="@string/pref_current_ntp_key"
-        android:persistent="false"
-        android:selectable="false"
-        android:summary=""
-        android:title="@string/pref_current_ntp" />
 
     <PreferenceCategory android:title="@string/pref_ntp" >
         <ListPreference
@@ -30,10 +24,17 @@
 
         <EditTextPreference
             android:enabled="false"
-            android:key="@string/pref_ntp_server_custom_key"
+            android:key="@string/pref_ntp_custom_key"
             android:persistent="false"
-            android:summary="@string/pref_ntp_server_custom_summary"
-            android:title="@string/pref_ntp_server_custom" />
+            android:summary="@string/pref_ntp_custom_summary"
+            android:title="@string/pref_ntp_custom" />
+
+        <Preference
+            android:key="@string/pref_ntp_current_key"
+            android:persistent="false"
+            android:selectable="false"
+            android:summary=""
+            android:title="@string/pref_ntp_current" />
     </PreferenceCategory>
     <PreferenceCategory android:title="@string/pref_further_options" >
         <Preference

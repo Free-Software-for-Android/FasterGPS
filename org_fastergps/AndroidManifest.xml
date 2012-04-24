@@ -6,7 +6,7 @@
 
     <uses-sdk
         android:minSdkVersion="7"
-        android:targetSdkVersion="13" />
+        android:targetSdkVersion="15" />
 
     <uses-feature
         android:name="android.hardware.touchscreen"

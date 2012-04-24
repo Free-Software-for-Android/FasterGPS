@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Activities -->
     <string name="activity_advanced_settings">Advanced Settings</string>
     <string name="activity_help">Help</string>
     <string name="activity_about">About</string>
     <string name="activity_donations">Donations</string>
+
+    <!-- Buttons -->
     <string name="button_close">Close</string>
     <string name="button_exit">Exit</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+
+    <!-- About -->
     <string name="about_description">With FasterGPS you can select a NTP Server matching your region to speed up the process of getting a GPS fix.</string>
     <string name="about_license">License: GPL v3+</string>
     <string name="about_version">Version:</string>
     <string name="about_developer">Developer: Dominik Schürmann</string>
     <string name="about_libs">FasterGPS uses \'RootTools\' (License: GPL v2) Library to handle root access.</string>
+
+    <!-- Dialogs -->
     <string name="no_root_description">Either the su binary could not be found or you did not allow root permission for FasterGPS.\n\nThis can happen when your device is not rooted.\nYou can find information about how to root your device on www.cyanogenmod.com or other Android websites.</string>
     <string name="no_root_title">Rooted Android required</string>
     <string name="revert_dialog_title">Revert?</string>
     <string name="revert_dialog">Do you want to revert to your old gps.conf?</string>
-    <string name="button_yes">Yes</string>
-    <string name="button_no">No</string>
+    <string name="applying_successful">gps.conf was written successfully!</string>
+
+    <!-- Preferences -->
     <string name="pref_introduction">What to do?</string>
     <string name="pref_introduction_summary">Please select a NTP Server that is near to your current position. The nearer it is, the faster you get a GPS fix. FasterGPS will immediately write your settings.</string>
-    <string name="pref_current_ntp">Current NTP Server</string>
+    <string name="pref_ntp_current">Current server:</string>
     <string name="pref_revert">Revert to old gps.conf</string>
     <string name="pref_revert_summary">When FasterGPS is started the first time, it backups your current gps.conf. Using revert you can restore this one.</string>
     <string name="pref_further_options">Further options</string>
@@ -145,8 +155,8 @@
         <item>Uganda</item>
     </string-array>
 
-    <string name="pref_ntp_server_custom">Custom</string>
-    <string name="pref_ntp_server_custom_summary">If manual input is selected you can define a custom NTP Server here.</string>
+    <string name="pref_ntp_custom">Custom</string>
+    <string name="pref_ntp_custom_summary">If manual input is selected you can define a custom NTP Server here.</string>
     <string name="pref_advanced_settings">Go to advanced settings</string>
     <string name="pref_help">Help</string>
     <string name="pref_about">About</string>

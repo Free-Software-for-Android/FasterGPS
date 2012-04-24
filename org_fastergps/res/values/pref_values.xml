@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="pref_current_ntp_key" translate="false">currentNtp</string>
+    <string name="pref_ntp_current_key" translate="false">ntpCurrent</string>
     <string name="pref_ntp_continent_key" translate="false">ntpContinent</string>
     <string name="pref_ntp_region_key" translate="false">ntpRegion</string>
-    <string name="pref_ntp_server_custom_key" translate="false">ntpServerCustom</string>
+    <string name="pref_ntp_custom_key" translate="false">ntpCustom</string>
 
     <string-array name="pref_ntp_continent_entries_values">
         <item>null</item>
