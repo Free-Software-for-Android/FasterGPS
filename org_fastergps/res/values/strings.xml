@@ -17,7 +17,8 @@
     <string name="about_description">With FasterGPS you can select a NTP Server matching your region to speed up the process of getting a GPS fix.</string>
     <string name="about_license">License: GPL v3+</string>
     <string name="about_version">Version:</string>
-    <string name="about_developer">Developer: Dominik Schürmann</string>
+    <string name="about_developer">Developer:</string>
+    <string name="about_translators">Translators:</string>
     <string name="about_libs">FasterGPS uses \'RootTools\' (License: GPL v2) Library to handle root access.</string>
 
     <!-- Dialogs -->
