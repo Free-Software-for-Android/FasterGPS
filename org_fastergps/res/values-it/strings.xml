@@ -15,18 +15,18 @@
   <string name="about_license">Licenza: GPL V3+</string>
   <string name="about_version">Versione:</string>
   <string name="about_developer">Sviluppatore:</string>
-  <string name="about_translators">Translators:</string>
+  <string name="about_translators">Traduttori:</string>
   <string name="about_libs">FasterGPS usa \'RootTools\' (Licenza: GPL v2) Libreria per usare l\'accesso root.</string>
   <!--Dialogs-->
   <string name="no_root_description">Il binario su non può essere trovare o non hai acconsentito i permessi di root per FasterGPS.\n\nQuesto può succedere quando il tuo dispositivo non ha il root.\nPuoi trovare informazioni su come eseguire il root su www.cyanogenmod.com o altri siti Android.</string>
   <string name="no_root_title">Richiede Android con Root</string>
   <string name="revert_dialog_title">Ripristina?</string>
   <string name="revert_dialog">Vuoi ripristinare il vecchio gps.conf</string>
-  <string name="applying_successful">gps.conf was written successfully!</string>
+  <string name="applying_successful">gps.conf scritto correttamente!</string>
   <!--Preferences-->
   <string name="pref_introduction">Cosa fare?</string>
   <string name="pref_introduction_summary">Per favore seleziona un Server NTP vicino alla tua posizione attuale. Più vicino sarà e più rapido sarà l\'aggancio ai satelliti. FasterGPS scriverà immediatamente i tuoi settaggi.</string>
-  <string name="pref_ntp_current">Current server:</string>
+  <string name="pref_ntp_current">Server corrente:</string>
   <string name="pref_revert">Ripristina vecchio gps.conf</string>
   <string name="pref_revert_summary">Quando FasterGPS viene avviato per la prima volta, verrà eseguito un backup del file gps.conf corrente. Usando Ripristina potrai ripristinarlo.</string>
   <string name="pref_further_options">Ulteriori opzioni</string>
@@ -147,8 +147,8 @@
     <item>Madagascar</item>
     <item>Uganda</item>
   </string-array>
-  <string name="pref_ntp_custom">Custom</string>
-  <string name="pref_ntp_custom_summary">If manual input is selected you can define a custom NTP Server here.</string>
+  <string name="pref_ntp_custom">Personalizzato</string>
+  <string name="pref_ntp_custom_summary">Se è stato selezionato Server Personalizzato è possibile indicare il NTP Server qui.</string>
   <string name="pref_advanced_settings">Vai alle impostazioni avanzate</string>
   <string name="pref_help">Aiuto</string>
   <string name="pref_about">Informazioni</string>

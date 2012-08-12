@@ -15,7 +15,7 @@
   <string name="about_license">Лицензия: GPL v3+</string>
   <string name="about_version">Версия:</string>
   <string name="about_developer">Разработчик:</string>
-  <string name="about_translators">Перевод на Русский язык:</string>
+  <string name="about_translators">Перевод:</string>
   <string name="about_libs">FasterGPS использует библиотеку \'RootTools\' (Лицензия: GPL v2) для получения  прав администратора.</string>
   <!--Dialogs-->
   <string name="no_root_description">Либо программный файл SuperUser не найден, либо FasterGPS не были предоставлены разрешения root.\n\nЭто может произойти, когда на устройстве нет прав Root.\nО том, как получить права Root на устройстве вы можете найти на www.cyanogenmod.com или других веб-сайтах по Android.</string>

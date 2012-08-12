@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Activities-->
+  <string name="activity_advanced_settings">Додаткові налаштування</string>
+  <string name="activity_help">Допомога</string>
+  <string name="activity_about">Про</string>
+  <string name="activity_donations">Пожертва</string>
+  <!--Buttons-->
+  <string name="button_close">Закрити</string>
+  <string name="button_exit">Вийти</string>
+  <string name="button_yes">Так</string>
+  <string name="button_no">Ні</string>
+  <!--About-->
+  <string name="about_description">З FasterGPS Ви можете вибрати сервер NTP, що відповідає Вашому регіону, для пришвидшення процесу фіксації GPS.</string>
+  <string name="about_license">Ліцензія: GPL v3+</string>
+  <string name="about_version">Версія:</string>
+  <string name="about_developer">Розробник:</string>
+  <string name="about_translators"></string>
+  <string name="about_libs">FasterGPS використовує бібліотеку \'RootTools\' (Ліцензія: GPL v2) для отримання доступу від імені root.</string>
+  <!--Dialogs-->
+  <string name="no_root_description">Або не знайдено бінарний файл su, або FasterGPS не має прав доступу root. \n\nЦе може статися, якщо на пристрої немає прав root.\nЯк отримати права root на Вашому пристрої можна знайти сторінці www.cyanogenmod.com або інших веб-сторінках про Android.</string>
+  <string name="no_root_title">Вимагається Android з root</string>
+  <string name="revert_dialog_title">Відновити?</string>
+  <string name="revert_dialog">Ви бажаєте відновити Ваш старий gps.conf?</string>
+  <string name="applying_successful">gps.conf успішно записано!</string>
+  <!--Preferences-->
+  <string name="pref_introduction">Що ж робити?</string>
+  <string name="pref_introduction_summary">Виберіть сервер NTP, який є найближчий до Вашого місця знаходження. Чим ближчий сервер, тим скоріше ви зафіксуєте GPS. FasterGPS відразу ж запише Ваші налаштування.</string>
+  <string name="pref_ntp_current">Поточний сервер:</string>
+  <string name="pref_revert">Відновити старий gps.conf</string>
+  <string name="pref_revert_summary">Коли FasterGPS запускається перший раз, він зберігає поточний gps.conf. Використовуючи відновлення Ви можете відновити його.</string>
+  <string name="pref_further_options">Інші параметри</string>
+  <string name="pref_ntp">Сервер NTP</string>
+  <string name="pref_ntp_continent">Континент</string>
+  <string name="pref_ntp_continent_summary">Виберіть Ваш континент!</string>
+  <string-array name="pref_ntp_continent_entries">
+    <item>- Нічого не вибрано -</item>
+    <item>- Інший сервер -</item>
+    <item>Європа</item>
+    <item>Океанія</item>
+    <item>Азія</item>
+    <item>Півн. Америка</item>
+    <item>Півд. Америка</item>
+    <item>Африка</item>
+  </string-array>
+  <string name="pref_ntp_region">Регіон</string>
+  <string name="pref_ntp_region_summary">Виберіть найближчий до Вас регіон!</string>
+  <string-array name="pref_ntp_region_entries_europe">
+    <item>- Нічого не вибрано -</item>
+    <item>Австрія</item>
+    <item>Швейцарія</item>
+    <item>Німеччина</item>
+    <item>Данія</item>
+    <item>Іспанія</item>
+    <item>Франція</item>
+    <item>Італія</item>
+    <item>Люксембург</item>
+    <item>Нідерланди</item>
+    <item>Норвегія</item>
+    <item>Польща</item>
+    <item>Швеція</item>
+    <item>Словенія</item>
+    <item>Британія</item>
+    <item>Фінляндія</item>
+    <item>Ірландія</item>
+    <item>Російська Федерація</item>
+    <item>Бельгія</item>
+    <item>Португалія</item>
+    <item>Греція</item>
+    <item>Угорщина</item>
+    <item>Болгарія</item>
+    <item>Румунія</item>
+    <item>Чеська Республіка</item>
+    <item>Югославія</item>
+    <item>Естонія</item>
+    <item>Білорусь</item>
+    <item>Словаччина</item>
+    <item>Україна-ненька</item>
+    <item>Литва</item>
+    <item>Македонія</item>
+    <item>Молдова</item>
+    <item>Латвія</item>
+    <item>Хорватія</item>
+    <item>Сербія</item>
+    <item>Боснія і Герцеговина</item>
+    <item>Вірменія</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_asia">
+    <item>- Нічого не вибрано -</item>
+    <item>Філіппіни</item>
+    <item>Малайзія</item>
+    <item>Туреччина</item>
+    <item>Сингапур</item>
+    <item>Індія</item>
+    <item>Гонконг</item>
+    <item>Об’єднані Арабські Емірати</item>
+    <item>Японія</item>
+    <item>Бангладеш</item>
+    <item>Ізраїль</item>
+    <item>Корея</item>
+    <item>Таїланд</item>
+    <item>Іран</item>
+    <item>Тайвань</item>
+    <item>Китай</item>
+    <item>Індонезія</item>
+    <item>В’єтнам</item>
+    <item>Пакистан</item>
+    <item>Оман</item>
+    <item>Узбекистан</item>
+    <item>Шрі-Ланка</item>
+    <item>Киргизстан</item>
+    <item>Камбоджа</item>
+    <item>Катар</item>
+    <item>Саудівська Аравія</item>
+    <item>Ірак</item>
+    <item>Казахстан</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_oceania">
+    <item>- Нічого не вибрано -</item>
+    <item>Австралія</item>
+    <item>Нова Зеландія</item>
+    <item>Нова Каледонія</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_north_america">
+    <item>- Нічого не вибрано -</item>
+    <item>Канада</item>
+    <item>Сполучені Штати Америки</item>
+    <item>Мексика</item>
+    <item>Гватемала</item>
+    <item>Панама</item>
+    <item>Багами</item>
+    <item>Коста-Рика</item>
+    <item>Сальвадор</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_south_america">
+    <item>- Нічого не вибрано -</item>
+    <item>Бразилія</item>
+    <item>Чилі</item>
+    <item>Аргентина</item>
+    <item>Венесуела</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_africa">
+    <item>- Нічого не вибрано -</item>
+    <item>Танзанія</item>
+    <item>Південна Африка</item>
+    <item>Ангола</item>
+    <item>Мадагаскар</item>
+    <item>Уганда</item>
+  </string-array>
+  <string name="pref_ntp_custom">Інший</string>
+  <string name="pref_ntp_custom_summary">Якщо вибрано інший сервер, Ви можете визначити сервер NTP тут.</string>
+  <string name="pref_advanced_settings">Перейти до додаткових налаштувань</string>
+  <string name="pref_help">Допомога</string>
+  <string name="pref_about">Про</string>
+  <string name="pref_donations">Пожертви</string>
+  <string name="pref_current_value">Значення:</string>
+  <string name="pref_category_general">Загальне</string>
+  <string name="pref_category_xtra">Сервер XTRA</string>
+  <string name="pref_category_supl">AGPS SUPL</string>
+  <string name="pref_category_c2k">AGPS C2K</string>
+  <string name="pref_category_carrier">Постачальник AGPS</string>
+  <string name="pref_category_other">Інше</string>
+  <string name="DEBUG_LEVEL">Рівні налагоджування: 0=немає, 1=Помилки, 2=Попередження, 3=Інфо, 4=Налагодження, 5=Детальний</string>
+  <string name="INTERMEDIATE_POS">Звіт про проміжну позицію: 1=Включити, 0=Виключити</string>
+  <string name="ACCURACY_THRES">Поріг точності для проміжних позицій, менш точні ігноруються: 0 для врахування всіх позицій</string>
+  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Звітувати про знаходження supl ref як позицію: 1=Включити, 0=Виключити</string>
+  <string name="ENABLE_WIPER">Wiper (інформація з wifi): 1=Включити, 0=Виключити</string>
+  <string name="SUPL_HOST"/>
+  <string name="SUPL_PORT"/>
+  <string name="SUPL_NO_SECURE_PORT"/>
+  <string name="SUPL_SECURE_PORT"/>
+  <string name="C2K_HOST"/>
+  <string name="C2K_PORT"/>
+  <string name="CURRENT_CARRIER">можливі значення: common</string>
+  <string name="DEFAULT_AGPS_ENABLE">можливі значення: TRUE/FALSE</string>
+  <string name="DEFAULT_SSL_ENABLE">можливе значення: TRUE/FALSE</string>
+  <string name="DEFAULT_USER_PLANE">TRUE для \"User Plane\", FALSE для \"Control Plane\"</string>
+</resources>

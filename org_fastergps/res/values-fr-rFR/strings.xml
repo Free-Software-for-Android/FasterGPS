@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Activities-->
+  <string name="activity_advanced_settings">Paramètres avancés</string>
+  <string name="activity_help">Aide</string>
+  <string name="activity_about">A propos</string>
+  <string name="activity_donations">Dons</string>
+  <!--Buttons-->
+  <string name="button_close">Fermer</string>
+  <string name="button_exit">Quitter</string>
+  <string name="button_yes">Oui</string>
+  <string name="button_no">Non</string>
+  <!--About-->
+  <string name="about_description">Avec FasterGPS, vous pouvez choisir un serveur NTP correpsondant à votre région afin d\'accélérer l\'opération d\'accrochage du GPS.</string>
+  <string name="about_license">License: GPL v3+</string>
+  <string name="about_version">Version:</string>
+  <string name="about_developer">Developeur:</string>
+  <string name="about_translators">Traducteurs:</string>
+  <string name="about_libs">FasterGPS utilises la bibliothèque \'RootTools\' (License: GPL v2) pour gérer l\'accès Root.</string>
+  <!--Dialogs-->
+  <string name="no_root_description">Soit le programme su ne peut être trouvé ou vous n\'avez pas donné l\'accès root pour FasterGPS.</string>
+  <string name="no_root_title">Android Rooté requis</string>
+  <string name="revert_dialog_title">Retour ?</string>
+  <string name="revert_dialog">Voulez vous revenir a votre ancien gps.conf ?</string>
+  <string name="applying_successful">gps.conf a été sauvé correctement!</string>
+  <!--Preferences-->
+  <string name="pref_introduction">Que faire ?</string>
+  <string name="pref_introduction_summary">Veuillez sélectionner un serveur de Temps proche de vous. Plus il sera proche et plus vous aurez un accrochage GPS rapide. FasterGPS va immédiatement sauvegarder vos réglages.</string>
+  <string name="pref_ntp_current">Serveur actuel:</string>
+  <string name="pref_revert">Revenir a votre ancien gps.conf ?</string>
+  <string name="pref_revert_summary">Lorsque FasterGPS est démarré la première fois, il sauvegarde votre fichier gps.conf actuel. En utilisant revenir, vous pouvez le restaurer.</string>
+  <string name="pref_further_options">Plus d\'options.</string>
+  <string name="pref_ntp">Serveur NTP</string>
+  <string name="pref_ntp_continent">Continent</string>
+  <string name="pref_ntp_continent_summary">Selectionner votre continent!</string>
+  <string name="pref_ntp_region">Region</string>
+  <string name="pref_ntp_region_summary">Selectionner une région a proximité!</string>
+  <string name="pref_ntp_custom">Personnalisation:</string>
+  <string name="pref_ntp_custom_summary">Si le serveur personnel est coché, vous pouvez définir un serveur NTP¨personnel ici.</string>
+  <string name="pref_advanced_settings">Aller aux paramètres avancés</string>
+  <string name="pref_help">Aide</string>
+  <string name="pref_about">A propos</string>
+  <string name="pref_donations">Dons</string>
+  <string name="pref_current_value">Valeur:</string>
+  <string name="pref_category_general">Général:</string>
+  <string name="pref_category_xtra">XTRA Server</string>
+  <string name="pref_category_supl">AGPS SUPL</string>
+  <string name="pref_category_c2k">AGPS C2K</string>
+  <string name="pref_category_carrier">Porteuse AGPS</string>
+  <string name="pref_category_other">autre</string>
+  <string name="DEBUG_LEVEL">Niveaux de Debug 0=aucun, 1=Erreur, 2=Avertissement, 3=Info, 4=Debug, 5=Bavard</string>
+  <string name="INTERMEDIATE_POS">Rapport de position internmédiaire: 1=Activé; 0=Désactivé</string>
+  <string name="ENABLE_WIPER">Wiper( positionnement wifi): 1=activé, 0=désactivé</string>
+  <string name="SUPL_HOST"/>
+  <string name="SUPL_PORT"/>
+  <string name="SUPL_NO_SECURE_PORT"/>
+  <string name="SUPL_SECURE_PORT"/>
+  <string name="C2K_HOST"/>
+  <string name="C2K_PORT"/>
+  <string name="CURRENT_CARRIER">Valeur possible:common</string>
+  <string name="DEFAULT_AGPS_ENABLE">Valeurs possibles:TRUE/FALSE</string>
+  <string name="DEFAULT_SSL_ENABLE">Valeur possible:TRUE/FALSE</string>
+</resources>
