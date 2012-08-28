@@ -33,12 +33,14 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.Iterator;
-import java.util.List;
 import java.util.Map.Entry;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.fastergps.R;
+import org.rootcommands.RootCommands;
+import org.rootcommands.Shell;
+import org.rootcommands.Toolbox;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -47,8 +49,6 @@ import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Toast;
-
-import com.stericson.RootTools.RootTools;
 
 public class Utils {
 
@@ -68,7 +68,7 @@ public class Utils {
         } else {
             // check for root on device and call su binary
             try {
-                if (!RootTools.isAccessGiven()) {
+                if (!RootCommands.rootAccessGiven()) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(activity);
                     builder.setCancelable(false);
                     builder.setIcon(android.R.drawable.ic_dialog_alert);
@@ -94,8 +94,7 @@ public class Utils {
                     rootAvailable = true;
                 }
             } catch (Exception e) {
-                e.printStackTrace();
-                rootAvailable = false;
+                Log.e(Constants.TAG, "Problem getting root access!", e);
             }
         }
 
@@ -206,11 +205,9 @@ public class Utils {
             }
             in.close();
         } catch (FileNotFoundException e) {
-            Log.e(Constants.TAG, "File not found!");
-            e.printStackTrace();
+            Log.e(Constants.TAG, "File not found!", e);
         } catch (IOException e) {
-            Log.e(Constants.TAG, "IO Exception");
-            e.printStackTrace();
+            Log.e(Constants.TAG, "IO Exception", e);
         }
 
         return currentConfig;
@@ -229,9 +226,18 @@ public class Utils {
             return false;
         }
 
+        Shell rootShell = null;
+        try {
+            rootShell = Shell.startRootShell();
+        } catch (Exception e) {
+            Log.e(Constants.TAG, "Problem starting root shell!", e);
+        }
+
+        Toolbox tb = new Toolbox(rootShell);
+
         /* remount for write access */
         Log.i(Constants.TAG, "Remounting for RW...");
-        if (!RootTools.remount(Constants.GPS_CONF_PATH, "RW")) {
+        if (!tb.remount(Constants.GPS_CONF_PATH, "RW")) {
             Log.e(Constants.TAG, "remount failed!");
 
             return false;
@@ -242,28 +248,30 @@ public class Utils {
         String privateDir = context.getFilesDir().getAbsolutePath();
         String privateFile = privateDir + Constants.FILE_SEPERATOR + Constants.GPS_CONF;
 
-        List<String> output = null;
         try {
-
             // copy file from /data/data/org.fastergps/gps.conf to /system/etc/gps.conf
-            if (!RootTools.copyFile(privateFile, Constants.GPS_CONF_PATH)) {
+            if (!tb.copyFile(privateFile, Constants.GPS_CONF_PATH, false, false)) {
                 return false;
             }
 
             // chmod 644 it
-            output = RootTools.sendShell(new String[] { Constants.COMMAND_CHMOD_644 + " "
-                    + Constants.GPS_CONF_PATH }, 0, -1);
+            tb.setFilePermissions(Constants.GPS_CONF_PATH, "644");
 
-            Log.d(Constants.TAG, "output of sendShell commands: " + output.toString());
         } catch (Exception e) {
-            Log.e(Constants.TAG, "Exception: " + e);
-            e.printStackTrace();
-
+            Log.e(Constants.TAG, "Exception while copying file!", e);
             return false;
         } finally {
             // after all remount system back as read only
             Log.i(Constants.TAG, "Remounting back to RO...");
-            RootTools.remount(Constants.GPS_CONF_PATH, "RO");
+            tb.remount(Constants.GPS_CONF_PATH, "RO");
+
+            if (rootShell != null) {
+                try {
+                    rootShell.close();
+                } catch (IOException e) {
+                    Log.e(Constants.TAG, "Problem closing root shell!", e);
+                }
+            }
         }
 
         Toast toast = Toast.makeText(context, R.string.applying_successful, Toast.LENGTH_LONG);
@@ -307,9 +315,7 @@ public class Utils {
 
             return true;
         } catch (Exception e) {
-            Log.e(Constants.TAG,
-                    "Error while writing " + filename + " to private files: " + e.getMessage());
-            e.printStackTrace();
+            Log.e(Constants.TAG, "Error while writing " + filename + " to private files!", e);
 
             return false;
         }

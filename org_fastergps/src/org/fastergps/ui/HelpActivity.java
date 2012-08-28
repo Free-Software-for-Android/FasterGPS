@@ -53,7 +53,6 @@ public class HelpActivity extends Activity {
         mHelpText.setText(Html.fromHtml(helpText));
         // make links work
         mHelpText.setMovementMethod(LinkMovementMethod.getInstance());
-
     }
 
 }

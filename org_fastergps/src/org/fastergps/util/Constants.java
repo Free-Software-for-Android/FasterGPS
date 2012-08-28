@@ -20,18 +20,18 @@
 
 package org.fastergps.util;
 
-import com.stericson.RootTools.RootTools;
+import org.rootcommands.RootCommands;
 
 public class Constants {
     /*
-     * DEBUG enables Log.d outputs, wrapped in org.adaway.util.Log and RootTools Debug Mode
+     * DEBUG enables Log.d outputs, wrapped in org.adaway.util.Log and RootCommands Debug Mode
      */
     public static final boolean DEBUG = false;
     public static final boolean DEBUG_DISABLE_ROOT_CHECK = false;
 
-    // set RootTools to debug mode based on AdAway
+    // set RootCommands to debug mode based on FasterGPS
     static {
-        RootTools.debugMode = DEBUG;
+        RootCommands.DEBUG = DEBUG;
     }
 
     public static final String TAG = "FasterGPS";
@@ -45,7 +45,4 @@ public class Constants {
             + FILE_SEPERATOR + GPS_CONF;
 
     public static final String OLD_GPS_CONF = "old_gps.conf";
-
-    public static final String COMMAND_CHMOD_644 = "chmod 644";
-
 }
