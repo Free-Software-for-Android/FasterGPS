@@ -1,6 +1,10 @@
 Please report bugs on the following website instead of writing bad reviews:
 http://code.google.com/p/faster-gps/issues
 
+1.5
+* Fixes for donation dialog
+* New root library: RootCommands
+
 1.4
 * User interface improvements
 
