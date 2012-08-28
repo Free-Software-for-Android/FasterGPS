@@ -14,11 +14,11 @@
   <string name="about_description">Avec FasterGPS, vous pouvez choisir un serveur NTP correpsondant à votre région afin d\'accélérer l\'opération d\'accrochage du GPS.</string>
   <string name="about_license">License: GPL v3+</string>
   <string name="about_version">Version:</string>
-  <string name="about_developer">Developeur:</string>
+  <string name="about_developer">Développeur:</string>
   <string name="about_translators">Traducteurs:</string>
-  <string name="about_libs">FasterGPS utilises la bibliothèque \'RootTools\' (License: GPL v2) pour gérer l\'accès Root.</string>
+  <string name="about_libs">FasterGPS utilise la bibliothèque \'RootTools\' (License: GPL v2) pour gérer l\'accès Root.</string>
   <!--Dialogs-->
-  <string name="no_root_description">Soit le programme su ne peut être trouvé ou vous n\'avez pas donné l\'accès root pour FasterGPS.</string>
+  <string name="no_root_description">Soit le programme su ne peut être trouvé ou vous n\'avez pas donné l\'accès root pour FasterGPS.\n\nCeci arrive quand votre appareil n\'est pas rooté.\nVous pouvez trouvez des informations sur comment rooter votre appareil sur www.cyanogenmod.com ou sur d\'autres sites web Android.</string>
   <string name="no_root_title">Android Rooté requis</string>
   <string name="revert_dialog_title">Retour ?</string>
   <string name="revert_dialog">Voulez vous revenir a votre ancien gps.conf ?</string>
@@ -33,8 +33,120 @@
   <string name="pref_ntp">Serveur NTP</string>
   <string name="pref_ntp_continent">Continent</string>
   <string name="pref_ntp_continent_summary">Selectionner votre continent!</string>
+  <string-array name="pref_ntp_continent_entries">
+    <item>- Aucune sélection -</item>
+    <item>- Custom Se -</item>
+    <item>Europe</item>
+    <item>Oceania</item>
+    <item>Asia</item>
+    <item>North America</item>
+    <item>South America</item>
+    <item>Africa</item>
+  </string-array>
   <string name="pref_ntp_region">Region</string>
   <string name="pref_ntp_region_summary">Selectionner une région a proximité!</string>
+  <string-array name="pref_ntp_region_entries_europe">
+    <item>- Aucune sélection -</item>
+    <item>Autriche</item>
+    <item>Suisse</item>
+    <item>Allemagne</item>
+    <item>Danemark</item>
+    <item>Espagne</item>
+    <item>France</item>
+    <item>Italie</item>
+    <item>Luxembourg</item>
+    <item>Pays-Bas</item>
+    <item>Norvège</item>
+    <item>Pologne</item>
+    <item>Suède</item>
+    <item>Slovénie</item>
+    <item>Royaume-Uni</item>
+    <item>Finlande</item>
+    <item>Irlande</item>
+    <item>Fédération de Russie</item>
+    <item>Belgique</item>
+    <item>Portugal</item>
+    <item>Grèce</item>
+    <item>Hongrie</item>
+    <item>Bulgarie</item>
+    <item>Roumanie</item>
+    <item>République Tchèque</item>
+    <item>Yougoslavie</item>
+    <item>Estonie</item>
+    <item>Biélorussie</item>
+    <item>Slovaquie</item>
+    <item>Ukraine</item>
+    <item>Lituanie</item>
+    <item>Macédoine</item>
+    <item>Moldavie</item>
+    <item>Lettonie</item>
+    <item>Croatie</item>
+    <item>République de Serbie</item>
+    <item>Bosnie-Herzégovine</item>
+    <item>Arménie</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_asia">
+    <item>- Aucune sélection -</item>
+    <item>Philippines</item>
+    <item>Malaisie</item>
+    <item>Turquie</item>
+    <item>Singapour</item>
+    <item>Inde</item>
+    <item>Hong Kong</item>
+    <item>Émirats Arabes Unis  </item>
+    <item>Japon</item>
+    <item>Bangladesh</item>
+    <item>Israël</item>
+    <item>Corée</item>
+    <item>Thaïlande</item>
+    <item>Iran</item>
+    <item>Taïwan</item>
+    <item>China</item>
+    <item>Indonésie</item>
+    <item>Vietnam</item>
+    <item>Pakistan</item>
+    <item>Oman</item>
+    <item>Ouzbékistan</item>
+    <item>Sri Lanka</item>
+    <item>Kirghizstan</item>
+    <item>Cambodge</item>
+    <item>Qatar</item>
+    <item>Arabie Saoudite</item>
+    <item>Irak</item>
+    <item>Kazakhstan</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_oceania">
+    <item>- Aucune sélection -</item>
+    <item>Australie</item>
+    <item>Nouvelle Zélande</item>
+    <item>Nouvelle Calédonie</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_north_america">
+    <item>- Aucune sélection -</item>
+    <item>Canada</item>
+    <item>États-Unis</item>
+    <item>Mexique</item>
+    <item>Guatemala</item>
+    <item>Panama</item>
+    <item>Bahamas</item>
+    <item>Costa Rica</item>
+    <item>Salvador</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_south_america">
+    <item>- Aucun sélection -</item>
+    <item>Brésil</item>
+    <item>Chili</item>
+    <item>Argentine</item>
+    <item>Venezuela</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_africa">
+    <item>- Aucune sélection -</item>
+    <item>Tanzanie</item>
+    <item>Afrique du Sud</item>
+    <item>Angola</item>
+    <item>Madagascar</item>
+    <item>Ouganda</item>
+  </string-array>
   <string name="pref_ntp_custom">Personnalisation:</string>
   <string name="pref_ntp_custom_summary">Si le serveur personnel est coché, vous pouvez définir un serveur NTP¨personnel ici.</string>
   <string name="pref_advanced_settings">Aller aux paramètres avancés</string>
@@ -50,6 +162,8 @@
   <string name="pref_category_other">autre</string>
   <string name="DEBUG_LEVEL">Niveaux de Debug 0=aucun, 1=Erreur, 2=Avertissement, 3=Info, 4=Debug, 5=Bavard</string>
   <string name="INTERMEDIATE_POS">Rapport de position internmédiaire: 1=Activé; 0=Désactivé</string>
+  <string name="ACCURACY_THRES">Seuil de précision pour les positions intermédiaires, les position moins précises sont ignorées : 0 pour ignorer toutes les positions</string>
+  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Reporter les positions supplémentaires comme lieu de référence: 1=activé, 0=désactivé</string>
   <string name="ENABLE_WIPER">Wiper( positionnement wifi): 1=activé, 0=désactivé</string>
   <string name="SUPL_HOST"/>
   <string name="SUPL_PORT"/>
@@ -60,4 +174,5 @@
   <string name="CURRENT_CARRIER">Valeur possible:common</string>
   <string name="DEFAULT_AGPS_ENABLE">Valeurs possibles:TRUE/FALSE</string>
   <string name="DEFAULT_SSL_ENABLE">Valeur possible:TRUE/FALSE</string>
+  <string name="DEFAULT_USER_PLANE">VRAI pour \" Plan utilisateur\", FAUX pour \"Plan de contrôle\"</string>
 </resources>
