@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Activities-->
+  <string name="activity_advanced_settings">Gelişmiş Ayarlar</string>
+  <string name="activity_help">Yardım</string>
+  <string name="activity_about">Hakkında</string>
+  <string name="activity_donations">Bağışlar</string>
+  <!--Buttons-->
+  <string name="button_close">Kapat</string>
+  <string name="button_exit">Çıkış</string>
+  <string name="button_yes">Evet</string>
+  <string name="button_no">Hayır</string>
+  <!--About-->
+  <string name="about_description">FasterGPS ile GPS sabitlemesini hızlandırmak için konumunuza uygun bir NTP sunucusu seçebilirsiniz.</string>
+  <string name="about_license">Lisans: GPL v3+</string>
+  <string name="about_version">Sürüm:</string>
+  <string name="about_developer">Geliştirici:</string>
+  <string name="about_translators">Çevirmenler:</string>
+  <string name="about_libs">FasterGPS root erişimini yönetmek için \'RootTools\' (Lisans: GPL v2) kütüphanesini kullanır.</string>
+  <!--Dialogs-->
+  <string name="no_root_description">Su binary bulunamadı veya FasterGPS için root erişimine izin vermediniz.\n\nCihazınız root\'lanmamış olabilir.\nCihazınızı nasıl root\'layacağınıza dair bilgileri www.cyanogenmod.com veya diğer Android sitelerinde bulabilirsiniz.</string>
+  <string name="no_root_title">Root\'lu Android gerekiyor</string>
+  <string name="revert_dialog_title">Geri al?</string>
+  <string name="revert_dialog">Eski gps.conf dosyasını geri almak istiyor musunuz?</string>
+  <string name="applying_successful">gps.conf başarıyla yazıldı!</string>
+  <!--Preferences-->
+  <string name="pref_introduction">Ne yapılacak?</string>
+  <string name="pref_introduction_summary">Lütfen geçerli konumunuza yakın bir NTP sunucusu seçin. Ne kadar yakın olursa o kadar hızlı GPS sabitlemesi gerçekleşir. FasterGPS ayarlarınızı anında değiştirecek.</string>
+  <string name="pref_ntp_current">Geçerli sunucu:</string>
+  <string name="pref_revert">Eski gps.conf\'u geri al</string>
+  <string name="pref_revert_summary">FasterGPS ilk kez başlatıldığında, geçerli gps.conf dosyanızı yedekler. Geri al\'ı kullanarak orijinali yerine koyabilirsiniz.</string>
+  <string name="pref_further_options">Daha fazla ayar</string>
+  <string name="pref_ntp">NTP Sunucusu</string>
+  <string name="pref_ntp_continent">Kıta</string>
+  <string name="pref_ntp_continent_summary">Kıtanızı seçin!</string>
+  <string-array name="pref_ntp_continent_entries">
+    <item>- Hiçbiri seçilmedi -</item>
+    <item>- Özel Sunucu -</item>
+    <item>Avrupa</item>
+    <item>Avustralya</item>
+    <item>Asya</item>
+    <item>Kuzey Amerika</item>
+    <item>Güney Amerika</item>
+    <item>Afrika</item>
+  </string-array>
+  <string name="pref_ntp_region">Bölge</string>
+  <string name="pref_ntp_region_summary">Size yakın olan bir bölge seçin!</string>
+  <string-array name="pref_ntp_region_entries_europe">
+    <item>- Hiçbiri seçilmedi -</item>
+    <item>Avusturya</item>
+    <item>İsviçre</item>
+    <item>Almanya</item>
+    <item>Danimarka</item>
+    <item>İspanya</item>
+    <item>Fransa</item>
+    <item>İtalya</item>
+    <item>Lüksemburg</item>
+    <item>Hollanda</item>
+    <item>Norveç</item>
+    <item>Polonya</item>
+    <item>İsveç</item>
+    <item>Slovenya</item>
+    <item>İngiltere</item>
+    <item>Finlandiya</item>
+    <item>İrlanda</item>
+    <item>Rusya</item>
+    <item>Belçika</item>
+    <item>Portekiz</item>
+    <item>Yunanistan</item>
+    <item>Macaristan</item>
+    <item>Bulgaristan</item>
+    <item>Romanya</item>
+    <item>Çek Cumhuriyeti</item>
+    <item>Yugoslavya</item>
+    <item>Estonya</item>
+    <item>Beyaz Rusya</item>
+    <item>Slovakya</item>
+    <item>Ukrayna</item>
+    <item>Litvanya</item>
+    <item>Makedonya</item>
+    <item>Moldova</item>
+    <item>Letonya</item>
+    <item>Hırvatistan</item>
+    <item>Sırbistan Cumhuriyeti</item>
+    <item>Bosna Hersek</item>
+    <item>Ermenistan</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_asia">
+    <item>- Hiçbiri seçilmedi -</item>
+    <item>Filipinler</item>
+    <item>Malezya</item>
+    <item>Türkiye</item>
+    <item>Singapur</item>
+    <item>Hindistan</item>
+    <item>Hong Kong</item>
+    <item>Birleşik Arap Emirlikleri</item>
+    <item>Japonya</item>
+    <item>Bangladeş</item>
+    <item>İsrail</item>
+    <item>Kore</item>
+    <item>Tayland</item>
+    <item>İran</item>
+    <item>Tayvan</item>
+    <item>Çin</item>
+    <item>Endonezya</item>
+    <item>Vietnam</item>
+    <item>Pakistan</item>
+    <item>Umman</item>
+    <item>Özbekistan</item>
+    <item>Sri Lanka</item>
+    <item>Kırgızistan</item>
+    <item>Kamboçya</item>
+    <item>Katar</item>
+    <item>Suudi Arabistan</item>
+    <item>Irak</item>
+    <item>Kazakistan</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_oceania">
+    <item>- Hiçbiri seçilmedi -</item>
+    <item>Avustralya</item>
+    <item>Yeni Zelanda</item>
+    <item>Yeni Kaledonya</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_north_america">
+    <item>- Hiçbiri seçilmedi -</item>
+    <item>Kanada</item>
+    <item>Birleşik Devletler</item>
+    <item>Meksika</item>
+    <item>Guatemala</item>
+    <item>Panama</item>
+    <item>Bahamalar</item>
+    <item>Kosta Rika</item>
+    <item>El Salvador</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_south_america">
+    <item>- Hiçbiri seçilmedi -</item>
+    <item>Brezilya</item>
+    <item>Şili</item>
+    <item>Arjantin</item>
+    <item>Venezuela</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_africa">
+    <item>- Hiçbiri seçilmedi -</item>
+    <item>Tanzanya</item>
+    <item>Güney Afrika</item>
+    <item>Angola</item>
+    <item>Madagaskar</item>
+    <item>Uganda</item>
+  </string-array>
+  <string name="pref_ntp_custom">Özel</string>
+  <string name="pref_ntp_custom_summary">Özel sunucu seçiliyse buradan özel bir NTP sunucusu tanımlayabilirsiniz.</string>
+  <string name="pref_advanced_settings">Gelişmiş ayarlara git</string>
+  <string name="pref_help">Yardım</string>
+  <string name="pref_about">Hakkında</string>
+  <string name="pref_donations">Bağışlar</string>
+  <string name="pref_current_value">Değer:</string>
+  <string name="pref_category_general">Genel</string>
+  <string name="pref_category_xtra">XTRA Sunucusu</string>
+  <string name="pref_category_supl">AGPS SUPL</string>
+  <string name="pref_category_c2k">AGPS C2K</string>
+  <string name="pref_category_carrier">AGPS Taşıyıcısı</string>
+  <string name="pref_category_other">Diğer</string>
+  <string name="DEBUG_LEVEL">Hata Ayıklama Seviyeleri: 0=yok, 1=Hata, 2=Uyarı, 3=Bilgi, 4=Hata Ayıklama, 5=Ayrıntı</string>
+  <string name="INTERMEDIATE_POS">Acil konum raporu: 1=Etkin, 0=Devre Dışı</string>
+  <string name="ACCURACY_THRES">Orta konumlar için hassasiyet sınırı, daha az hassas konumlar yoksayılır: tüm konumları dikkate almak için 0</string>
+  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Supl ref yerini konum olarak bildir: 1=etkin, 0=devre dışı</string>
+  <string name="ENABLE_WIPER">Wiper (wifi konumlama): 1=etkin, 0=devre dışı</string>
+  <string name="SUPL_HOST"/>
+  <string name="SUPL_PORT"/>
+  <string name="SUPL_NO_SECURE_PORT"/>
+  <string name="SUPL_SECURE_PORT"/>
+  <string name="C2K_HOST"/>
+  <string name="C2K_PORT"/>
+  <string name="CURRENT_CARRIER">olası değerler: genel</string>
+  <string name="DEFAULT_AGPS_ENABLE">olası değerler: TRUE/FALSE</string>
+  <string name="DEFAULT_SSL_ENABLE">olası değer: TRUE/FALSE</string>
+  <string name="DEFAULT_USER_PLANE">\"User Plane\" için TRUE, \"Control Plane\" için FALSE</string>
+</resources>

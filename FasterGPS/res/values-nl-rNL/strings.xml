@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Activities-->
+  <string name="activity_advanced_settings">Geavanceerde instellingen</string>
+  <string name="activity_help">Help</string>
+  <string name="activity_about">Over</string>
+  <string name="activity_donations">Donaties</string>
+  <!--Buttons-->
+  <string name="button_close">Sluiten</string>
+  <string name="button_exit">Afsluiten</string>
+  <string name="button_yes">Ja</string>
+  <string name="button_no">Nee</string>
+  <!--About-->
+  <string name="about_description">Met FasterGPS kunt u een NTP-server selecteren voor uw omgeving zodat u sneller uw GPS-positie verkrijgt.</string>
+  <string name="about_license">Licentie: GPL v3+</string>
+  <string name="about_version">Versie:</string>
+  <string name="about_developer">Ontwikkelaar:</string>
+  <string name="about_translators">Vertalers:</string>
+  <string name="about_libs">FasterGPS gebruikt de \'RootTools\' (Licentie: GPL v2) Bibliotheek om met roottoegang om te gaan.</string>
+  <!--Dialogs-->
+  <string name="no_root_description">E</string>
+  <string name="no_root_title">Geroote Android vereist</string>
+  <string name="revert_dialog_title">Terugzetten?</string>
+  <string name="revert_dialog">Wilt u de oude gps.conf terugzetten?</string>
+  <!--Preferences-->
+  <string name="pref_introduction">Wat wilt u doen?</string>
+  <string name="pref_ntp_current">Huidige server:</string>
+  <string name="pref_revert">Oude gps.conf terugzetten</string>
+  <string name="pref_further_options">Meer opties</string>
+  <string name="pref_ntp">NTP Server</string>
+  <string name="pref_ntp_continent">Continent</string>
+  <string name="pref_ntp_continent_summary">Selecteer uw continent!</string>
+  <string name="pref_ntp_region">Gebied</string>
+  <string name="pref_ntp_region_summary">Selecteer een gebied bij u in de buurt!</string>
+  <string-array name="pref_ntp_region_entries_asia">
+    <item>- Nothing selected -</item>
+    <item>Filipijnen</item>
+    <item>Maleisië</item>
+    <item>Turkije</item>
+    <item>Singapore</item>
+    <item>India</item>
+    <item>Hong Kong</item>
+    <item>Verenigde Arabische Emiraten</item>
+    <item>Japan</item>
+    <item>Bangladesh</item>
+    <item>Israël</item>
+    <item>Korea</item>
+    <item>Thailand</item>
+    <item>Iran</item>
+    <item>Taiwan</item>
+    <item>China</item>
+    <item>Indonesië</item>
+    <item>Vietnam</item>
+    <item>Pakistan</item>
+    <item>Oman</item>
+    <item>Oezbekistan</item>
+    <item>Sri Lanka</item>
+    <item>Kirgizië</item>
+    <item>Cambodja</item>
+    <item>Qatar</item>
+    <item>Saudi-Arabië</item>
+    <item>Irak</item>
+    <item>Kazachstan</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_oceania">
+    <item>- Niets geselecteerd -</item>
+    <item>Australië</item>
+    <item>Nieuw-Zeeland</item>
+    <item>Nieuw-Caledonië</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_north_america">
+    <item>- Niets geselecteerd -</item>
+    <item>Canada</item>
+    <item>Verenigde Staten</item>
+    <item>Mexico</item>
+    <item>Guatemala</item>
+    <item>Panama</item>
+    <item>Bahamas</item>
+    <item>Costa Rica</item>
+    <item>El Salvador</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_south_america">
+    <item>- Niets geselecteerd -</item>
+    <item>Brazilië</item>
+    <item>Chili</item>
+    <item>Argentinië</item>
+    <item>Venezuela</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_africa">
+    <item>- Niets geselecteerd -</item>
+    <item>Tanzania</item>
+    <item>Zuid-Afrika</item>
+    <item>Angola</item>
+    <item>Madagaskar</item>
+    <item>Uganda</item>
+  </string-array>
+  <string name="pref_ntp_custom">Aangepast</string>
+  <string name="pref_ntp_custom_summary">Als \"aangepaste server\" is geselecteerd kunt u hier een aangepaste server instellen.</string>
+  <string name="pref_advanced_settings">Ga naar de geavanceerde instellingen</string>
+  <string name="pref_help">Help</string>
+  <string name="pref_about">Over</string>
+  <string name="pref_donations">Donaties</string>
+  <string name="pref_current_value">Waarde:</string>
+  <string name="pref_category_general">Algemeen</string>
+  <string name="pref_category_xtra">XTRA Server</string>
+  <string name="pref_category_other">Ander</string>
+  <string name="SUPL_HOST"/>
+  <string name="SUPL_PORT"/>
+  <string name="SUPL_NO_SECURE_PORT"/>
+  <string name="SUPL_SECURE_PORT"/>
+  <string name="C2K_HOST"/>
+  <string name="C2K_PORT"/>
+</resources>
