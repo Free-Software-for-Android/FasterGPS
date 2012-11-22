@@ -4,22 +4,17 @@
     <!-- Activities -->
     <string name="activity_advanced_settings">Advanced Settings</string>
     <string name="activity_help">Help</string>
-    <string name="activity_about">About</string>
-    <string name="activity_donations">Donations</string>
+
+    <!-- Help -->
+    <string name="help_help">Help</string>
+    <string name="help_donations">Donations</string>
+    <string name="help_about_version">Version:</string>
 
     <!-- Buttons -->
     <string name="button_close">Close</string>
     <string name="button_exit">Exit</string>
     <string name="button_yes">Yes</string>
     <string name="button_no">No</string>
-
-    <!-- About -->
-    <string name="about_description">With FasterGPS you can select a NTP Server matching your region to speed up the process of getting a GPS fix.</string>
-    <string name="about_license">License: GPL v3+</string>
-    <string name="about_version">Version:</string>
-    <string name="about_developer">Developer:</string>
-    <string name="about_translators">Translators:</string>
-    <string name="about_libs">FasterGPS uses \'RootTools\' (License: GPL v2) Library to handle root access.</string>
 
     <!-- Dialogs -->
     <string name="no_root_description">Either the su binary could not be found or you did not allow root permission for FasterGPS.\n\nThis can happen when your device is not rooted.\nYou can find information about how to root your device on www.cyanogenmod.com or other Android websites.</string>

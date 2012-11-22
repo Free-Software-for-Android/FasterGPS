@@ -21,17 +21,11 @@
 package org.fastergps.ui;
 
 import org.fastergps.R;
-import org.fastergps.util.Utils;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.text.Html;
-import android.text.method.LinkMovementMethod;
-import android.widget.TextView;
+import android.support.v4.app.FragmentActivity;
 
-public class HelpActivity extends Activity {
-    Activity mActivity;
-    TextView mHelpText;
+public class HelpActivity extends FragmentActivity {
 
     /**
      * Instantiate View for this Activity
@@ -41,18 +35,6 @@ public class HelpActivity extends Activity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.help_activity);
-
-        mActivity = this;
-
-        mHelpText = (TextView) findViewById(R.id.help_text);
-
-        // load html from html file from /res/raw
-        String helpText = Utils.readContentFromResource(mActivity, R.raw.help);
-
-        // set text from resources with html markup
-        mHelpText.setText(Html.fromHtml(helpText));
-        // make links work
-        mHelpText.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
 }

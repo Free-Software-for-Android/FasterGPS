@@ -22,7 +22,6 @@ package org.fastergps.ui;
 
 import java.util.HashMap;
 
-import org.donations.DonationsActivity;
 import org.fastergps.R;
 import org.fastergps.util.Constants;
 import org.fastergps.util.Log;
@@ -52,8 +51,6 @@ public class BaseActivity extends PreferenceActivity {
     private Preference mRevert;
 
     private Preference mHelp;
-    private Preference mAbout;
-    private Preference mDonations;
 
     private HashMap<String, String> config;
 
@@ -200,8 +197,6 @@ public class BaseActivity extends PreferenceActivity {
             mAdvancedSettings = (Preference) findPreference(getString(R.string.pref_advanced_settings_key));
             mRevert = (Preference) findPreference(getString(R.string.pref_revert_key));
             mHelp = (Preference) findPreference(getString(R.string.pref_help_key));
-            mAbout = (Preference) findPreference(getString(R.string.pref_about_key));
-            mDonations = (Preference) findPreference(getString(R.string.pref_donations_key));
 
             // set current ntp summary based on config
             setCurrentNtpBasedOnConfig();
@@ -328,28 +323,6 @@ public class BaseActivity extends PreferenceActivity {
                 @Override
                 public boolean onPreferenceClick(Preference preference) {
                     startActivity(new Intent(mActivity, HelpActivity.class));
-
-                    return false;
-                }
-
-            });
-
-            mAbout.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    startActivity(new Intent(mActivity, AboutActivity.class));
-
-                    return false;
-                }
-
-            });
-
-            mDonations.setOnPreferenceClickListener(new OnPreferenceClickListener() {
-
-                @Override
-                public boolean onPreferenceClick(Preference preference) {
-                    startActivity(new Intent(mActivity, DonationsActivity.class));
 
                     return false;
                 }
