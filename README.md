@@ -6,7 +6,7 @@ For more information visit http://code.google.com/p/faster-gps/
 
 # Build using Ant
 
-1. Add a file ``local.properties`` in the folder ``FasterGPS`` folder with the following lines:
+1. Add a file ``local.properties`` in the folder ``FasterGPS`` and ``FasterGPS/android-libs/Donations`` with the following lines:
 ``sdk.dir=/opt/android-sdk``. Alter these lines to your locations of the Android SDK!
 2. Execute ```ant clear```
 3. Execute ```ant debug -Dtemplates=other```
