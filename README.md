@@ -6,11 +6,16 @@ For more information visit http://code.google.com/p/faster-gps/
 
 # Build using Ant
 
-1. Add a file ``local.properties`` in the folder ``FasterGPS`` and ``FasterGPS/android-libs/Donations`` with the following lines:
-``sdk.dir=/opt/android-sdk``. Alter these lines to your locations of the Android SDK!
-2. Execute ```ant clear```
-3. Execute ```ant debug -Dtemplates=other```
-4. To disable Flattr and PayPal (not allowed in Google Play), execute ```ant debug -Dtemplates=google```
+1. Have Android SDK "tools" directory in your PATH (http://developer.android.com/sdk/index.html)
+2. Change to "FasterGPS" directory with ``cd FasterGPS``
+3. Execute ``android update project -p .`` and ``android update project -p android-libs/Donations``
+4. Execute ``ant clean``
+5. Execute ``ant debug -Ddonations=all``
+
+## More build information
+
+* To disable Flattr and PayPal (not allowed in Google Play), execute ``ant debug -Ddonations=google``
+* To disable Google (only working when the apk is signed with my private key), execute ``ant debug -Ddonations=other``
 
 # Contribute
 
@@ -18,23 +23,21 @@ Fork FasterGPS and do a Pull Request. I will merge your changes back into the ma
 
 # Libraries
 
-All JAR-Libraries are provided in this repository under ``libs``, all Android Library projects are under ``android-libs``.
+All JAR-Libraries are provided in this repository under "libs", all Android Library projects are under "android-libs".
 
 # Information about gps.conf
 
 * http://forum.xda-developers.com/showthread.php?p=11342772
 * http://forum.xda-developers.com/showthread.php?t=1498276
 * http://forum.xda-developers.com/showthread.php?t=1493695
-
-other gps configs:
 * http://forum.xda-developers.com/showthread.php?p=25094918
 
 # Translations
 
-Translations are hosted on Transifex, which is configured by ``.tx/config``
+Translations are hosted on Transifex, which is configured by ".tx/config"
 
-1. To pull newest translations install transifex client (e.g. aptitude install transifex-client)
-2. Config Transifex client with ``~/.transifexrc``
+1. To pull newest translations install transifex client (e.g. ``apt-get install transifex-client``)
+2. Config Transifex client with "~/.transifexrc"
 3. Go into root folder of git repo
 4. execute ```tx pull``` (```tx pull -a``` to get all languages)
 
