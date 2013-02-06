@@ -1,30 +1,33 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Activities-->
-  <string name="activity_advanced_settings">Definições Avançadas</string>
-  <string name="activity_help">Ajuda</string>
+  <string name="activity_advanced_settings">Erweiterte Einstellungen</string>
+  <string name="activity_help">Hilfe</string>
   <!--Help-->
+  <string name="help_help">Hilfe</string>
+  <string name="help_donations">Spenden</string>
+  <string name="help_about_version">Version:</string>
   <!--Buttons-->
-  <string name="button_close">Fechar</string>
-  <string name="button_exit">Sair</string>
-  <string name="button_yes">Sim</string>
-  <string name="button_no">Não</string>
+  <string name="button_close">Schließen</string>
+  <string name="button_exit">Beenden</string>
+  <string name="button_yes">Ja</string>
+  <string name="button_no">Nein</string>
   <!--Dialogs-->
-  <string name="no_root_description">Ou o binário su não pôde ser encontrado ou você não permitir que a permissão de raiz para FasterGPS. ⏎ ⏎ Isso pode acontecer quando o dispositivo não está com acesso root. ⏎ Você pode encontrar informações sobre como obter acesso root para o seu dispositivo em www.cyanogenmod.com ou outros sites sobre Android.</string>
-  <string name="no_root_title">Android com acesso root requerido</string>
-  <string name="revert_dialog_title">Reverter?</string>
-  <string name="revert_dialog">Quer reverter para as suas configurações antigas gps.conf?</string>
-  <string name="applying_successful">gps.conf foi actualizado com sucesso</string>
+  <string name="no_root_description">Either the su binary could not be found or you did not allow root permission for FasterGPS.\n\nThis can happen when your device is not rooted.\nYou can find information about how to root your device on www.cyanogenmod.com or other Android websites.</string>
+  <string name="no_root_title">Android muss gerootet sein</string>
+  <string name="revert_dialog_title">Wiederherstellen?</string>
+  <string name="revert_dialog">Soll die alte gps.conf wiederhergestellt werden?</string>
+  <string name="applying_successful">gps.conf erfolgreich gespeichert!</string>
   <!--Preferences-->
-  <string name="pref_introduction">O que fazer?</string>
-  <string name="pref_introduction_summary">Por favor seleccione um servidor NTP que fica mais próximo da sua posição actual. Quanto mais perto, mais rápido terás acesso ao GPS. FasterGPS escreve as suas definições imediatamente.</string>
-  <string name="pref_ntp_current">Servidor Actual:</string>
-  <string name="pref_revert">Reverter para as configurações antigas gps.conf</string>
-  <string name="pref_revert_summary">Quando FasterGPS é iniciado pela primeira vez, ele guarda o seu gps.conf antigo. Ao usar o reverter, poderá restaurar o gps.conf inicial.</string>
-  <string name="pref_further_options">Mais opções</string>
-  <string name="pref_ntp">Servidor NTP</string>
-  <string name="pref_ntp_continent">Continente</string>
-  <string name="pref_ntp_continent_summary">Seleccione o seu continente!</string>
+  <string name="pref_introduction">Was machen?</string>
+  <string name="pref_introduction_summary">Bitte wähle einen NTP Server der deinem aktuellen Standort am nächsten ist. Je näher dieser ist, umso schneller erhältst du einen GPS fix. FasterGPS schreibt augenblicklich deine Einstellungen.</string>
+  <string name="pref_ntp_current">Aktueller Server:</string>
+  <string name="pref_revert">Alte gps.conf wiederherstellen</string>
+  <string name="pref_revert_summary">Wenn FasterGPS zum ersten mal gestartet wird, erstellt es ein Backup der aktuellen gps.conf Datei. Durch Wiederherstellen kann diese erneut verwendet werden.</string>
+  <string name="pref_further_options">Weitere Optionen</string>
+  <string name="pref_ntp">NTP Server</string>
+  <string name="pref_ntp_continent">Kontinent</string>
+  <string name="pref_ntp_continent_summary">Wähle deinen Kontinent</string>
   <string-array name="pref_ntp_continent_entries">
     <item>- Nothing selected -</item>
     <item>- Custom Server -</item>
@@ -35,8 +38,8 @@
     <item>South America</item>
     <item>Africa</item>
   </string-array>
-  <string name="pref_ntp_region">Região</string>
-  <string name="pref_ntp_region_summary">Seleccione a região mais próxima de si!</string>
+  <string name="pref_ntp_region">Region</string>
+  <string name="pref_ntp_region_summary">Wähle eine Region in deiner Nähe!</string>
   <string-array name="pref_ntp_region_entries_europe">
     <item>- Nothing selected -</item>
     <item>Austria</item>
@@ -139,32 +142,31 @@
     <item>Madagascar</item>
     <item>Uganda</item>
   </string-array>
-  <string name="pref_ntp_custom">Personalizado:</string>
-  <string name="pref_ntp_custom_summary">Se o servidor personalizado estiver seleccionado, você poderá definir um servidor personalizado NTP aqui.</string>
-  <string name="pref_advanced_settings">Vá a Definições avançadas</string>
-  <string name="pref_help">Ajuda</string>
-  <string name="pref_about">Sobre</string>
-  <string name="pref_donations">Doações</string>
-  <string name="pref_current_value">Valor:</string>
-  <string name="pref_category_general">Geral</string>
-  <string name="pref_category_xtra">Servidor XTRA</string>
+  <string name="pref_ntp_custom">Eigener</string>
+  <string name="pref_advanced_settings">Gehe zu erweiterten Einstellungen</string>
+  <string name="pref_help">Hilfe</string>
+  <string name="pref_about">Über</string>
+  <string name="pref_donations">Donations / Spenden</string>
+  <string name="pref_current_value">Wert:</string>
+  <string name="pref_category_general">Generell</string>
+  <string name="pref_category_xtra">XTRA Server</string>
   <string name="pref_category_supl">AGPS SUPL</string>
   <string name="pref_category_c2k">AGPS C2K</string>
-  <string name="pref_category_carrier">Operador AGPS</string>
-  <string name="pref_category_other">Outros</string>
+  <string name="pref_category_carrier">AGPS Carrier</string>
+  <string name="pref_category_other">Andere</string>
   <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Warning, 3=Info, 4=Debug, 5=Verbose</string>
-  <string name="INTERMEDIATE_POS">Posição intermédia: 1=Activado, 0=Desactivado</string>
-  <string name="ACCURACY_THRES">Limite de precisão para posições intermediárias, as posições menos precisas são ignoradas: 0 para passar todas as posições</string>
-  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Relatório localização ref supl como posição: 1 = Activado, 0 = Desactivado</string>
-  <string name="ENABLE_WIPER">wiper (posicionamento wifi): 1 = Activado, 0 = Desactivado</string>
+  <string name="INTERMEDIATE_POS">Intermediate position report: 1=Enable, 0=Disable</string>
+  <string name="ACCURACY_THRES">Accuracy threshold for intermediate positions, less accurate positions are ignored: 0 for passing all positions</string>
+  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Report supl ref location as position: 1=enable, 0=disable</string>
+  <string name="ENABLE_WIPER">Wiper (wifi positioning): 1=enable, 0=disable</string>
   <string name="SUPL_HOST"></string>
   <string name="SUPL_PORT"></string>
   <string name="SUPL_NO_SECURE_PORT"></string>
   <string name="SUPL_SECURE_PORT"></string>
   <string name="C2K_HOST"></string>
   <string name="C2K_PORT"></string>
-  <string name="CURRENT_CARRIER">Valores Possíveis: comum</string>
-  <string name="DEFAULT_AGPS_ENABLE">valores possíveis: Verdadeiro/Falso</string>
-  <string name="DEFAULT_SSL_ENABLE">valores possíveis: Verdadeiro/Falso</string>
+  <string name="CURRENT_CARRIER">possible values: common</string>
+  <string name="DEFAULT_AGPS_ENABLE">possible values: TRUE/FALSE</string>
+  <string name="DEFAULT_SSL_ENABLE">possible value: TRUE/FALSE</string>
   <string name="DEFAULT_USER_PLANE">TRUE for \"User Plane\", FALSE for \"Control Plane\"</string>
 </resources>

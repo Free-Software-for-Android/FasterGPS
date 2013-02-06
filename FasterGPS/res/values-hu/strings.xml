@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Activities-->
+  <string name="activity_advanced_settings">Haladó beállítások</string>
+  <string name="activity_help">Súgó</string>
+  <!--Help-->
+  <string name="help_help">Súgó</string>
+  <string name="help_donations">Adományozás</string>
+  <string name="help_about_version">Verzió:</string>
+  <!--Buttons-->
+  <string name="button_close">Bezár</string>
+  <string name="button_exit">Kilép</string>
+  <string name="button_yes">Igen</string>
+  <string name="button_no">Nem</string>
+  <!--Dialogs-->
+  <string name="no_root_description">Az su bináris nem található, vagy nem engedélyezett a FasterGPS root hozzáférése.\n\nEz akkor történhet meg, ha a készülék nem rootolt.\nA rootolás menetéről a www.cyanogenmod.com vagy egyéb Android weblapokon talál információt.</string>
+  <string name="no_root_title">Rootolt rendszer szükséges</string>
+  <string name="revert_dialog_title">Visszaállítja?</string>
+  <string name="revert_dialog">Visszaállítja a régi gps.conf állományt?</string>
+  <string name="applying_successful">A gps.conf sikeresen felülírva!</string>
+  <!--Preferences-->
+  <string name="pref_introduction">Mit kell tennie?</string>
+  <string name="pref_introduction_summary">Válasszon ki egy, az aktuális pozíciójához közeli NTP szervert. Minél közelebbi, annál gyorsabban kap egy GPS kiigazítást. A FasterGPS azonnal felülírja a beállításokat.</string>
+  <string name="pref_ntp_current">Jelenlegi szerver:</string>
+  <string name="pref_revert">A régi gps.conf visszaállítása</string>
+  <string name="pref_revert_summary">Amikor a FasterGPS először elindul, egy biztonsági mentést készít a jelenlegi gps.conf állományról. Ez később felhasználható a visszaállításhoz.</string>
+  <string name="pref_further_options">További opciók</string>
+  <string name="pref_ntp">NTP szerver</string>
+  <string name="pref_ntp_continent">Kontinens</string>
+  <string name="pref_ntp_continent_summary">Válasszon kontinenst!</string>
+  <string-array name="pref_ntp_continent_entries">
+    <item>- Nincs kijelölve -</item>
+    <item>- Egyéni szerver -</item>
+    <item>Európa</item>
+    <item>Óceánia</item>
+    <item>Ázsia</item>
+    <item>Észak Amerika</item>
+    <item>Dél Amerika</item>
+    <item>Afrika</item>
+  </string-array>
+  <string name="pref_ntp_region">Régió</string>
+  <string name="pref_ntp_region_summary">Válasszon Önhöz közeli régiót!</string>
+  <string-array name="pref_ntp_region_entries_europe">
+    <item>- Nincs kijelölve -</item>
+    <item>Ausztria</item>
+    <item>Switzerland</item>
+    <item>Germany</item>
+    <item>Denmark</item>
+    <item>Spain</item>
+    <item>France</item>
+    <item>Italy</item>
+    <item>Luxembourg</item>
+    <item>Netherlands</item>
+    <item>Norway</item>
+    <item>Poland</item>
+    <item>Sweden</item>
+    <item>Slovenia</item>
+    <item>United Kingdom</item>
+    <item>Finland</item>
+    <item>Ireland</item>
+    <item>Russian Federation</item>
+    <item>Belgium</item>
+    <item>Portugal</item>
+    <item>Greece</item>
+    <item>Magyarország</item>
+    <item>Bulgaria</item>
+    <item>Romania</item>
+    <item>Czech Republic</item>
+    <item>Yugoslavia</item>
+    <item>Estonia</item>
+    <item>Belarus</item>
+    <item>Slovakia</item>
+    <item>Ukraine</item>
+    <item>Lithuania</item>
+    <item>Macedonia</item>
+    <item>Moldova</item>
+    <item>Latvia</item>
+    <item>Croatia</item>
+    <item>Republic of Serbia</item>
+    <item>Bosnia and Herzegovina</item>
+    <item>Armenia</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_asia">
+    <item>- Nincs kijelölve -</item>
+    <item>Philippines</item>
+    <item>Malaysia</item>
+    <item>Turkey</item>
+    <item>Singapore</item>
+    <item>India</item>
+    <item>Hong Kong</item>
+    <item>United Arab Emirates</item>
+    <item>Japan</item>
+    <item>Bangladesh</item>
+    <item>Israel</item>
+    <item>Korea</item>
+    <item>Thailand</item>
+    <item>Iran</item>
+    <item>Taiwan</item>
+    <item>China</item>
+    <item>Indonesia</item>
+    <item>Vietnam</item>
+    <item>Pakistan</item>
+    <item>Oman</item>
+    <item>Uzbekistan</item>
+    <item>Sri Lanka</item>
+    <item>Kyrgyzstan</item>
+    <item>Cambodia</item>
+    <item>Qatar</item>
+    <item>Saudi Arabia</item>
+    <item>Iraq</item>
+    <item>Kazakhstan</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_oceania">
+    <item>- Nincs kijelölve -</item>
+    <item>Australia</item>
+    <item>New Zealand</item>
+    <item>New Caledonia</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_north_america">
+    <item>- Nincs kijelölve -</item>
+    <item>Canada</item>
+    <item>United States</item>
+    <item>Mexico</item>
+    <item>Guatemala</item>
+    <item>Panama</item>
+    <item>Bahamas</item>
+    <item>Costa Rica</item>
+    <item>El Salvador</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_south_america">
+    <item>- Nincs kijelölve -</item>
+    <item>Brazil</item>
+    <item>Chile</item>
+    <item>Argentina</item>
+    <item>Venezuela</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_africa">
+    <item>- Nincs kijelölve -</item>
+    <item>Tanzania</item>
+    <item>South Africa</item>
+    <item>Angola</item>
+    <item>Madagascar</item>
+    <item>Uganda</item>
+  </string-array>
+  <string name="pref_ntp_custom">Egyéni</string>
+  <string name="pref_ntp_custom_summary">Ha egyéni szerver van kijelölve, itt megadhatja az NTP szerver beállításait.</string>
+  <string name="pref_advanced_settings">Haladó beállítások</string>
+  <string name="pref_help">Súgó</string>
+  <string name="pref_about">Rólunk</string>
+  <string name="pref_donations">Adományozás</string>
+  <string name="pref_current_value">Értéke:</string>
+  <string name="pref_category_general">Általános</string>
+  <string name="pref_category_xtra">XTRA szerver</string>
+  <string name="pref_category_supl">AGPS SUPL</string>
+  <string name="pref_category_c2k">AGPS C2K</string>
+  <string name="pref_category_carrier">AGPS szolgáltató</string>
+  <string name="pref_category_other">Egyéb</string>
+  <string name="DEBUG_LEVEL">Debug szintek: 0=nincs, 1=Hiba, 2=Figyelmeztetés, 3=Infó, 4=Debug, 5=Részletes</string>
+  <string name="INTERMEDIATE_POS">Közbenső helyzet jelentés: 1=Engedett, 0=Tiltott</string>
+  <string name="ACCURACY_THRES">A köztes helyzetek pontossági küszöbértéke, kevésbé pontos pozíció figyelmen kívül hagyása: a 0 elhagyása minden helyzetben</string>
+  <string name="REPORT_POSITION_USE_SUPL_REFLOC">A supl ref pozíció jelentése: 1=engedés, 0=tiltás</string>
+  <string name="ENABLE_WIPER">Törlés (wifis helymeghatározás): 1=engedés, 0=tiltás</string>
+  <string name="SUPL_HOST"></string>
+  <string name="SUPL_PORT"></string>
+  <string name="SUPL_NO_SECURE_PORT"></string>
+  <string name="SUPL_SECURE_PORT"></string>
+  <string name="C2K_HOST"></string>
+  <string name="C2K_PORT"></string>
+  <string name="CURRENT_CARRIER">lehetséges értékek: common</string>
+  <string name="DEFAULT_AGPS_ENABLE">lehetséges értékek: TRUE/FALSE</string>
+  <string name="DEFAULT_SSL_ENABLE">lehetséges értékek: TRUE/FALSE</string>
+  <string name="DEFAULT_USER_PLANE">TRUE a felhasználói sík, FALSE a vezérlő sík</string>
+</resources>

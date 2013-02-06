@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Activities-->
+  <string name="activity_advanced_settings">Opciones Avanzadas</string>
+  <string name="activity_help">ayuda</string>
+  <!--Help-->
+  <!--Buttons-->
+  <string name="button_close">Cerrar</string>
+  <string name="button_exit">Salir</string>
+  <string name="button_yes">Si</string>
+  <string name="button_no">No</string>
+  <!--Dialogs-->
+  <string name="no_root_description">O bien el binario SU no se ha encontrado o no tiene permisos de root para usar FasterGPS. ⏎ ⏎ Esto puede suceder cuando el dispositivo no esta como usuario root. ⏎ Puede encontrar información sobre cómo ser usuario root en www.cyanogenmod.com o en otros sitios web de Android.</string>
+  <string name="no_root_title">Necesitas ser usuario Root</string>
+  <string name="revert_dialog_title">¿Regresar?</string>
+  <string name="revert_dialog">¿Quieres regresar a tu antiguo archivo gps.conf?</string>
+  <!--Preferences-->
+  <string name="pref_introduction">¿Que hacer?</string>
+  <string name="pref_introduction_summary">Por favor, seleccione un servidor NTP que está cerca de su posición actual. Cuanto más cerca está, más rápido se obtiene un punto de GPS. FasterGPS inmediatamente escribirá su configuración.</string>
+  <string name="pref_revert">Regresar a tu antiguo archivo gps.conf</string>
+  <string name="pref_revert_summary">Cuando se inicia FasterGPS por primera vez, se hacen copias de seguridad de su actual archivo gps.conf . Usando Regresar puede restaurar esta.</string>
+  <string name="pref_further_options">Otras opciones</string>
+  <string name="pref_ntp">Servidor NTP</string>
+  <string name="pref_advanced_settings">Ir a opciones avanzadas</string>
+  <string name="pref_help">Ayuda</string>
+  <string name="pref_about">Acerca de</string>
+  <string name="pref_donations">Donaciones</string>
+  <string name="pref_current_value">Valor:</string>
+  <string name="pref_category_general">General</string>
+  <string name="pref_category_xtra">Servidor XTRA</string>
+  <string name="pref_category_supl">AGPS SUPL</string>
+  <string name="pref_category_c2k">AGPS SUPL</string>
+  <string name="pref_category_carrier">AGPS Carrier</string>
+  <string name="pref_category_other">Otros</string>
+  <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Warning, 3=Info, 4=Debug, 5=Verbose</string>
+  <string name="SUPL_HOST"></string>
+  <string name="SUPL_PORT"></string>
+  <string name="SUPL_NO_SECURE_PORT"></string>
+  <string name="SUPL_SECURE_PORT"></string>
+  <string name="C2K_HOST"></string>
+  <string name="C2K_PORT"></string>
+</resources>

@@ -3,20 +3,12 @@
   <!--Activities-->
   <string name="activity_advanced_settings">Paramètres avancés</string>
   <string name="activity_help">Aide</string>
-  <string name="activity_about">A propos</string>
-  <string name="activity_donations">Dons</string>
+  <!--Help-->
   <!--Buttons-->
   <string name="button_close">Fermer</string>
   <string name="button_exit">Quitter</string>
   <string name="button_yes">Oui</string>
   <string name="button_no">Non</string>
-  <!--About-->
-  <string name="about_description">Avec FasterGPS, vous pouvez choisir un serveur NTP proche de vous afin de réduire le temps de localisation du GPS.</string>
-  <string name="about_license">License: GPL v3+</string>
-  <string name="about_version">Version:</string>
-  <string name="about_developer">Développeur:</string>
-  <string name="about_translators">Traducteurs:</string>
-  <string name="about_libs">FasterGPS utilise la bibliothèque \'RootTools\' (License: GPL v2) pour gérer l\'accès Root.</string>
   <!--Dialogs-->
   <string name="no_root_description">Le binaire su est introuvable ou FasterGPS n\'as pas reçu l\'autorisation root.\n\nVotre appareil n\'est peut-être pas rooté.\nVous pouvez trouvez des informations sur comment rooter votre appareil sur www.cyanogenmod.com ou sur d\'autres sites web Android.</string>
   <string name="no_root_title">Android Rooté requis</string>
@@ -165,12 +157,12 @@
   <string name="ACCURACY_THRES">Seuil de précision pour les positions intermédiaires, les position moins précises sont ignorées : 0 pour ignorer toutes les positions</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Rapporter les positions supplémentaires comme lieu de référence: 1=activé, 0=désactivé</string>
   <string name="ENABLE_WIPER">Wiper( localisation wifi): 1=activé, 0=désactivé</string>
-  <string name="SUPL_HOST"/>
-  <string name="SUPL_PORT"/>
-  <string name="SUPL_NO_SECURE_PORT"/>
-  <string name="SUPL_SECURE_PORT"/>
-  <string name="C2K_HOST"/>
-  <string name="C2K_PORT"/>
+  <string name="SUPL_HOST"></string>
+  <string name="SUPL_PORT"></string>
+  <string name="SUPL_NO_SECURE_PORT"></string>
+  <string name="SUPL_SECURE_PORT"></string>
+  <string name="C2K_HOST"></string>
+  <string name="C2K_PORT"></string>
   <string name="CURRENT_CARRIER">Valeurs possible: commun</string>
   <string name="DEFAULT_AGPS_ENABLE">Valeurs possibles: OUI/NON</string>
   <string name="DEFAULT_SSL_ENABLE">Valeur possible: OUI/NON</string>

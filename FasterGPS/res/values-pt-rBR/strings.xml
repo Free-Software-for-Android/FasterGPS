@@ -3,20 +3,12 @@
   <!--Activities-->
   <string name="activity_advanced_settings">Opções Avançadas</string>
   <string name="activity_help">Ajuda</string>
-  <string name="activity_about">Sobre</string>
-  <string name="activity_donations">Doações</string>
+  <!--Help-->
   <!--Buttons-->
   <string name="button_close">Fechar</string>
   <string name="button_exit">Sair</string>
   <string name="button_yes">Sim</string>
   <string name="button_no">Não</string>
-  <!--About-->
-  <string name="about_description">Com FasterGPS pode seleccionar um servidor NTP que se adequa à sua região para acelarar o processo de obtenção de GPS.</string>
-  <string name="about_license">Licença: GPL v3+</string>
-  <string name="about_version">Versão:</string>
-  <string name="about_developer">Desenvolvedor:</string>
-  <string name="about_translators">Traduções:</string>
-  <string name="about_libs">FasterGPS usa \"RootTools\"(Licença: GPLv2) para obter o acesso root.</string>
   <!--Dialogs-->
   <string name="no_root_title">Android com acesso root requerido</string>
   <string name="revert_dialog_title">Desfazer?</string>
@@ -62,12 +54,12 @@
   <string name="pref_category_carrier">Operador AGPS</string>
   <string name="pref_category_other">Outro</string>
   <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Warning, 3=Info, 4=Debug, 5=Verbose\n</string>
-  <string name="SUPL_HOST"/>
-  <string name="SUPL_PORT"/>
-  <string name="SUPL_NO_SECURE_PORT"/>
-  <string name="SUPL_SECURE_PORT"/>
-  <string name="C2K_HOST"/>
-  <string name="C2K_PORT"/>
+  <string name="SUPL_HOST"></string>
+  <string name="SUPL_PORT"></string>
+  <string name="SUPL_NO_SECURE_PORT"></string>
+  <string name="SUPL_SECURE_PORT"></string>
+  <string name="C2K_HOST"></string>
+  <string name="C2K_PORT"></string>
   <string name="CURRENT_CARRIER">valores possíveis: comuns</string>
   <string name="DEFAULT_AGPS_ENABLE">possíveis valores: VERDADEIRO/FALSO</string>
   <string name="DEFAULT_SSL_ENABLE">possível valor: VERDADEIRO/FALSO</string>

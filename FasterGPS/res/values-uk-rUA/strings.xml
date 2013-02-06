@@ -3,20 +3,15 @@
   <!--Activities-->
   <string name="activity_advanced_settings">Додаткові налаштування</string>
   <string name="activity_help">Допомога</string>
-  <string name="activity_about">Про</string>
-  <string name="activity_donations">Пожертва</string>
+  <!--Help-->
+  <string name="help_help">Допомога</string>
+  <string name="help_donations">Пожертви</string>
+  <string name="help_about_version">Версія:</string>
   <!--Buttons-->
   <string name="button_close">Закрити</string>
   <string name="button_exit">Вийти</string>
   <string name="button_yes">Так</string>
   <string name="button_no">Ні</string>
-  <!--About-->
-  <string name="about_description">З FasterGPS Ви можете вибрати сервер NTP, що відповідає Вашому регіону, для пришвидшення процесу фіксації GPS.</string>
-  <string name="about_license">Ліцензія: GPL v3+</string>
-  <string name="about_version">Версія:</string>
-  <string name="about_developer">Розробник:</string>
-  <string name="about_translators"></string>
-  <string name="about_libs">FasterGPS використовує бібліотеку \'RootTools\' (Ліцензія: GPL v2) для отримання доступу від імені root.</string>
   <!--Dialogs-->
   <string name="no_root_description">Або не знайдено бінарний файл su, або FasterGPS не має прав доступу root. \n\nЦе може статися, якщо на пристрої немає прав root.\nЯк отримати права root на Вашому пристрої можна знайти сторінці www.cyanogenmod.com або інших веб-сторінках про Android.</string>
   <string name="no_root_title">Вимагається Android з root</string>
@@ -165,12 +160,12 @@
   <string name="ACCURACY_THRES">Поріг точності для проміжних позицій, менш точні ігноруються: 0 для врахування всіх позицій</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Звітувати про знаходження supl ref як позицію: 1=Включити, 0=Виключити</string>
   <string name="ENABLE_WIPER">Wiper (інформація з wifi): 1=Включити, 0=Виключити</string>
-  <string name="SUPL_HOST"/>
-  <string name="SUPL_PORT"/>
-  <string name="SUPL_NO_SECURE_PORT"/>
-  <string name="SUPL_SECURE_PORT"/>
-  <string name="C2K_HOST"/>
-  <string name="C2K_PORT"/>
+  <string name="SUPL_HOST"></string>
+  <string name="SUPL_PORT"></string>
+  <string name="SUPL_NO_SECURE_PORT"></string>
+  <string name="SUPL_SECURE_PORT"></string>
+  <string name="C2K_HOST"></string>
+  <string name="C2K_PORT"></string>
   <string name="CURRENT_CARRIER">можливі значення: common</string>
   <string name="DEFAULT_AGPS_ENABLE">можливі значення: TRUE/FALSE</string>
   <string name="DEFAULT_SSL_ENABLE">можливе значення: TRUE/FALSE</string>

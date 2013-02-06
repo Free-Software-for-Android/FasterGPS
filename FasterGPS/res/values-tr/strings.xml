@@ -3,20 +3,12 @@
   <!--Activities-->
   <string name="activity_advanced_settings">Gelişmiş Ayarlar</string>
   <string name="activity_help">Yardım</string>
-  <string name="activity_about">Hakkında</string>
-  <string name="activity_donations">Bağışlar</string>
+  <!--Help-->
   <!--Buttons-->
   <string name="button_close">Kapat</string>
   <string name="button_exit">Çıkış</string>
   <string name="button_yes">Evet</string>
   <string name="button_no">Hayır</string>
-  <!--About-->
-  <string name="about_description">FasterGPS ile GPS sabitlemesini hızlandırmak için konumunuza uygun bir NTP sunucusu seçebilirsiniz.</string>
-  <string name="about_license">Lisans: GPL v3+</string>
-  <string name="about_version">Sürüm:</string>
-  <string name="about_developer">Geliştirici:</string>
-  <string name="about_translators">Çevirmenler:</string>
-  <string name="about_libs">FasterGPS root erişimini yönetmek için \'RootTools\' (Lisans: GPL v2) kütüphanesini kullanır.</string>
   <!--Dialogs-->
   <string name="no_root_description">Su binary bulunamadı veya FasterGPS için root erişimine izin vermediniz.\n\nCihazınız root\'lanmamış olabilir.\nCihazınızı nasıl root\'layacağınıza dair bilgileri www.cyanogenmod.com veya diğer Android sitelerinde bulabilirsiniz.</string>
   <string name="no_root_title">Root\'lu Android gerekiyor</string>
@@ -165,12 +157,12 @@
   <string name="ACCURACY_THRES">Orta konumlar için hassasiyet sınırı, daha az hassas konumlar yoksayılır: tüm konumları dikkate almak için 0</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Supl ref yerini konum olarak bildir: 1=etkin, 0=devre dışı</string>
   <string name="ENABLE_WIPER">Wiper (wifi konumlama): 1=etkin, 0=devre dışı</string>
-  <string name="SUPL_HOST"/>
-  <string name="SUPL_PORT"/>
-  <string name="SUPL_NO_SECURE_PORT"/>
-  <string name="SUPL_SECURE_PORT"/>
-  <string name="C2K_HOST"/>
-  <string name="C2K_PORT"/>
+  <string name="SUPL_HOST"></string>
+  <string name="SUPL_PORT"></string>
+  <string name="SUPL_NO_SECURE_PORT"></string>
+  <string name="SUPL_SECURE_PORT"></string>
+  <string name="C2K_HOST"></string>
+  <string name="C2K_PORT"></string>
   <string name="CURRENT_CARRIER">olası değerler: genel</string>
   <string name="DEFAULT_AGPS_ENABLE">olası değerler: TRUE/FALSE</string>
   <string name="DEFAULT_SSL_ENABLE">olası değer: TRUE/FALSE</string>
