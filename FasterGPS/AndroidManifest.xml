@@ -16,9 +16,10 @@
         android:required="false" />
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <!-- Required permission to use Google Android Market donations -->
     <uses-permission android:name="com.android.vending.BILLING" />
+    <!-- Used by Koush's new Superuser app -->
+    <uses-permission android:name="android.permission.ACCESS_SUPERUSER" />
 
     <supports-screens
         android:anyDensity="true"
@@ -29,6 +30,7 @@
 
     <application
         android:name=".FasterGPSApplication"
+        android:allowBackup="true"
         android:debuggable="false"
         android:icon="@drawable/icon"
         android:label="@string/app_name" >
