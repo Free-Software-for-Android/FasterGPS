@@ -4,32 +4,170 @@
   <string name="activity_advanced_settings">Ustawienia zaawansowane</string>
   <string name="activity_help">Pomoc</string>
   <!--Help-->
+  <string name="help_help">Pomoc</string>
+  <string name="help_donations">Dotacje</string>
+  <string name="help_about_version">Wersja:</string>
   <!--Buttons-->
   <string name="button_close">Zamknij</string>
   <string name="button_exit">Wyjdź</string>
   <string name="button_yes">Tak</string>
   <string name="button_no">Nie</string>
   <!--Dialogs-->
+  <string name="no_root_description">Żadna z bibliotek su nie może zostać znaleziona lub nie masz uprawnień roota dla FasterGPS.\n\nTak się dzieje kiedy twoje urządzenie nie jest zrootowane.\nInformacje dotyczące rootowania twojego urządzenia znajdziesz na www.cyanogenmod.com lub innych\nstronach o Androidzie.</string>
   <string name="no_root_title">Wymagany Root</string>
   <string name="revert_dialog_title">Przywrócić? </string>
   <string name="revert_dialog">Czy chcesz przywrócić stary plik gps.conf? </string>
+  <string name="applying_successful">gps.conf został zapisany pomyślnie!</string>
   <!--Preferences-->
   <string name="pref_introduction">Co zrobić?</string>
   <string name="pref_introduction_summary">Proszę wybierz serwer NTP który jest najbliżej \ntwojej aktualnej pozycji. Im bliżej będzie,\ntym szybciej zostanie ustalona pozycja.\nFasterGPS bezzwłocznie zapisze Twoje ustawienia.</string>
+  <string name="pref_ntp_current">Aktualny serwer:</string>
   <string name="pref_revert">Przywróć stary gps.conf</string>
   <string name="pref_revert_summary">Kiedy FasterGPS uruchamia się pierwszy raz,\ntworzy kopię zapasową aktualnego gps.conf.\nUżywając przywracania możesz go przywrócić.</string>
+  <string name="pref_further_options">Opcje dodatkowe</string>
+  <string name="pref_ntp">Serwer NTP</string>
+  <string name="pref_ntp_continent">Kontynent</string>
+  <string name="pref_ntp_continent_summary">Wybierz swój kontynent!</string>
+  <string-array name="pref_ntp_continent_entries">
+    <item>- Nic nie wybrano -</item>
+    <item>- Inny serwer -</item>
+    <item>Europa</item>
+    <item>Oceania</item>
+    <item>Azja</item>
+    <item>Ameryka Północna</item>
+    <item>Ameryka Południowa</item>
+    <item>Afryka</item>
+  </string-array>
+  <string name="pref_ntp_region">Kraj</string>
+  <string name="pref_ntp_region_summary">Wybierz kraj w którym jesteś!</string>
+  <string-array name="pref_ntp_region_entries_europe">
+    <item>- Nic nie wybrano -</item>
+    <item>Austria</item>
+    <item>Szwajcaria</item>
+    <item>Niemcy</item>
+    <item>Dania</item>
+    <item>Hiszpania</item>
+    <item>Francja</item>
+    <item>Włochy</item>
+    <item>Luxemburg</item>
+    <item>Holandia</item>
+    <item>Norwegia</item>
+    <item>Polska</item>
+    <item>Szwecja</item>
+    <item>Słowenia</item>
+    <item>Wielka Brytania</item>
+    <item>Finlandia</item>
+    <item>Irlandia</item>
+    <item>Rosja</item>
+    <item>Belgia</item>
+    <item>Portugalia</item>
+    <item>Grecja</item>
+    <item>Węgry</item>
+    <item>Bułgaria</item>
+    <item>Rumunia</item>
+    <item>Czechy</item>
+    <item>Jugosławia</item>
+    <item>Estonia</item>
+    <item>Białoruś</item>
+    <item>Słowacja</item>
+    <item>Ukraina</item>
+    <item>Litwa</item>
+    <item>Macedonia</item>
+    <item>Mołdawia</item>
+    <item>Łotwa</item>
+    <item>Chorwacja</item>
+    <item>Serbia</item>
+    <item>Bośnia i Herzegowina</item>
+    <item>Armenia</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_asia">
+    <item>- Nic nie wybrano -</item>
+    <item>Filipiny</item>
+    <item>Malezja</item>
+    <item>Turcja</item>
+    <item>Singapur</item>
+    <item>Indie</item>
+    <item>Hong Kong</item>
+    <item>Emiraty Arabskie</item>
+    <item>Japonia</item>
+    <item>Bangladesz</item>
+    <item>Izrael</item>
+    <item>Korea</item>
+    <item>Tajlandia</item>
+    <item>Iran</item>
+    <item>Tajwan</item>
+    <item>China</item>
+    <item>Indonezja</item>
+    <item>Wietnam</item>
+    <item>Pakistan</item>
+    <item>Oman</item>
+    <item>Uzbekistan</item>
+    <item>Sri Lanka</item>
+    <item>Kirgistan</item>
+    <item>Kambodża</item>
+    <item>Katar</item>
+    <item>Arabia Saudyjska</item>
+    <item>Irak</item>
+    <item>Kazachstan</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_oceania">
+    <item>- Nic nie wybrano -</item>
+    <item>Australia</item>
+    <item>Nowa Zelandia</item>
+    <item>Nowa Kaledonia</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_north_america">
+    <item>- Nothing selected -</item>
+    <item>Kanada</item>
+    <item>Stany Zjednoczone</item>
+    <item>Meksyk</item>
+    <item>Gwatemala</item>
+    <item>Panama</item>
+    <item>Bahamay</item>
+    <item>Kostaryka</item>
+    <item>El Salvador</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_south_america">
+    <item>- Nic nie wybrano -</item>
+    <item>Brazylia</item>
+    <item>Chile</item>
+    <item>Argentyna</item>
+    <item>Wenezuela</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_africa">
+    <item>- Nic nie wybrano -</item>
+    <item>Tanzania</item>
+    <item>Afryka Południowa</item>
+    <item>Angola</item>
+    <item>Madagaskar</item>
+    <item>Uganda</item>
+  </string-array>
+  <string name="pref_ntp_custom">Własne</string>
+  <string name="pref_ntp_custom_summary">Jeżeli jest wybrany serwer własny, możesz określić własny serwer NTP tutaj.</string>
   <string name="pref_advanced_settings">Idź do ustawień zaawansowanych</string>
   <string name="pref_help">Pomoc</string>
   <string name="pref_about">O aplikacji</string>
   <string name="pref_donations">Dotacje</string>
   <string name="pref_current_value">Wartość:</string>
   <string name="pref_category_general">Podstawowe</string>
+  <string name="pref_category_xtra">XTRA Serwer</string>
+  <string name="pref_category_supl">AGPS SUPL</string>
+  <string name="pref_category_c2k">AGPS C2K</string>
+  <string name="pref_category_carrier">AGPS Carrier</string>
   <string name="pref_category_other">Inne</string>
-  <string name="INTERMEDIATE_POS">Raportowanie pozycji umiarkowanej: 1=włączony, 0=wyłączony</string>
+  <string name="DEBUG_LEVEL">Poziomy debugowania: 0=brak, 1=Błędy, 2=Ostrzeżenia, 3=Info, 4=Debug, 5=Rozległy</string>
+  <string name="INTERMEDIATE_POS">Raportowanie niedokładnej pozycji: 1=włączony, 0=wyłączony</string>
+  <string name="ACCURACY_THRES">Próg dokładności dla niedokładnych pozycji, mniej dokładne pozycje będą ignorowane: 0= przypuszczalnie wszystkich pozycji</string>
+  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Raportuj lokalizację supl ref jako pozycję: 1=włączony, 0=wyłączony</string>
+  <string name="ENABLE_WIPER">Wiem (pozycjonowanie przez wifi): 1=włączony, 0=wyłączony</string>
   <string name="SUPL_HOST"></string>
   <string name="SUPL_PORT"></string>
   <string name="SUPL_NO_SECURE_PORT"></string>
   <string name="SUPL_SECURE_PORT"></string>
   <string name="C2K_HOST"></string>
   <string name="C2K_PORT"></string>
+  <string name="CURRENT_CARRIER">możliwe wartości: common</string>
+  <string name="DEFAULT_AGPS_ENABLE">możliwe wartości: TRUE/FALSE (włączony/wyłączony)</string>
+  <string name="DEFAULT_SSL_ENABLE">możliwe wartości: TRUE/FALSE</string>
+  <string name="DEFAULT_USER_PLANE">TRUE dla \"User Plane\", FALSE dla \"Control Plane\"</string>
 </resources>
