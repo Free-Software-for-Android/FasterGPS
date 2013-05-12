@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Activities-->
+  <string name="activity_advanced_settings">Ustawienia zaawansowane</string>
+  <string name="activity_help">Pomoc</string>
+  <!--Help-->
+  <!--Buttons-->
+  <string name="button_close">Zamknij</string>
+  <string name="button_exit">Wyjdź</string>
+  <string name="button_yes">Tak</string>
+  <string name="button_no">Nie</string>
+  <!--Dialogs-->
+  <string name="no_root_title">Wymagany Root</string>
+  <string name="revert_dialog_title">Przywrócić? </string>
+  <string name="revert_dialog">Czy chcesz przywrócić stary plik gps.conf? </string>
+  <!--Preferences-->
+  <string name="pref_introduction">Co zrobić?</string>
+  <string name="pref_introduction_summary">Proszę wybierz serwer NTP który jest najbliżej \ntwojej aktualnej pozycji. Im bliżej będzie,\ntym szybciej zostanie ustalona pozycja.\nFasterGPS bezzwłocznie zapisze Twoje ustawienia.</string>
+  <string name="pref_revert">Przywróć stary gps.conf</string>
+  <string name="pref_revert_summary">Kiedy FasterGPS uruchamia się pierwszy raz,\ntworzy kopię zapasową aktualnego gps.conf.\nUżywając przywracania możesz go przywrócić.</string>
+  <string name="pref_advanced_settings">Idź do ustawień zaawansowanych</string>
+  <string name="pref_help">Pomoc</string>
+  <string name="pref_about">O aplikacji</string>
+  <string name="pref_donations">Dotacje</string>
+  <string name="pref_current_value">Wartość:</string>
+  <string name="pref_category_general">Podstawowe</string>
+  <string name="pref_category_other">Inne</string>
+  <string name="INTERMEDIATE_POS">Raportowanie pozycji umiarkowanej: 1=włączony, 0=wyłączony</string>
+  <string name="SUPL_HOST"></string>
+  <string name="SUPL_PORT"></string>
+  <string name="SUPL_NO_SECURE_PORT"></string>
+  <string name="SUPL_SECURE_PORT"></string>
+  <string name="C2K_HOST"></string>
+  <string name="C2K_PORT"></string>
+</resources>

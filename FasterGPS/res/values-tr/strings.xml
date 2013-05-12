@@ -4,6 +4,9 @@
   <string name="activity_advanced_settings">Gelişmiş Ayarlar</string>
   <string name="activity_help">Yardım</string>
   <!--Help-->
+  <string name="help_help">Yardım</string>
+  <string name="help_donations">Bağışlar</string>
+  <string name="help_about_version">Versiyon:</string>
   <!--Buttons-->
   <string name="button_close">Kapat</string>
   <string name="button_exit">Çıkış</string>

@@ -1,0 +1,173 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Activities-->
+  <string name="activity_advanced_settings">Paràmetres avançats</string>
+  <string name="activity_help">Ajuda</string>
+  <!--Help-->
+  <string name="help_help">Ajuda</string>
+  <string name="help_donations">Donatius</string>
+  <string name="help_about_version">Versió</string>
+  <!--Buttons-->
+  <string name="button_close">Tanca</string>
+  <string name="button_exit">Surt</string>
+  <string name="button_yes">Sí</string>
+  <string name="button_no">No</string>
+  <!--Dialogs-->
+  <string name="no_root_description">No s\'ha trobat el programa su o bé no ha donat permisos d\'administrador (root) a FasterGPS.⏎ ⏎ Això pot passar quan el vostre dispositiu no s\'ha rootejat.⏎ Pot trobar informació sobre com rootejar el seu dispositiu a www.cyanogenmod.com o a altres llocs web sobre Android.</string>
+  <string name="no_root_title">Es necessita Android amb superusuari (root)</string>
+  <string name="revert_dialog_title">Revertir?</string>
+  <string name="revert_dialog">Voleu revertir al fitxer gps.conf anterior?</string>
+  <string name="applying_successful">S\'ha desat gps.conf correctament.</string>
+  <!--Preferences-->
+  <string name="pref_introduction">Què voleu fer?</string>
+  <string name="pref_introduction_summary">Seleccioneu un servidor NTP proper a la seva ubicació actual. Com més a prop sigui, més ràpidament obtindreu una localització GPS. FasterGPS desarà els seus ajustaments immediatament.</string>
+  <string name="pref_ntp_current">Servidor actual:</string>
+  <string name="pref_revert">Revertir al fitxer gps.conf anterior</string>
+  <string name="pref_revert_summary">Quan s\'inicia FasterGPS per primer cop, es crea una còpia de seguretat del seu fitxer gps.conf actual. Utilitzant \'revertir\' es pot restaurar aquest fixer.</string>
+  <string name="pref_further_options">Més opcions</string>
+  <string name="pref_ntp">Servidor NTP</string>
+  <string name="pref_ntp_continent">Continent</string>
+  <string name="pref_ntp_continent_summary">Seleccioneu el vostre continent.</string>
+  <string-array name="pref_ntp_continent_entries">
+    <item>- Cap seleccionat -</item>
+    <item>- servidor personalitzat -</item>
+    <item>Europa</item>
+    <item>Oceania</item>
+    <item>Àsia</item>
+    <item>Amèrica del Nord</item>
+    <item>Amèrica del Sud</item>
+    <item>Àfrica</item>
+  </string-array>
+  <string name="pref_ntp_region">Regió</string>
+  <string name="pref_ntp_region_summary">Seleccioneu una regió propera.</string>
+  <string-array name="pref_ntp_region_entries_europe">
+    <item>- Res seleccionat -</item>
+    <item>Àustria</item>
+    <item>Suïssa</item>
+    <item>Alemanya</item>
+    <item>Dinamarca</item>
+    <item> Espanya</item>
+    <item>França</item>
+    <item>Itàlia</item>
+    <item>Luxemburg</item>
+    <item>Països Baixos</item>
+    <item>Noruega </item>
+    <item>Polònia</item>
+    <item>Suècia</item>
+    <item>Eslovènia</item>
+    <item>Regne Unit</item>
+    <item>Finlàndia</item>
+    <item> Irlanda</item>
+    <item>Rússia</item>
+    <item>Bèlgica</item>
+    <item>Portugal</item>
+    <item>Grècia</item>
+    <item>Hongria </item>
+    <item>Bulgària</item>
+    <item>Romania</item>
+    <item>República Txeca</item>
+    <item>Iugoslàvia</item>
+    <item>Estònia</item>
+    <item> Bielorússia</item>
+    <item>Eslovàquia</item>
+    <item>Ucraïna</item>
+    <item>Lituània</item>
+    <item>Macedònia</item>
+    <item>Moldàvia </item>
+    <item>Letònia</item>
+    <item>Croàcia</item>
+    <item>República de Sèrbia</item>
+    <item>Bòsnia i Hercegovina</item>
+    <item>Armènia </item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_asia">
+    <item>- Cap selecció -</item>
+    <item>Filipines</item>
+    <item>Malàisia</item>
+    <item>Turquia</item>
+    <item>Singapur</item>
+    <item> Índia</item>
+    <item>Hong Kong</item>
+    <item>Emirats Àrabs Units</item>
+    <item>Japó</item>
+    <item>Bangladesh</item>
+    <item>Israel</item>
+    <item>Corea</item>
+    <item>Tailàndia</item>
+    <item>Iran</item>
+    <item>Taiwan</item>
+    <item>Xina</item>
+    <item>Indonèsia</item>
+    <item>Vietnam</item>
+    <item>Pakistan</item>
+    <item>Oman</item>
+    <item>Uzbekistan</item>
+    <item>Sri Lanka</item>
+    <item>Kirguizistan</item>
+    <item>Cambodja</item>
+    <item>Qatar</item>
+    <item>Aràbia Saudita</item>
+    <item>Iraq</item>
+    <item>Kazakhstan</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_oceania">
+    <item>- Cap selecció -</item>
+    <item>Austràlia</item>
+    <item>Nova Zealanda</item>
+    <item>Nova Caledònia</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_north_america">
+    <item>- Cap selecció -</item>
+    <item>Canadà</item>
+    <item>Estats Units</item>
+    <item>Mèxic</item>
+    <item>Guatemala</item>
+    <item>Panamà</item>
+    <item>Bahamas</item>
+    <item>Costa Rica</item>
+    <item>El Salvador</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_south_america">
+    <item>- Cap selecció -</item>
+    <item>Brasil</item>
+    <item>Xile</item>
+    <item>Argentina</item>
+    <item>Veneçuela</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_africa">
+    <item>- Cap selecció -</item>
+    <item>Tanzània</item>
+    <item>Sud Àfrica</item>
+    <item>Angola</item>
+    <item>Madagascar</item>
+    <item>Uganda</item>
+  </string-array>
+  <string name="pref_ntp_custom">Personalitzat</string>
+  <string name="pref_ntp_custom_summary">Si s\'ha seleccionat un servidor personalitzat, aquí podeu definir un servidor NTP personalitzat.</string>
+  <string name="pref_advanced_settings">Vés a paràmetres avançats</string>
+  <string name="pref_help">Ajuda</string>
+  <string name="pref_about">Quant a</string>
+  <string name="pref_donations">Donatius</string>
+  <string name="pref_current_value">Valor:</string>
+  <string name="pref_category_general">General</string>
+  <string name="pref_category_xtra">XTRA Server</string>
+  <string name="pref_category_supl">AGPS SUPL</string>
+  <string name="pref_category_c2k">AGPS C2K</string>
+  <string name="pref_category_carrier">AGPS Carrier</string>
+  <string name="pref_category_other">Altres</string>
+  <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Advertències, 3=Info, 4=Depuració, 5=Detallat</string>
+  <string name="INTERMEDIATE_POS">Informar de les posicions intermitges: 1=Activat, 0=Desactivat</string>
+  <string name="ACCURACY_THRES">Umbral de precisió per a posicions intermitges. S\'ignoren les posicions menys precises: 0 per passar totes les posicions</string>
+  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Informar de les localitzacions supl ref com a posicions: 1=activat, 0=desactivat</string>
+  <string name="ENABLE_WIPER">Posicionament Wi-Fi (Wiper): 1=activat, 0=desactivat</string>
+  <string name="SUPL_HOST"></string>
+  <string name="SUPL_PORT"></string>
+  <string name="SUPL_NO_SECURE_PORT"></string>
+  <string name="SUPL_SECURE_PORT"></string>
+  <string name="C2K_HOST"></string>
+  <string name="C2K_PORT"></string>
+  <string name="CURRENT_CARRIER">valors possibles: comú</string>
+  <string name="DEFAULT_AGPS_ENABLE">valors possibles: TRUE/FALSE</string>
+  <string name="DEFAULT_SSL_ENABLE">valor possible: TRUE/FALSE</string>
+  <string name="DEFAULT_USER_PLANE">TRUE per a \"Pla de l\'usuari\" i FALSE per a \"Pla de control\"</string>
+</resources>

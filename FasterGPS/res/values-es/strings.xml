@@ -2,8 +2,11 @@
 <resources>
   <!--Activities-->
   <string name="activity_advanced_settings">Opciones Avanzadas</string>
-  <string name="activity_help">ayuda</string>
+  <string name="activity_help">Ayuda</string>
   <!--Help-->
+  <string name="help_help">Ayuda</string>
+  <string name="help_donations">Donaciones</string>
+  <string name="help_about_version">Versión:</string>
   <!--Buttons-->
   <string name="button_close">Cerrar</string>
   <string name="button_exit">Salir</string>
@@ -11,16 +14,136 @@
   <string name="button_no">No</string>
   <!--Dialogs-->
   <string name="no_root_description">O bien el binario SU no se ha encontrado o no tiene permisos de root para usar FasterGPS. ⏎ ⏎ Esto puede suceder cuando el dispositivo no esta como usuario root. ⏎ Puede encontrar información sobre cómo ser usuario root en www.cyanogenmod.com o en otros sitios web de Android.</string>
-  <string name="no_root_title">Necesitas ser usuario Root</string>
+  <string name="no_root_title">Necesita ser usuario Root</string>
   <string name="revert_dialog_title">¿Regresar?</string>
-  <string name="revert_dialog">¿Quieres regresar a tu antiguo archivo gps.conf?</string>
+  <string name="revert_dialog">¿Quiere regresar a su antiguo archivo gps.conf?</string>
+  <string name="applying_successful">Se ha guardado gps.conf satisfactoriamente.</string>
   <!--Preferences-->
-  <string name="pref_introduction">¿Que hacer?</string>
+  <string name="pref_introduction">¿Qué hacer?</string>
   <string name="pref_introduction_summary">Por favor, seleccione un servidor NTP que está cerca de su posición actual. Cuanto más cerca está, más rápido se obtiene un punto de GPS. FasterGPS inmediatamente escribirá su configuración.</string>
-  <string name="pref_revert">Regresar a tu antiguo archivo gps.conf</string>
+  <string name="pref_ntp_current">Servidor actual:</string>
+  <string name="pref_revert">Regresar a su antiguo archivo gps.conf</string>
   <string name="pref_revert_summary">Cuando se inicia FasterGPS por primera vez, se hacen copias de seguridad de su actual archivo gps.conf . Usando Regresar puede restaurar esta.</string>
   <string name="pref_further_options">Otras opciones</string>
   <string name="pref_ntp">Servidor NTP</string>
+  <string name="pref_ntp_continent">Continente</string>
+  <string name="pref_ntp_continent_summary">Seleccione su continente.</string>
+  <string-array name="pref_ntp_continent_entries">
+    <item>- Ninguno seleccionado -</item>
+    <item>- Servidor personalizado -</item>
+    <item>Europa</item>
+    <item>Oceanía</item>
+    <item>Asia</item>
+    <item>Norteamérica</item>
+    <item>Suramérica</item>
+    <item>África</item>
+  </string-array>
+  <string name="pref_ntp_region">Región</string>
+  <string name="pref_ntp_region_summary">Seleccione una región cercana a usted.</string>
+  <string-array name="pref_ntp_region_entries_europe">
+    <item>- Ninguno seleccionado -</item>
+    <item>Austria</item>
+    <item>Suiza</item>
+    <item>Alemania</item>
+    <item>Dinamarca</item>
+    <item> España</item>
+    <item>Francia</item>
+    <item>Italia</item>
+    <item>Luxemburgo</item>
+    <item>Países Bajos</item>
+    <item>Noruega </item>
+    <item>Polonia</item>
+    <item>Suecia</item>
+    <item>Eslovenia</item>
+    <item>Reino Unido</item>
+    <item>Finlandia</item>
+    <item> Irlanda</item>
+    <item>Rusia</item>
+    <item>Bélgica</item>
+    <item>Portugal</item>
+    <item>Grecia</item>
+    <item>Hungría</item>
+    <item>Bulgaria</item>
+    <item>Rumanía</item>
+    <item>República Checa</item>
+    <item>Yugoslavia</item>
+    <item>Estonia</item>
+    <item> Bielorrusia</item>
+    <item>Eslovaquia</item>
+    <item>Ucrania</item>
+    <item>Lituania</item>
+    <item>Macedonia</item>
+    <item>Moldavia </item>
+    <item>Letonia</item>
+    <item>Croacia</item>
+    <item>República de Serbia</item>
+    <item>Bosnia y Herzegovina</item>
+    <item>Armenia</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_asia">
+    <item>- Ninguno seleccionado -</item>
+    <item>Filipinas</item>
+    <item>Malasia</item>
+    <item>Turquía</item>
+    <item>Singapur</item>
+    <item> India</item>
+    <item>Hong Kong</item>
+    <item>Emiratos Árabes Unidos</item>
+    <item>Japón</item>
+    <item>Bangladesh</item>
+    <item>Israel</item>
+    <item>Corea</item>
+    <item>Tailandia</item>
+    <item>Irán</item>
+    <item>Taiwán</item>
+    <item>China</item>
+    <item>Indonesia</item>
+    <item>Vietnam</item>
+    <item>Pakistán</item>
+    <item>Omán</item>
+    <item>Uzbekistán</item>
+    <item>Sri Lanka</item>
+    <item>Kirguistán</item>
+    <item>Camboya</item>
+    <item>Qatar</item>
+    <item>Arabia Saudita</item>
+    <item>Iraq</item>
+    <item>Kazajstán</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_oceania">
+    <item>- Ninguno seleccionado  -</item>
+    <item>Australia</item>
+    <item>Nueva Zealanda</item>
+    <item>Nueva Caledonia</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_north_america">
+    <item>- Nada seleccionado -</item>
+    <item>Canadá</item>
+    <item>Estados Unidos</item>
+    <item>México</item>
+    <item>Guatemala</item>
+    <item> Panamá</item>
+    <item>Bahamas</item>
+    <item>Costa Rica</item>
+    <item>El Salvador</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_south_america">
+    <item>- Nothing selected -</item>
+    <item>Brazil</item>
+    <item>Chile</item>
+    <item>Argentina</item>
+    <item>Venezuela</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_africa">
+    <item>- Nothing selected -</item>
+    <item>Tanzania</item>
+    <item>South Africa</item>
+    <item>Angola</item>
+    <item>Madagascar</item>
+    <item>Uganda</item>
+  </string-array>
+  <string name="pref_ntp_custom">Personalizado</string>
+  <string name="pref_ntp_custom_summary">Si ha seleccionado un servidor personalizado puede definir un servidor NTP aquí.</string>
   <string name="pref_advanced_settings">Ir a opciones avanzadas</string>
   <string name="pref_help">Ayuda</string>
   <string name="pref_about">Acerca de</string>
@@ -32,11 +155,19 @@
   <string name="pref_category_c2k">AGPS SUPL</string>
   <string name="pref_category_carrier">AGPS Carrier</string>
   <string name="pref_category_other">Otros</string>
-  <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Warning, 3=Info, 4=Debug, 5=Verbose</string>
+  <string name="DEBUG_LEVEL">Debug Levels: 0=ninguno, 1=Errores, 2=Advertencias, 3=Info, 4=Depuración, 5=Detallado</string>
+  <string name="INTERMEDIATE_POS">Informar de las posiciones intermedias: 1=Activar, 0=Desactivar</string>
+  <string name="ACCURACY_THRES">Umbral de exactitud para posiciones intermedias (se ignoran las posiciones menos exactas): 0 para pasar todas las posiciones</string>
+  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Informar de las localizaciones supl ref como posición: 1=activar, 0=desactivar</string>
+  <string name="ENABLE_WIPER">Wiper (posicionamento wifi): 1=activar, 0=desactivar</string>
   <string name="SUPL_HOST"></string>
   <string name="SUPL_PORT"></string>
   <string name="SUPL_NO_SECURE_PORT"></string>
   <string name="SUPL_SECURE_PORT"></string>
   <string name="C2K_HOST"></string>
   <string name="C2K_PORT"></string>
+  <string name="CURRENT_CARRIER">valores posibles: comunes</string>
+  <string name="DEFAULT_AGPS_ENABLE">valores posibles: TRUE/FALSE</string>
+  <string name="DEFAULT_SSL_ENABLE">valor posible: TRUE/FALSE</string>
+  <string name="DEFAULT_USER_PLANE">TRUE para \"Plano de usuario\", FALSE para \"Plano de control</string>
 </resources>
