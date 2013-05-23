@@ -20,7 +20,7 @@
 
 package org.fastergps.util;
 
-import org.rootcommands.RootCommands;
+import org.sufficientlysecure.rootcommands.RootCommands;
 
 public class Constants {
     /*

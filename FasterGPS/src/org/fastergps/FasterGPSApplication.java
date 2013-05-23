@@ -21,7 +21,7 @@
 package org.fastergps;
 
 import org.fastergps.util.Constants;
-import org.rootcommands.RootCommands;
+import org.sufficientlysecure.rootcommands.RootCommands;
 
 import android.app.Application;
 

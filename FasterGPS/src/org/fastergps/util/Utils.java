@@ -38,9 +38,9 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.fastergps.R;
-import org.rootcommands.RootCommands;
-import org.rootcommands.Shell;
-import org.rootcommands.Toolbox;
+import org.sufficientlysecure.rootcommands.RootCommands;
+import org.sufficientlysecure.rootcommands.Shell;
+import org.sufficientlysecure.rootcommands.Toolbox;
 
 import android.app.Activity;
 import android.app.AlertDialog;
