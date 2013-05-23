@@ -1,6 +1,10 @@
 Please report bugs on the following website instead of writing bad reviews:
 http://code.google.com/p/faster-gps/issues
 
+1.7
+* bug fixes
+* Indicate superuser access by new permission
+
 1.6
 * Fixes for RootCommands
 * Google forced me to remove the possibility to donate via Flattr and PayPal
