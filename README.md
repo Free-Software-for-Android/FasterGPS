@@ -4,18 +4,17 @@ With FasterGPS you can select a NTP Server matching your region to speed up the 
 
 For more information visit http://code.google.com/p/faster-gps/
 
-# Build using Ant
+# Build with Gradle
 
-1. Have Android SDK "tools" directory in your PATH (http://developer.android.com/sdk/index.html)
-2. Change to "FasterGPS" directory with ``cd FasterGPS``
-3. Execute ``android update project -p .`` and ``android update project -p android-libs/Donations``
-4. Execute ``ant clean``
-5. Execute ``ant debug -Ddonations=all``
+1. Have Android SDK "tools", "platform-tools", and "build-tools" directories in your PATH (http://developer.android.com/sdk/index.html)
+2. Export ANDROID_HOME pointing to your Android SDK
+3. Install gradle
+4. Execute ``gradle wrapper`` (http://www.gradle.org/docs/current/userguide/gradle_wrapper.html)
+5. Execute ``./gradlew assemble``
 
 ## More build information
 
-* To disable Flattr and PayPal (not allowed in Google Play), execute ``ant debug -Ddonations=google``
-* To disable Google (only working when the apk is signed with my private key), execute ``ant debug -Ddonations=other``
+Two productFlavors are build with gradle. One for Google Play (without Paypal and Flattr Donations) and one for F-Droid (without Google Play Donations).
 
 # Contribute
 
@@ -23,7 +22,7 @@ Fork FasterGPS and do a Pull Request. I will merge your changes back into the ma
 
 # Libraries
 
-All JAR-Libraries are provided in this repository under "libs", all Android Library projects are under "android-libs".
+All JAR-Libraries are provided in this repository under "FasterGPS/libs", all Android Library projects are under "libraries".
 
 # Information about gps.conf
 
