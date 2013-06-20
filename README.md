@@ -2,7 +2,7 @@
 
 With FasterGPS you can select a NTP Server matching your region to speed up the process of getting a GPS fix.
 
-For more information visit http://code.google.com/p/faster-gps/
+For more information visit http://sufficientlysecure.org/index.php/android-apps/
 
 # Build with Gradle
 
