@@ -10,7 +10,6 @@
   <string name="button_yes">Ja</string>
   <string name="button_no">Nee</string>
   <!--Dialogs-->
-  <string name="no_root_description">E</string>
   <string name="no_root_title">Geroote Android vereist</string>
   <string name="revert_dialog_title">Terugzetten?</string>
   <string name="revert_dialog">Wilt u de oude gps.conf terugzetten?</string>
@@ -87,7 +86,6 @@
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Aangepast</string>
-  <string name="pref_ntp_custom_summary">Als \"aangepaste server\" is geselecteerd kunt u hier een aangepaste server instellen.</string>
   <string name="pref_advanced_settings">Ga naar de geavanceerde instellingen</string>
   <string name="pref_help">Help</string>
   <string name="pref_about">Over</string>

@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Activities-->
+  <string name="activity_advanced_settings">高级设置</string>
+  <string name="activity_help">帮助</string>
+  <!--Help-->
+  <string name="help_help">帮助</string>
+  <string name="help_donations">捐赠：</string>
+  <string name="help_about_version">版本：</string>
+  <string name="help_donation_paypal_item">FasterGPS 捐赠</string>
+  <string-array name="help_donation_google_catalog_values">
+    <item>1 欧元</item>
+    <item>2 欧元</item>
+    <item>3 欧元</item>
+    <item>5 欧元</item>
+    <item>8 欧元</item>
+    <item>13 欧元</item>
+  </string-array>
+  <!--Buttons-->
+  <string name="button_close">关闭</string>
+  <string name="button_exit">退出</string>
+  <string name="button_yes">确认</string>
+  <string name="button_no">取消</string>
+  <!--Dialogs-->
+  <string name="no_root_description">没有发现su文件或你没有允许FasterGPS的root权限\n当你的设备没有root时这将有可能发生\n你可以在www.cyanogenmod.com 或者其他Android网站找到关于如何root你的设备的信息</string>
+  <string name="no_root_title">需要root权限</string>
+  <string name="revert_dialog_title">恢复？</string>
+  <string name="revert_dialog">想要恢复到旧的gps.conf？</string>
+  <string name="applying_successful">gps.conf写入成功！</string>
+  <!--Preferences-->
+  <string name="pref_introduction">需要做什么？</string>
+  <string name="pref_introduction_summary">请选择一个您当前位置附近的NTP服务器。服务器越近，GPS定位越快。FasterGPS将会立刻写入您的设置。⏎</string>
+  <string name="pref_ntp_current">当前服务器：</string>
+  <string name="pref_revert">恢复到旧的gps.conf</string>
+  <string name="pref_revert_summary">当FasterGPS第一次运行时，它会备份当前的gps.conf。可以使用恢复功能将此恢复。</string>
+  <string name="pref_further_options">更多选项</string>
+  <string name="pref_ntp">NTP服务器</string>
+  <string name="pref_ntp_continent">地区</string>
+  <string name="pref_ntp_continent_summary">选择你的区域</string>
+  <string-array name="pref_ntp_continent_entries">
+    <item>-无-</item>
+    <item>-自定义-</item>
+    <item>欧洲</item>
+    <item>大洋洲</item>
+    <item>亚洲</item>
+    <item>北美洲</item>
+    <item>南美洲</item>
+    <item>非洲</item>
+  </string-array>
+  <string name="pref_ntp_region">地区</string>
+  <string name="pref_ntp_region_summary">选择与你最近的地区！</string>
+  <string-array name="pref_ntp_region_entries_europe">
+    <item>- 无 -</item>
+    <item>奥地利</item>
+    <item>瑞士</item>
+    <item>德国</item>
+    <item>丹麦</item>
+    <item>西班牙</item>
+    <item>法国</item>
+    <item>意大利</item>
+    <item>卢森堡</item>
+    <item>荷兰</item>
+    <item>挪威</item>
+    <item>波兰</item>
+    <item>瑞典</item>
+    <item>斯洛文尼亚</item>
+    <item>联合王国</item>
+    <item>芬兰</item>
+    <item>爱尔兰</item>
+    <item>俄罗斯联邦</item>
+    <item>比利时</item>
+    <item>葡萄牙</item>
+    <item>希腊</item>
+    <item>匈牙利</item>
+    <item>保加利亚</item>
+    <item>罗马尼亚</item>
+    <item>捷克共和国</item>
+    <item>南斯拉夫</item>
+    <item>爱沙尼亚</item>
+    <item>白俄罗斯</item>
+    <item>斯洛伐克</item>
+    <item>乌克兰</item>
+    <item>立陶宛</item>
+    <item>马其顿</item>
+    <item>摩尔多瓦</item>
+    <item>拉脱维亚</item>
+    <item>克罗地亚</item>
+    <item>塞尔维亚共和国</item>
+    <item>波斯尼亚和黑塞哥维那</item>
+    <item>亚美尼亚</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_asia">
+    <item>- 无 -</item>
+    <item>菲律宾</item>
+    <item>马来西亚</item>
+    <item>土耳其</item>
+    <item>新加坡</item>
+    <item>印度</item>
+    <item>香港</item>
+    <item>阿拉伯联合大公国</item>
+    <item>日本</item>
+    <item>孟加拉国</item>
+    <item>以色列</item>
+    <item>韩国</item>
+    <item>泰国</item>
+    <item>伊朗</item>
+    <item>台湾</item>
+    <item>中国</item>
+    <item>印尼</item>
+    <item>越南</item>
+    <item>巴基斯坦</item>
+    <item>阿曼</item>
+    <item>乌兹别克斯坦</item>
+    <item>斯里兰卡</item>
+    <item>吉尔吉斯斯坦</item>
+    <item>柬埔寨</item>
+    <item>卡塔尔</item>
+    <item>沙特阿拉伯</item>
+    <item>伊拉克</item>
+    <item>哈萨克斯坦</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_oceania">
+    <item>- 无 -</item>
+    <item>澳大利亚</item>
+    <item>新西兰</item>
+    <item>新喀里多尼亚</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_north_america">
+    <item>- 无 -</item>
+    <item>加拿大</item>
+    <item>美国</item>
+    <item>墨西哥</item>
+    <item>危地马拉</item>
+    <item>巴拿马</item>
+    <item>巴哈马</item>
+    <item>哥斯达黎加</item>
+    <item>萨尔瓦多</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_south_america">
+    <item>- 无 -</item>
+    <item>巴西</item>
+    <item>智利</item>
+    <item>阿根廷</item>
+    <item>委内瑞拉</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_africa">
+    <item>- 无 -</item>
+    <item>坦桑尼亚</item>
+    <item>南非</item>
+    <item>安哥拉</item>
+    <item>马达加斯加</item>
+    <item>乌干达</item>
+  </string-array>
+  <string name="pref_ntp_custom">自定义</string>
+  <string name="pref_ntp_custom_summary">如果选择自定义服务器，你可以定义一个定制的NTP服务器。</string>
+  <string name="pref_advanced_settings">高级设置</string>
+  <string name="pref_help">帮助</string>
+  <string name="pref_about">关于</string>
+  <string name="pref_donations">捐赠</string>
+  <string name="pref_current_value">值：</string>
+  <string name="pref_category_general">一般</string>
+  <string name="pref_category_xtra">XTRA Server</string>
+  <string name="pref_category_supl">AGPS SUPL</string>
+  <string name="pref_category_c2k">AGPS C2K</string>
+  <string name="pref_category_carrier">AGPS Carrier</string>
+  <string name="pref_category_other">其他</string>
+  <string name="DEBUG_LEVEL">调试等级：0=无，1=错误，2=警告，3=信息，4=调试，5=详细</string>
+  <string name="INTERMEDIATE_POS">中间位置报告：1=启用，0=禁用</string>
+  <string name="ACCURACY_THRES">中间位置的测量精度值，不准确的位置将被忽略：0为所有位置准确</string>
+  <string name="REPORT_POSITION_USE_SUPL_REFLOC">报告SUPL参考位置作为的位置：1=启用，0=禁用</string>
+  <string name="ENABLE_WIPER">Wiper(WiFi定位)：1 =启用，0=禁用</string>
+  <string name="SUPL_HOST"></string>
+  <string name="SUPL_PORT"></string>
+  <string name="SUPL_NO_SECURE_PORT"></string>
+  <string name="SUPL_SECURE_PORT"></string>
+  <string name="C2K_HOST"></string>
+  <string name="C2K_PORT"></string>
+  <string name="CURRENT_CARRIER">可能的值：普通</string>
+  <string name="DEFAULT_AGPS_ENABLE">可能的值：正确/错误</string>
+  <string name="DEFAULT_SSL_ENABLE">可能的值：正确/错误</string>
+  <string name="DEFAULT_USER_PLANE">正确为”用户层面“，错误为”控制层面“</string>
+</resources>

@@ -13,17 +13,14 @@
   <string name="button_yes">Igen</string>
   <string name="button_no">Nem</string>
   <!--Dialogs-->
-  <string name="no_root_description">Az su bináris nem található, vagy nem engedélyezett a FasterGPS root hozzáférése.\n\nEz akkor történhet meg, ha a készülék nem rootolt.\nA rootolás menetéről a www.cyanogenmod.com vagy egyéb Android weblapokon talál információt.</string>
   <string name="no_root_title">Rootolt rendszer szükséges</string>
   <string name="revert_dialog_title">Visszaállítja?</string>
   <string name="revert_dialog">Visszaállítja a régi gps.conf állományt?</string>
   <string name="applying_successful">A gps.conf sikeresen felülírva!</string>
   <!--Preferences-->
   <string name="pref_introduction">Mit kell tennie?</string>
-  <string name="pref_introduction_summary">Válasszon ki egy, az aktuális pozíciójához közeli NTP szervert. Minél közelebbi, annál gyorsabban kap egy GPS kiigazítást. A FasterGPS azonnal felülírja a beállításokat.</string>
   <string name="pref_ntp_current">Jelenlegi szerver:</string>
   <string name="pref_revert">A régi gps.conf visszaállítása</string>
-  <string name="pref_revert_summary">Amikor a FasterGPS először elindul, egy biztonsági mentést készít a jelenlegi gps.conf állományról. Ez később felhasználható a visszaállításhoz.</string>
   <string name="pref_further_options">További opciók</string>
   <string name="pref_ntp">NTP szerver</string>
   <string name="pref_ntp_continent">Kontinens</string>
@@ -143,7 +140,6 @@
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Egyéni</string>
-  <string name="pref_ntp_custom_summary">Ha egyéni szerver van kijelölve, itt megadhatja az NTP szerver beállításait.</string>
   <string name="pref_advanced_settings">Haladó beállítások</string>
   <string name="pref_help">Súgó</string>
   <string name="pref_about">Rólunk</string>
@@ -157,7 +153,6 @@
   <string name="pref_category_other">Egyéb</string>
   <string name="DEBUG_LEVEL">Debug szintek: 0=nincs, 1=Hiba, 2=Figyelmeztetés, 3=Infó, 4=Debug, 5=Részletes</string>
   <string name="INTERMEDIATE_POS">Közbenső helyzet jelentés: 1=Engedett, 0=Tiltott</string>
-  <string name="ACCURACY_THRES">A köztes helyzetek pontossági küszöbértéke, kevésbé pontos pozíció figyelmen kívül hagyása: a 0 elhagyása minden helyzetben</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">A supl ref pozíció jelentése: 1=engedés, 0=tiltás</string>
   <string name="ENABLE_WIPER">Törlés (wifis helymeghatározás): 1=engedés, 0=tiltás</string>
   <string name="SUPL_HOST"></string>

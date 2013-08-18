@@ -7,23 +7,29 @@
   <string name="help_help">Ajuda</string>
   <string name="help_donations">Doações</string>
   <string name="help_about_version">Versão:</string>
+  <string name="help_donation_paypal_item">Ajudar FasterGPS</string>
+  <string-array name="help_donation_google_catalog_values">
+    <item>1 Euro</item>
+    <item>2 Euros</item>
+    <item>3 Euros</item>
+    <item>5 Euros</item>
+    <item>8 Euros</item>
+    <item>13 Euros</item>
+  </string-array>
   <!--Buttons-->
   <string name="button_close">Fechar</string>
   <string name="button_exit">Sair</string>
   <string name="button_yes">Sim</string>
   <string name="button_no">Não</string>
   <!--Dialogs-->
-  <string name="no_root_description">Não foi possível obter permissões de ROOT.\n\nIsso acontece quando o dispositivo não está rooteado ou você não deu permissões de root para o FasterGPS.\nVocê pode encontrar informações sobre como rootear seu dispositivo em www.cyanogenmod.com ou outros sites Android.</string>
   <string name="no_root_title">Android com acesso root requerido</string>
   <string name="revert_dialog_title">Desfazer?</string>
   <string name="revert_dialog">Você quer reverter suas configurações do gps.conf?</string>
   <string name="applying_successful">gps.conf atualizado com sucesso!</string>
   <!--Preferences-->
   <string name="pref_introduction">O que fazer?</string>
-  <string name="pref_introduction_summary">Selecione um servidor NTP que está perto de sua posição atual. Quanto mais perto que seja, mais rápido você irá obter uma posição GPS e o FasterGPS escreverá suas configurações.</string>
   <string name="pref_ntp_current">Servidor atual:</string>
   <string name="pref_revert">Reverter para versão anterior do gps.conf</string>
-  <string name="pref_revert_summary">Quando FasterGPS é iniciado pela primeira vez, ele faz backups do seu gps.conf atual. Você pode reverter as configurações originais.</string>
   <string name="pref_further_options">Outras opções</string>
   <string name="pref_ntp">Servidor NTP</string>
   <string name="pref_ntp_continent">Continente</string>
@@ -143,7 +149,6 @@
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Personalizado</string>
-  <string name="pref_ntp_custom_summary">Se o servidor personalizado é selecionado, você pode definir um Servidor NTP personalizado aqui.</string>
   <string name="pref_advanced_settings">Ir para opções avançadas</string>
   <string name="pref_help">Ajuda</string>
   <string name="pref_about">Sobre</string>
@@ -157,7 +162,6 @@
   <string name="pref_category_other">Outro</string>
   <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Warning, 3=Info, 4=Debug, 5=Verbose\n</string>
   <string name="INTERMEDIATE_POS">Reportar posição intermediária: 1=Ativar, 0=Desativar</string>
-  <string name="ACCURACY_THRES">Limite de precisão para posições intermediárias, as posições menos precisas são ignorados: 0 para passar todas as posições</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Relatório localização como posição: 1=ativar, 0=desativar</string>
   <string name="ENABLE_WIPER">Wiper (posicionamento wifi): 1=ativar, 0=desativar</string>
   <string name="SUPL_HOST"></string>

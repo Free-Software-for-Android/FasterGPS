@@ -7,23 +7,29 @@
   <string name="help_help">Ajuda</string>
   <string name="help_donations">Donatius</string>
   <string name="help_about_version">Versió</string>
+  <string name="help_donation_paypal_item">Donació a FasterGPS</string>
+  <string-array name="help_donation_google_catalog_values">
+    <item>1 Euro</item>
+    <item>2 Euros</item>
+    <item>3 Euros</item>
+    <item>5 Euros</item>
+    <item>8 Euros</item>
+    <item>13 Euros</item>
+  </string-array>
   <!--Buttons-->
   <string name="button_close">Tanca</string>
   <string name="button_exit">Surt</string>
   <string name="button_yes">Sí</string>
   <string name="button_no">No</string>
   <!--Dialogs-->
-  <string name="no_root_description">No s\'ha trobat el programa su o bé no ha donat permisos d\'administrador (root) a FasterGPS.⏎ ⏎ Això pot passar quan el vostre dispositiu no s\'ha rootejat.⏎ Pot trobar informació sobre com rootejar el seu dispositiu a www.cyanogenmod.com o a altres llocs web sobre Android.</string>
   <string name="no_root_title">Es necessita Android amb superusuari (root)</string>
   <string name="revert_dialog_title">Revertir?</string>
   <string name="revert_dialog">Voleu revertir al fitxer gps.conf anterior?</string>
   <string name="applying_successful">S\'ha desat gps.conf correctament.</string>
   <!--Preferences-->
   <string name="pref_introduction">Què voleu fer?</string>
-  <string name="pref_introduction_summary">Seleccioneu un servidor NTP proper a la seva ubicació actual. Com més a prop sigui, més ràpidament obtindreu una localització GPS. FasterGPS desarà els seus ajustaments immediatament.</string>
   <string name="pref_ntp_current">Servidor actual:</string>
   <string name="pref_revert">Revertir al fitxer gps.conf anterior</string>
-  <string name="pref_revert_summary">Quan s\'inicia FasterGPS per primer cop, es crea una còpia de seguretat del seu fitxer gps.conf actual. Utilitzant \'revertir\' es pot restaurar aquest fixer.</string>
   <string name="pref_further_options">Més opcions</string>
   <string name="pref_ntp">Servidor NTP</string>
   <string name="pref_ntp_continent">Continent</string>
@@ -143,7 +149,6 @@
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Personalitzat</string>
-  <string name="pref_ntp_custom_summary">Si s\'ha seleccionat un servidor personalitzat, aquí podeu definir un servidor NTP personalitzat.</string>
   <string name="pref_advanced_settings">Vés a paràmetres avançats</string>
   <string name="pref_help">Ajuda</string>
   <string name="pref_about">Quant a</string>
@@ -157,7 +162,6 @@
   <string name="pref_category_other">Altres</string>
   <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Advertències, 3=Info, 4=Depuració, 5=Detallat</string>
   <string name="INTERMEDIATE_POS">Informar de les posicions intermitges: 1=Activat, 0=Desactivat</string>
-  <string name="ACCURACY_THRES">Umbral de precisió per a posicions intermitges. S\'ignoren les posicions menys precises: 0 per passar totes les posicions</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Informar de les localitzacions supl ref com a posicions: 1=activat, 0=desactivat</string>
   <string name="ENABLE_WIPER">Posicionament Wi-Fi (Wiper): 1=activat, 0=desactivat</string>
   <string name="SUPL_HOST"></string>

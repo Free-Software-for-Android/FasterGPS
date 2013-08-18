@@ -4,13 +4,25 @@
   <string name="activity_advanced_settings">Impostazioni Avanzate</string>
   <string name="activity_help">Aiuto</string>
   <!--Help-->
+  <string name="help_help">Aiuto</string>
+  <string name="help_donations">Donazioni</string>
+  <string name="help_about_version">Versione:</string>
+  <string name="help_donation_paypal_item">Donazione a FasterGPS</string>
+  <string-array name="help_donation_google_catalog_values">
+    <item>1 Euro</item>
+    <item>2 Euro</item>
+    <item>3 Euro</item>
+    <item>5 Euro</item>
+    <item>8 Euro</item>
+    <item>13 Euro</item>
+  </string-array>
   <!--Buttons-->
   <string name="button_close">Chiudi</string>
   <string name="button_exit">Esci</string>
   <string name="button_yes">Sì</string>
   <string name="button_no">No</string>
   <!--Dialogs-->
-  <string name="no_root_description">Il binario su non può essere trovare o non hai acconsentito i permessi di root per FasterGPS.\n\nQuesto può succedere quando il tuo dispositivo non ha il root.\nPuoi trovare informazioni su come eseguire il root su www.cyanogenmod.com o altri siti Android.</string>
+  <string name="no_root_description">Il binario SU non è stato trovato oppure non si è dato il permesso di root a\nFasterGPS.\n\nQuesto può succedere quando il tuo dispositivo non è rootato.\nPuoi trovare informazioni su come eseguire il root su\nwww.cyanogenmod.com o altri siti Android.</string>
   <string name="no_root_title">Richiede Android con Root</string>
   <string name="revert_dialog_title">Ripristina?</string>
   <string name="revert_dialog">Vuoi ripristinare il vecchio gps.conf?</string>
@@ -140,7 +152,7 @@
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Personalizzato</string>
-  <string name="pref_ntp_custom_summary">Se è stato selezionato Server Personalizzato è possibile indicare il NTP Server qui.</string>
+  <string name="pref_ntp_custom_summary">Se l\'immissione manuale è selezionata potrai definire un Server NTP personalizzato qui.</string>
   <string name="pref_advanced_settings">Vai alle impostazioni avanzate</string>
   <string name="pref_help">Aiuto</string>
   <string name="pref_about">Informazioni</string>
@@ -154,7 +166,7 @@
   <string name="pref_category_other">Altro</string>
   <string name="DEBUG_LEVEL">Livelli Debug: 0=nessuno, 1=Errore, 2=Avvertimento, 3=Informazioni, 4=Debug, 5=Verboso</string>
   <string name="INTERMEDIATE_POS">Riferisci posizioni intermedie: 1=Abilita, 0=Disabilita</string>
-  <string name="ACCURACY_THRES">Soglia di accuratezza per le posizioni intermedie, posizioni meno accurate sono ignorate: 0 Per passare tutte le posizioni</string>
+  <string name="ACCURACY_THRES">Soglia di accuratezza per le posizioni intermedie, posizioni meno accurate sono ignorate: 0\nper accettare tutte le posizioni</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Riferisci località supl ref come posizione: 1=abilita, 0=disabilita</string>
   <string name="ENABLE_WIPER">Wiper (posizione wifi): 1=abilita, 0=disabilita</string>
   <string name="SUPL_HOST"></string>

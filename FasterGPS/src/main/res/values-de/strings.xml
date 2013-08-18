@@ -7,23 +7,31 @@
   <string name="help_help">Hilfe</string>
   <string name="help_donations">Spenden</string>
   <string name="help_about_version">Version:</string>
+  <string name="help_donation_paypal_item">FasterGPS Spende</string>
+  <string-array name="help_donation_google_catalog_values">
+    <item>1 Euro</item>
+    <item>2 Euros</item>
+    <item>3 Euros</item>
+    <item>5 Euros</item>
+    <item>8 Euros</item>
+    <item>13 Euros</item>
+  </string-array>
   <!--Buttons-->
   <string name="button_close">Schließen</string>
   <string name="button_exit">Beenden</string>
   <string name="button_yes">Ja</string>
   <string name="button_no">Nein</string>
   <!--Dialogs-->
-  <string name="no_root_description">Either the su binary could not be found or you did not allow root permission for FasterGPS.\n\nThis can happen when your device is not rooted.\nYou can find information about how to root your device on www.cyanogenmod.com or other Android websites.</string>
   <string name="no_root_title">Android muss gerootet sein</string>
   <string name="revert_dialog_title">Wiederherstellen?</string>
   <string name="revert_dialog">Soll die alte gps.conf wiederhergestellt werden?</string>
   <string name="applying_successful">gps.conf erfolgreich gespeichert!</string>
   <!--Preferences-->
-  <string name="pref_introduction">Was machen?</string>
-  <string name="pref_introduction_summary">Bitte wähle einen NTP Server der deinem aktuellen Standort am nächsten ist. Je näher dieser ist, umso schneller erhältst du einen GPS fix. FasterGPS schreibt augenblicklich deine Einstellungen.</string>
+  <string name="pref_introduction">Anleitung</string>
+  <string name="pref_introduction_summary">Wählen Sie einen NTP Server in Ihrer Nähe.⏎\nJe näher ein Server ist, umso schneller erhalten Sie einen GPS-Fix. FasterGPS aktualisiert die Einstellungen unmittelbar.</string>
   <string name="pref_ntp_current">Aktueller Server:</string>
   <string name="pref_revert">Alte gps.conf wiederherstellen</string>
-  <string name="pref_revert_summary">Wenn FasterGPS zum ersten mal gestartet wird, erstellt es ein Backup der aktuellen gps.conf Datei. Durch Wiederherstellen kann diese erneut verwendet werden.</string>
+  <string name="pref_revert_summary">FasterGPS legt beim ersten Start ein Backup der gps.conf an; diese kann hierdurch wieder hergestellt werden.</string>
   <string name="pref_further_options">Weitere Optionen</string>
   <string name="pref_ntp">NTP Server</string>
   <string name="pref_ntp_continent">Kontinent</string>
@@ -143,6 +151,7 @@
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Eigener</string>
+  <string name="pref_ntp_custom_summary">Wenn eigener Server gewählt ist, kann dieser hier definiert weden.</string>
   <string name="pref_advanced_settings">Gehe zu erweiterten Einstellungen</string>
   <string name="pref_help">Hilfe</string>
   <string name="pref_about">Über</string>
@@ -156,7 +165,6 @@
   <string name="pref_category_other">Andere</string>
   <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Warning, 3=Info, 4=Debug, 5=Verbose</string>
   <string name="INTERMEDIATE_POS">Intermediate position report: 1=Enable, 0=Disable</string>
-  <string name="ACCURACY_THRES">Accuracy threshold for intermediate positions, less accurate positions are ignored: 0 for passing all positions</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Report supl ref location as position: 1=enable, 0=disable</string>
   <string name="ENABLE_WIPER">Wiper (wifi positioning): 1=enable, 0=disable</string>
   <string name="SUPL_HOST"></string>

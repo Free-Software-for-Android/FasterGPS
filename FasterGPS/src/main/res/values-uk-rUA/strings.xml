@@ -7,23 +7,32 @@
   <string name="help_help">Допомога</string>
   <string name="help_donations">Пожертви</string>
   <string name="help_about_version">Версія:</string>
+  <string name="help_donation_paypal_item">Пожертва на FasterGPS</string>
+  <string-array name="help_donation_google_catalog_values">
+    <item>1 Євро</item>
+    <item>2 Євро</item>
+    <item>3 Євро</item>
+    <item>5 Євро</item>
+    <item>8 Євро</item>
+    <item>13 Євро</item>
+  </string-array>
   <!--Buttons-->
   <string name="button_close">Закрити</string>
   <string name="button_exit">Вийти</string>
   <string name="button_yes">Так</string>
   <string name="button_no">Ні</string>
   <!--Dialogs-->
-  <string name="no_root_description">Або не знайдено бінарний файл su, або FasterGPS не має прав доступу root. \n\nЦе може статися, якщо на пристрої немає прав root.\nЯк отримати права root на Вашому пристрої можна знайти сторінці www.cyanogenmod.com або інших веб-сторінках про Android.</string>
+  <string name="no_root_description">Або неможливо знайти файл su, або ж Ви не маєте прав суперкористувача на\n        FasterGPS.\n\nЦе може статися, якщо ваш пристрій нерутований.\nВи можете знайти інофрмацію про те, як рутувати ваш\n        пристрій на www.cyanogenmod.com або інших сторінках про Андроїд.\n    </string>
   <string name="no_root_title">Вимагається Android з root</string>
   <string name="revert_dialog_title">Відновити?</string>
   <string name="revert_dialog">Ви бажаєте відновити Ваш старий gps.conf?</string>
   <string name="applying_successful">gps.conf успішно записано!</string>
   <!--Preferences-->
   <string name="pref_introduction">Що ж робити?</string>
-  <string name="pref_introduction_summary">Виберіть сервер NTP, який є найближчий до Вашого місця знаходження. Чим ближчий сервер, тим скоріше ви зафіксуєте GPS. FasterGPS відразу ж запише Ваші налаштування.</string>
+  <string name="pref_introduction_summary">Виберіть сервер NTP поблизу Вашої теперішньої позиції. \n        Чим ближче він буде до Вас, тим швидше Ви зафіксуєте GPS. FasterGPS негайно запише Ваші налаштування.\n    </string>
   <string name="pref_ntp_current">Поточний сервер:</string>
   <string name="pref_revert">Відновити старий gps.conf</string>
-  <string name="pref_revert_summary">Коли FasterGPS запускається перший раз, він зберігає поточний gps.conf. Використовуючи відновлення Ви можете відновити його.</string>
+  <string name="pref_revert_summary">Коли FasterGPS запускається перший раз, він зберігає поточний gps.conf.\nВикористовуючи відновлення Ви можете відновити його.</string>
   <string name="pref_further_options">Інші параметри</string>
   <string name="pref_ntp">Сервер NTP</string>
   <string name="pref_ntp_continent">Континент</string>
@@ -143,7 +152,7 @@
     <item>Уганда</item>
   </string-array>
   <string name="pref_ntp_custom">Інший</string>
-  <string name="pref_ntp_custom_summary">Якщо вибрано інший сервер, Ви можете визначити сервер NTP тут.</string>
+  <string name="pref_ntp_custom_summary">Якщо вибрано інший сервер, Ви можете визначити цей сервер NTP тут.</string>
   <string name="pref_advanced_settings">Перейти до додаткових налаштувань</string>
   <string name="pref_help">Допомога</string>
   <string name="pref_about">Про</string>
@@ -157,7 +166,7 @@
   <string name="pref_category_other">Інше</string>
   <string name="DEBUG_LEVEL">Рівні налагоджування: 0=немає, 1=Помилки, 2=Попередження, 3=Інфо, 4=Налагодження, 5=Детальний</string>
   <string name="INTERMEDIATE_POS">Звіт про проміжну позицію: 1=Включити, 0=Виключити</string>
-  <string name="ACCURACY_THRES">Поріг точності для проміжних позицій, менш точні ігноруються: 0 для врахування всіх позицій</string>
+  <string name="ACCURACY_THRES">Поріг точності для проміжних позицій, менш точні ігноруються: 0\nдля врахування всіх позицій</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Звітувати про знаходження supl ref як позицію: 1=Включити, 0=Виключити</string>
   <string name="ENABLE_WIPER">Wiper (інформація з wifi): 1=Включити, 0=Виключити</string>
   <string name="SUPL_HOST"></string>

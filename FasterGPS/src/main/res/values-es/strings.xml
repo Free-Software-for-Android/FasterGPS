@@ -13,17 +13,14 @@
   <string name="button_yes">Si</string>
   <string name="button_no">No</string>
   <!--Dialogs-->
-  <string name="no_root_description">O bien el binario SU no se ha encontrado o no tiene permisos de root para usar FasterGPS. ⏎ ⏎ Esto puede suceder cuando el dispositivo no esta como usuario root. ⏎ Puede encontrar información sobre cómo ser usuario root en www.cyanogenmod.com o en otros sitios web de Android.</string>
   <string name="no_root_title">Necesita ser usuario Root</string>
   <string name="revert_dialog_title">¿Regresar?</string>
   <string name="revert_dialog">¿Quiere regresar a su antiguo archivo gps.conf?</string>
   <string name="applying_successful">Se ha guardado gps.conf satisfactoriamente.</string>
   <!--Preferences-->
   <string name="pref_introduction">¿Qué hacer?</string>
-  <string name="pref_introduction_summary">Por favor, seleccione un servidor NTP que está cerca de su posición actual. Cuanto más cerca está, más rápido se obtiene un punto de GPS. FasterGPS inmediatamente escribirá su configuración.</string>
   <string name="pref_ntp_current">Servidor actual:</string>
   <string name="pref_revert">Regresar a su antiguo archivo gps.conf</string>
-  <string name="pref_revert_summary">Cuando se inicia FasterGPS por primera vez, se hacen copias de seguridad de su actual archivo gps.conf . Usando Regresar puede restaurar esta.</string>
   <string name="pref_further_options">Otras opciones</string>
   <string name="pref_ntp">Servidor NTP</string>
   <string name="pref_ntp_continent">Continente</string>
@@ -143,7 +140,6 @@
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Personalizado</string>
-  <string name="pref_ntp_custom_summary">Si ha seleccionado un servidor personalizado puede definir un servidor NTP aquí.</string>
   <string name="pref_advanced_settings">Ir a opciones avanzadas</string>
   <string name="pref_help">Ayuda</string>
   <string name="pref_about">Acerca de</string>
@@ -157,7 +153,6 @@
   <string name="pref_category_other">Otros</string>
   <string name="DEBUG_LEVEL">Debug Levels: 0=ninguno, 1=Errores, 2=Advertencias, 3=Info, 4=Depuración, 5=Detallado</string>
   <string name="INTERMEDIATE_POS">Informar de las posiciones intermedias: 1=Activar, 0=Desactivar</string>
-  <string name="ACCURACY_THRES">Umbral de exactitud para posiciones intermedias (se ignoran las posiciones menos exactas): 0 para pasar todas las posiciones</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Informar de las localizaciones supl ref como posición: 1=activar, 0=desactivar</string>
   <string name="ENABLE_WIPER">Wiper (posicionamento wifi): 1=activar, 0=desactivar</string>
   <string name="SUPL_HOST"></string>

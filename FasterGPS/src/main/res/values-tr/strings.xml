@@ -13,17 +13,14 @@
   <string name="button_yes">Evet</string>
   <string name="button_no">Hayır</string>
   <!--Dialogs-->
-  <string name="no_root_description">Su binary bulunamadı veya FasterGPS için root erişimine izin vermediniz.\n\nCihazınız root\'lanmamış olabilir.\nCihazınızı nasıl root\'layacağınıza dair bilgileri www.cyanogenmod.com veya diğer Android sitelerinde bulabilirsiniz.</string>
   <string name="no_root_title">Root\'lu Android gerekiyor</string>
   <string name="revert_dialog_title">Geri al?</string>
   <string name="revert_dialog">Eski gps.conf dosyasını geri almak istiyor musunuz?</string>
   <string name="applying_successful">gps.conf başarıyla yazıldı!</string>
   <!--Preferences-->
   <string name="pref_introduction">Ne yapılacak?</string>
-  <string name="pref_introduction_summary">Lütfen geçerli konumunuza yakın bir NTP sunucusu seçin. Ne kadar yakın olursa o kadar hızlı GPS sabitlemesi gerçekleşir. FasterGPS ayarlarınızı anında değiştirecek.</string>
   <string name="pref_ntp_current">Geçerli sunucu:</string>
   <string name="pref_revert">Eski gps.conf\'u geri al</string>
-  <string name="pref_revert_summary">FasterGPS ilk kez başlatıldığında, geçerli gps.conf dosyanızı yedekler. Geri al\'ı kullanarak orijinali yerine koyabilirsiniz.</string>
   <string name="pref_further_options">Daha fazla ayar</string>
   <string name="pref_ntp">NTP Sunucusu</string>
   <string name="pref_ntp_continent">Kıta</string>
@@ -143,7 +140,6 @@
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Özel</string>
-  <string name="pref_ntp_custom_summary">Özel sunucu seçiliyse buradan özel bir NTP sunucusu tanımlayabilirsiniz.</string>
   <string name="pref_advanced_settings">Gelişmiş ayarlara git</string>
   <string name="pref_help">Yardım</string>
   <string name="pref_about">Hakkında</string>
@@ -157,7 +153,6 @@
   <string name="pref_category_other">Diğer</string>
   <string name="DEBUG_LEVEL">Hata Ayıklama Seviyeleri: 0=yok, 1=Hata, 2=Uyarı, 3=Bilgi, 4=Hata Ayıklama, 5=Ayrıntı</string>
   <string name="INTERMEDIATE_POS">Acil konum raporu: 1=Etkin, 0=Devre Dışı</string>
-  <string name="ACCURACY_THRES">Orta konumlar için hassasiyet sınırı, daha az hassas konumlar yoksayılır: tüm konumları dikkate almak için 0</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Supl ref yerini konum olarak bildir: 1=etkin, 0=devre dışı</string>
   <string name="ENABLE_WIPER">Wiper (wifi konumlama): 1=etkin, 0=devre dışı</string>
   <string name="SUPL_HOST"></string>

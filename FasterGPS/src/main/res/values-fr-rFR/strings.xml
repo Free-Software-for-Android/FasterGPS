@@ -10,17 +10,14 @@
   <string name="button_yes">Oui</string>
   <string name="button_no">Non</string>
   <!--Dialogs-->
-  <string name="no_root_description">Le binaire su est introuvable ou FasterGPS n\'as pas reçu l\'autorisation root.\n\nVotre appareil n\'est peut-être pas rooté.\nVous pouvez trouvez des informations sur comment rooter votre appareil sur www.cyanogenmod.com ou sur d\'autres sites web Android.</string>
   <string name="no_root_title">Android Rooté requis</string>
   <string name="revert_dialog_title">Restaurer?</string>
   <string name="revert_dialog">Voulez vous restaurer les paramètres GPS originaux ?</string>
   <string name="applying_successful">Configuration d\'origine sauvegardée avec succès!</string>
   <!--Preferences-->
   <string name="pref_introduction">Fonctionnement</string>
-  <string name="pref_introduction_summary">Sélectionnez un serveur NTP proche de vous. Plus il sera proche, plus la localisation GPS sera rapide. FasterGPS applique immédiatement la nouvelle configuration.</string>
   <string name="pref_ntp_current">Serveur actuel:</string>
   <string name="pref_revert">Restaurer la configuration d\'origine?</string>
-  <string name="pref_revert_summary">Lorsque FasterGPS démarre pour la première fois, il sauvegarde la configuration d\'origine du GPS. Sélectionnez restaurer pour revenir à celle-ci.</string>
   <string name="pref_further_options">Options</string>
   <string name="pref_ntp">Serveur NTP</string>
   <string name="pref_ntp_continent">Continent</string>
@@ -140,7 +137,6 @@
     <item>Ouganda</item>
   </string-array>
   <string name="pref_ntp_custom">Personnalisé</string>
-  <string name="pref_ntp_custom_summary">Si le serveur personnalisé est sélectionné, entrez son adresse ici.</string>
   <string name="pref_advanced_settings">Paramètres avancés</string>
   <string name="pref_help">Aide</string>
   <string name="pref_about">A propos</string>
@@ -154,7 +150,6 @@
   <string name="pref_category_other">Autre</string>
   <string name="DEBUG_LEVEL">Niveaux de Debug 0=aucun, 1=Erreur, 2=Avertissement, 3=Info, 4=Debug, 5=Bavard</string>
   <string name="INTERMEDIATE_POS">Rapport de position intermédiaire: 1=Activé; 0=Désactivé</string>
-  <string name="ACCURACY_THRES">Seuil de précision pour les positions intermédiaires, les position moins précises sont ignorées : 0 pour ignorer toutes les positions</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Rapporter les positions supplémentaires comme lieu de référence: 1=activé, 0=désactivé</string>
   <string name="ENABLE_WIPER">Wiper( localisation wifi): 1=activé, 0=désactivé</string>
   <string name="SUPL_HOST"></string>
