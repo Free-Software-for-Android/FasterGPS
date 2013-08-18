@@ -1,6 +1,9 @@
 Please report bugs on the following website instead of writing bad reviews:
 http://code.google.com/p/faster-gps/issues
 
+1.8
+* Fix Remounter for Android 4.3
+
 1.7
 * bug fixes
 * Indicate superuser access by new permission
