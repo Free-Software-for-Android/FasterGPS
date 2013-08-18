@@ -29,6 +29,6 @@ public class FasterGPSApplication extends Application {
 
     static {
         // set RootCommands to debug mode based on FasterGPS
-        RootCommands.DEBUG = Constants.DEBUG;
+        RootCommands.DEBUG = BuildConfig.DEBUG;
     }
 }

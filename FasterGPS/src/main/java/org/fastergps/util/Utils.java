@@ -37,6 +37,7 @@ import java.util.Map.Entry;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import org.fastergps.BuildConfig;
 import org.fastergps.R;
 import org.sufficientlysecure.rootcommands.RootCommands;
 import org.sufficientlysecure.rootcommands.Shell;
@@ -378,7 +379,7 @@ public class Utils {
      *            to print
      */
     public static void debugLogConfig(HashMap<String, String> config) {
-        if (Constants.DEBUG) {
+        if (BuildConfig.DEBUG) {
             // print config
             Iterator<String> iterator = config.keySet().iterator();
 
