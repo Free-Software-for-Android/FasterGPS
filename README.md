@@ -20,10 +20,6 @@ Two productFlavors are build with gradle. One for Google Play (without Paypal an
 
 Fork FasterGPS and do a Pull Request. I will merge your changes back into the main project.
 
-# Libraries
-
-All JAR-Libraries are provided in this repository under "FasterGPS/libs", all Android Library projects are under "libraries".
-
 # Information about gps.conf
 
 * http://forum.xda-developers.com/showthread.php?p=11342772

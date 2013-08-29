@@ -1,1 +1,4 @@
-include ':FasterGPS', ':libraries:Donations'
+include ':FasterGPS'
+include ':libraries:Donations'
+include ':libraries:HtmlSpanner'
+include ':libraries:RootCommands'

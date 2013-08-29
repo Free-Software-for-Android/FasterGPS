@@ -25,10 +25,10 @@ import java.io.InputStream;
 
 import org.fastergps.R;
 import org.fastergps.util.Constants;
+import org.fastergps.util.JellyBeanSpanFixTextView;
 import org.fastergps.util.Log;
 
 import net.nightwhistler.htmlspanner.HtmlSpanner;
-import net.nightwhistler.htmlspanner.JellyBeanSpanFixTextView;
 
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
