@@ -10,7 +10,7 @@ For more information visit http://sufficientlysecure.org/android-apps/
 2. Export ANDROID_HOME pointing to your Android SDK
 3. Install gradle
 4. Execute ``gradle wrapper`` (http://www.gradle.org/docs/current/userguide/gradle_wrapper.html)
-5. Execute ``./gradlew assemble``
+5. Execute ``./gradlew build``
 
 ## More build information
 
