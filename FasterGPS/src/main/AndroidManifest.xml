@@ -16,8 +16,6 @@
             android:required="false"/>
 
     <uses-permission android:name="android.permission.INTERNET"/>
-    <!-- Required permission to use Google Android Market donations -->
-    <uses-permission android:name="com.android.vending.BILLING"/>
     <!-- Used by Koush's new Superuser app -->
     <uses-permission android:name="android.permission.ACCESS_SUPERUSER"/>
 
