@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Activities-->
-  <string name="activity_advanced_settings">Impostazioni Avanzate</string>
+  <string name="activity_advanced_settings">Impostazioni avanzate</string>
   <string name="activity_help">Aiuto</string>
   <!--Help-->
   <string name="help_help">Aiuto</string>
@@ -22,24 +22,24 @@
   <string name="button_yes">Sì</string>
   <string name="button_no">No</string>
   <!--Dialogs-->
-  <string name="no_root_description">Il binario SU non è stato trovato oppure non si è dato il permesso di root a\nFasterGPS.\n\nQuesto può succedere quando il tuo dispositivo non è rootato.\nPuoi trovare informazioni su come eseguire il root su\nwww.cyanogenmod.com o altri siti Android.</string>
-  <string name="no_root_title">Richiede Android con Root</string>
-  <string name="revert_dialog_title">Ripristina?</string>
+  <string name="no_root_description">Non è stato trovato il programma SU oppure non si è concesso il permesso di root a\nFasterGPS.\n\nQuesto può succedere quando il dispositivo non è rootato.\nPuoi trovare informazioni su come eseguire il root su\nwww.cyanogenmod.com o altri siti Android.</string>
+  <string name="no_root_title">Richiede Android con root</string>
+  <string name="revert_dialog_title">Ripristinare?</string>
   <string name="revert_dialog">Vuoi ripristinare il vecchio gps.conf?</string>
   <string name="applying_successful">gps.conf scritto correttamente!</string>
   <!--Preferences-->
   <string name="pref_introduction">Cosa fare?</string>
-  <string name="pref_introduction_summary">Per favore seleziona un Server NTP vicino alla tua posizione attuale. Più vicino sarà e più rapido sarà l\'aggancio ai satelliti. FasterGPS scriverà immediatamente i tuoi settaggi.</string>
+  <string name="pref_introduction_summary">Per favore seleziona un server NTP vicino alla tua posizione attuale. Più vicino sarà e più rapido sarà l\'aggancio ai satelliti. FasterGPS scriverà immediatamente le tue impostazioni.</string>
   <string name="pref_ntp_current">Server corrente:</string>
   <string name="pref_revert">Ripristina vecchio gps.conf</string>
-  <string name="pref_revert_summary">Quando FasterGPS viene avviato per la prima volta, verrà eseguito un backup del file gps.conf corrente. Usando Ripristina potrai ripristinarlo.</string>
+  <string name="pref_revert_summary">Quando FasterGPS viene avviato per la prima volta, verrà eseguito un backup del file gps.conf attuale. Usando \'Ripristina\'\ potrai ripristinarlo.</string>
   <string name="pref_further_options">Ulteriori opzioni</string>
-  <string name="pref_ntp">Seleziona il Server NTP</string>
+  <string name="pref_ntp">Seleziona il server NTP</string>
   <string name="pref_ntp_continent">Continente</string>
   <string name="pref_ntp_continent_summary">Seleziona il tuo continente!</string>
   <string-array name="pref_ntp_continent_entries">
     <item>- Non selezionato -</item>
-    <item>- Server Personalizzato -</item>
+    <item>- Server personalizzato -</item>
     <item>Europa</item>
     <item>Oceania</item>
     <item>Asia</item>
@@ -152,8 +152,8 @@
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Personalizzato</string>
-  <string name="pref_ntp_custom_summary">Se l\'immissione manuale è selezionata potrai definire un Server NTP personalizzato qui.</string>
-  <string name="pref_advanced_settings">Vai alle impostazioni avanzate</string>
+  <string name="pref_ntp_custom_summary">Se è selezionata l\'immissione manuale potrai definire qui un server NTP personalizzato.</string>
+  <string name="pref_advanced_settings">Vai alle \'Impostazioni avanzate\'\</string>
   <string name="pref_help">Aiuto</string>
   <string name="pref_about">Informazioni</string>
   <string name="pref_donations">Donazioni</string>
@@ -164,9 +164,9 @@
   <string name="pref_category_c2k">AGPS C2K</string>
   <string name="pref_category_carrier">AGPS Carrier</string>
   <string name="pref_category_other">Altro</string>
-  <string name="DEBUG_LEVEL">Livelli Debug: 0=nessuno, 1=Errore, 2=Avvertimento, 3=Informazioni, 4=Debug, 5=Verboso</string>
-  <string name="INTERMEDIATE_POS">Riferisci posizioni intermedie: 1=Abilita, 0=Disabilita</string>
-  <string name="ACCURACY_THRES">Soglia di accuratezza per le posizioni intermedie, posizioni meno accurate sono ignorate: 0\nper accettare tutte le posizioni</string>
+  <string name="DEBUG_LEVEL">Livelli debug: 0=nessuno, 1=errore, 2=avvertimento, 3=informazioni, 4=debug, 5=dettagliato</string>
+  <string name="INTERMEDIATE_POS">Riferisci posizioni intermedie: 1=abilita, 0=disabilita</string>
+  <string name="ACCURACY_THRES">Soglia di accuratezza per le posizioni intermedie. Posizioni meno accurate sono ignorate: 0\nper accettare tutte le posizioni</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Riferisci località supl ref come posizione: 1=abilita, 0=disabilita</string>
   <string name="ENABLE_WIPER">Wiper (posizione wifi): 1=abilita, 0=disabilita</string>
   <string name="SUPL_HOST"></string>
@@ -177,6 +177,6 @@
   <string name="C2K_PORT"></string>
   <string name="CURRENT_CARRIER">possibili valori: common</string>
   <string name="DEFAULT_AGPS_ENABLE">possibili valori: TRUE/FALSE</string>
-  <string name="DEFAULT_SSL_ENABLE">possibili valore: TRUE/FALSE</string>
-  <string name="DEFAULT_USER_PLANE">TRUE per \"Piano Utente\", FALSE per \"Piano di Controllo\"</string>
+  <string name="DEFAULT_SSL_ENABLE">possibili valori: TRUE/FALSE</string>
+  <string name="DEFAULT_USER_PLANE">TRUE per \"Profilo utente\", FALSE per \"Profilo di controllo\"</string>
 </resources>
