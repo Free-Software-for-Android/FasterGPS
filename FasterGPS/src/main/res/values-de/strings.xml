@@ -22,6 +22,7 @@
   <string name="button_yes">Ja</string>
   <string name="button_no">Nein</string>
   <!--Dialogs-->
+  <string name="no_root_description">Entweder kann die Superuser Binary nicht gefunden werden oder FasterGPS hat keine Root-Berechtigungen.\n\nDieser Fehler kann auftreten wenn dein Gerät nicht gerooted ist.\nInformation zum rooten deines Geräts gibts auf www.cyanogenmod.org oder anderen Android Webseiten.</string>
   <string name="no_root_title">Android muss gerootet sein</string>
   <string name="revert_dialog_title">Wiederherstellen?</string>
   <string name="revert_dialog">Soll die alte gps.conf wiederhergestellt werden?</string>
@@ -165,6 +166,7 @@
   <string name="pref_category_other">Andere</string>
   <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Warning, 3=Info, 4=Debug, 5=Verbose</string>
   <string name="INTERMEDIATE_POS">Intermediate position report: 1=Enable, 0=Disable</string>
+  <string name="ACCURACY_THRES">Genauigkeitsschwelle für ungefähre Position, stärkere Abweichungen werden ignoriert: 0\n\nfür alle möglichen Positionen</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Report supl ref location as position: 1=enable, 0=disable</string>
   <string name="ENABLE_WIPER">Wiper (wifi positioning): 1=enable, 0=disable</string>
   <string name="SUPL_HOST"></string>
