@@ -92,3 +92,11 @@ along with FasterGPS.  If not, see <http://www.gnu.org/licenses/>.
 * HtmlTextView  
   https://github.com/dschuermann/html-textview  
   Apache License v2
+  
+## Images
+
+* icon.svg  
+  Based on GPS Navigation by shokunin and Stopwatch (no shading) by dtjohnnymonkey  
+  http://openclipart.org/detail/76297/gps-navigation-by-shokunin  
+  http://openclipart.org/detail/3977/stopwatch-(no-shading)-by-dtjohnnymonkey  
+  Public Domain
