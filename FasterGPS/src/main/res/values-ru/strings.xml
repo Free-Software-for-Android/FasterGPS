@@ -22,17 +22,19 @@
   <string name="button_yes">Да</string>
   <string name="button_no">Нет</string>
   <!--Dialogs-->
-  <string name="no_root_description">Либо программный файл SuperUser не найден, либо FasterGPS не были предоставлены разрешения root.\n\nЭто может произойти, когда на устройстве нет прав Root.\nО том, как получить права Root на устройстве вы можете найти на www.cyanogenmod.com или других веб-сайтах по Android.\n    </string>
   <string name="no_root_title">Для Android требуются права Root</string>
   <string name="revert_dialog_title">Восстановить?</string>
   <string name="revert_dialog">Вы хотите восстановить ваш исходный gps.conf?</string>
   <string name="applying_successful">gps.conf был записан успешно!</string>
   <!--Preferences-->
   <string name="pref_introduction">С чего начать?</string>
-  <string name="pref_introduction_summary">Пожалуйста, выберите ближайший к вам сервер NTP. \nЧем он ближе, тем быстрее произойдет коррекция GPS. FasterGPS сразу запишет настройки.\n    </string>
+  <string name="pref_introduction_summary">Пожалуйста, выберите ближайший к вам сервер NTP. 
+Чем он ближе, тем быстрее произойдет коррекция GPS. FasterGPS сразу запишет настройки.
+    </string>
   <string name="pref_ntp_current">Текущий сервер:</string>
   <string name="pref_revert">Восстановление исходного gps.conf</string>
-  <string name="pref_revert_summary">При первом запуске FasterGPS сохраняет ваш текущий gps.conf.\nИспользуя восстановление, вы можете его вернуть.</string>
+  <string name="pref_revert_summary">При первом запуске FasterGPS сохраняет ваш текущий gps.conf.
+Используя восстановление, вы можете его вернуть.</string>
   <string name="pref_further_options">Дополнительные опции</string>
   <string name="pref_ntp">Выберите сервер NTP </string>
   <string name="pref_ntp_continent">Континент</string>

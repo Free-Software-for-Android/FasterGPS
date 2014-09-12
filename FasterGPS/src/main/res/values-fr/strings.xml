@@ -22,17 +22,22 @@
   <string name="button_yes">Oui</string>
   <string name="button_no">Non</string>
   <!--Dialogs-->
-  <string name="no_root_description">Soit le binaire su n\'a pas été trouvé, soit vous n\'avez pas donné la permission\n« root » à FasterGPS.\n\nCeci peut arrivé quand votre appareil n\'est pas rooté.\nVous pouvez trouvez de l\'information sur comment rooter votre appareil sur www.cyanogenmod.com ou d\'autres sites Web Android.\n</string>
+  <string name="no_root_description">Soit le binaire su n\'a pas été trouvé, soit vous n\'avez pas donné la permission « root » à
+FasterGPS.\n\nCeci peut arriver quand votre appareil n\'est pas rooté.\nVous pouvez trouvez de l\'information sur comment
+rooter votre appareil sur www.cyanogenmod.com ou d\'autres sites Web Android.</string>
   <string name="no_root_title">Android rooté exigé</string>
   <string name="revert_dialog_title">Restaurer ?</string>
   <string name="revert_dialog">Voulez vous revenir à votre ancien gps.conf ?</string>
   <string name="applying_successful">gps.conf enregistré avec succès !</string>
   <!--Preferences-->
   <string name="pref_introduction">Que faire ?</string>
-  <string name="pref_introduction_summary">Veuillez choisir un serveur NTP proche de votre position actuelle. Plus\nil sera proche, plus rapide sera votre résultat GPS. FasterGPS déterminera\nimmédiatement vos paramètres.</string>
+  <string name="pref_introduction_summary">Veuillez choisir un serveur NTP proche de votre position actuelle. Plus
+il sera proche, plus rapide sera votre résultat GPS. FasterGPS déterminera
+immédiatement vos paramètres.</string>
   <string name="pref_ntp_current">Serveur actuel :</string>
   <string name="pref_revert">Revenir à l\'ancien gps.conf </string>
-  <string name="pref_revert_summary">Quand FasterGPS est lancé pour la première fois, il sauvegarde votre gps.conf courant. Utiliser « Restaurer » pour y revenir.\n</string>
+  <string name="pref_revert_summary">Quand FasterGPS est lancé pour la première fois, il sauvegarde votre gps.conf courant. Utiliser « Restaurer » pour y revenir.
+</string>
   <string name="pref_further_options">Autres options </string>
   <string name="pref_ntp">Serveur NTP</string>
   <string name="pref_ntp_continent">Continent</string>
@@ -152,10 +157,11 @@
     <item>Ouganda</item>
   </string-array>
   <string name="pref_ntp_custom">Personnalisé</string>
-  <string name="pref_ntp_custom_summary">Si un serveur personalisé est choisi, vous pouvez définir ici un serveur NTP personalisé.\n</string>
+  <string name="pref_ntp_custom_summary">Si un serveur personalisé est choisi, vous pouvez définir ici un serveur NTP personalisé.
+</string>
   <string name="pref_advanced_settings">Aller aux paramètres avancés</string>
   <string name="pref_help">Aide</string>
-  <string name="pref_about">À propos</string>
+  <string name="pref_about">À propos de</string>
   <string name="pref_donations">Dons</string>
   <string name="pref_current_value">Valeur :</string>
   <string name="pref_category_general">Général</string>

@@ -1,20 +1,20 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
   <!--Activities-->
-  <string name="activity_advanced_settings">Opções Avançadas</string>
+  <string name="activity_advanced_settings">Definições avançadas</string>
   <string name="activity_help">Ajuda</string>
   <!--Help-->
   <string name="help_help">Ajuda</string>
-  <string name="help_donations">Doações</string>
+  <string name="help_donations">Donativos</string>
   <string name="help_about_version">Versão:</string>
-  <string name="help_donation_paypal_item">Ajudar FasterGPS</string>
+  <string name="help_donation_paypal_item">Donativo FasterGPS</string>
   <string-array name="help_donation_google_catalog_values">
-    <item>1 Euro</item>
-    <item>2 Euros</item>
-    <item>3 Euros</item>
-    <item>5 Euros</item>
-    <item>8 Euros</item>
-    <item>13 Euros</item>
+    <item>1 euro</item>
+    <item>2 euros</item>
+    <item>3 euros</item>
+    <item>5 euros</item>
+    <item>8 euros</item>
+    <item>13 euros</item>
   </string-array>
   <!--Buttons-->
   <string name="button_close">Fechar</string>
@@ -22,32 +22,35 @@
   <string name="button_yes">Sim</string>
   <string name="button_no">Não</string>
   <!--Dialogs-->
-  <string name="no_root_title">Android com acesso root requerido</string>
-  <string name="revert_dialog_title">Desfazer?</string>
-  <string name="revert_dialog">Você quer reverter suas configurações do gps.conf?</string>
+  <string name="no_root_title">Requer acesso root</string>
+  <string name="revert_dialog_title">Reverter?</string>
+  <string name="revert_dialog">Quer reverter para o seu anterior gps.conf?</string>
   <string name="applying_successful">gps.conf atualizado com sucesso!</string>
   <!--Preferences-->
   <string name="pref_introduction">O que fazer?</string>
+  <string name="pref_introduction_summary">Por favor selecione o servidor NTP que fica mais próximo da sua posição atual. Quanto mais perto, mais rápido terá acesso GPS. O FasterGPS escreve as definições imediatamente.</string>
   <string name="pref_ntp_current">Servidor atual:</string>
-  <string name="pref_revert">Reverter para versão anterior do gps.conf</string>
-  <string name="pref_further_options">Outras opções</string>
+  <string name="pref_revert">Reverter para o anterior gps.conf</string>
+  <string name="pref_revert_summary">Ao iniciar pela primeira vez o FasterGPS, o ficheiro gps.conf é copiado.
+Pode utilizar a opção reverter para restaurar este ficheiro.</string>
+  <string name="pref_further_options">Mais opções</string>
   <string name="pref_ntp">Servidor NTP</string>
   <string name="pref_ntp_continent">Continente</string>
-  <string name="pref_ntp_continent_summary">Selecione seu continente!</string>
+  <string name="pref_ntp_continent_summary">Seleccione o seu continente!</string>
   <string-array name="pref_ntp_continent_entries">
-    <item>- Nenhum -</item>
-    <item>- Servidor customizado -</item>
+    <item>- Nemhum -</item>
+    <item>- Personalizado -</item>
     <item>Europa</item>
-    <item>Oceania</item>
+    <item>Oceânia</item>
     <item>Ásia</item>
     <item>América do Norte</item>
     <item>América do Sul</item>
     <item>África</item>
   </string-array>
   <string name="pref_ntp_region">Região</string>
-  <string name="pref_ntp_region_summary">Selecione uma região perto de você!</string>
+  <string name="pref_ntp_region_summary">Selecione a região mais próxima!</string>
   <string-array name="pref_ntp_region_entries_europe">
-    <item>- Nenhum -</item>
+    <item>- Nenhuma -</item>
     <item>Áustria</item>
     <item>Suíça</item>
     <item>Alemanha</item>
@@ -58,9 +61,9 @@
     <item>Luxemburgo</item>
     <item>Holanda</item>
     <item>Noruega</item>
-    <item>Polônia</item>
+    <item>Polónia</item>
     <item>Suécia</item>
-    <item>Eslovênia</item>
+    <item>Eslovénia</item>
     <item>Reino Unido</item>
     <item>Finlândia</item>
     <item>Irlanda</item>
@@ -70,86 +73,87 @@
     <item>Grécia</item>
     <item>Hungria</item>
     <item>Bulgária</item>
-    <item>Romênia</item>
-    <item>República Checa</item>
-    <item>Iugoslávia</item>
-    <item>Estônia</item>
+    <item>Roménia</item>
+    <item>Republica Checha</item>
+    <item>Jugoslávia</item>
+    <item>Estónia</item>
     <item>Bielorrússia</item>
     <item>Eslováquia</item>
     <item>Ucrânia</item>
     <item>Lituânia</item>
-    <item>Macedônia</item>
+    <item>Macedónia</item>
     <item>Moldávia</item>
-    <item>Letônia</item>
+    <item>Letónia</item>
     <item>Croácia</item>
-    <item>República da Sérvia</item>
+    <item>Republica da Sérvia</item>
     <item>Bósnia e Herzegovina</item>
-    <item>Armênia</item>
+    <item>Arménia</item>
   </string-array>
   <string-array name="pref_ntp_region_entries_asia">
-    <item>- Nenhum -</item>
+    <item>- Nenhuma -</item>
     <item>Filipinas</item>
     <item>Malásia</item>
     <item>Turquia</item>
-    <item>Cingapura</item>
+    <item>Singapura</item>
     <item>Índia</item>
     <item>Hong Kong</item>
-    <item>Emirados Árabes Unidos</item>
+    <item>Emirado Árabes Unidos</item>
     <item>Japão</item>
-    <item>Bangladesh</item>
+    <item>Bangladeche</item>
     <item>Israel</item>
-    <item>Coréia</item>
+    <item>Coreia</item>
     <item>Tailândia</item>
-    <item>Irã</item>
+    <item>Irão</item>
     <item>Taiwan</item>
     <item>China</item>
     <item>Indonésia</item>
-    <item>Vietnã</item>
+    <item>Vietname</item>
     <item>Paquistão</item>
     <item>Omã</item>
-    <item>Uzbequistão</item>
+    <item>Usbequistão</item>
     <item>Sri Lanka</item>
     <item>Quirguistão</item>
     <item>Camboja</item>
-    <item>Qatar</item>
+    <item>Catar</item>
     <item>Arábia Saudita</item>
     <item>Iraque</item>
-    <item>Cazaquistão</item>
+    <item>Quazaquistão</item>
   </string-array>
   <string-array name="pref_ntp_region_entries_oceania">
-    <item>- Nenhum -</item>
+    <item>- Nenhuma -</item>
     <item>Austrália</item>
-    <item>Nova Zelância</item>
-    <item>New Caledonia</item>
+    <item>Nova Zelândia</item>
+    <item>Nova Caledónia</item>
   </string-array>
   <string-array name="pref_ntp_region_entries_north_america">
-    <item>- Nenhum -</item>
-    <item>Canadá</item>
-    <item>Estados Unidos</item>
+    <item>- Nenhuma -</item>
+    <item>Canada</item>
+    <item>EUA</item>
     <item>México</item>
     <item>Guatemala</item>
     <item>Panamá</item>
-    <item>Bahamas</item>
+    <item>Baamas</item>
     <item>Costa Rica</item>
     <item>El Salvador</item>
   </string-array>
   <string-array name="pref_ntp_region_entries_south_america">
-    <item>- Nenhum -</item>
+    <item>- Nenhuma -</item>
     <item>Brasil</item>
     <item>Chile</item>
     <item>Argentina</item>
     <item>Venezuela</item>
   </string-array>
   <string-array name="pref_ntp_region_entries_africa">
-    <item>- Nothing selected -</item>
+    <item>- Nenhuma -</item>
     <item>Tanzânia</item>
     <item>África do Sul</item>
     <item>Angola</item>
-    <item>Madagascar</item>
+    <item>Madagáscar</item>
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Personalizado</string>
-  <string name="pref_advanced_settings">Ir para opções avançadas</string>
+  <string name="pref_ntp_custom_summary">Se optar por um servidor personalizado, pode definir aqui o servidor NTP.</string>
+  <string name="pref_advanced_settings">Vá a Definições avançadas</string>
   <string name="pref_help">Ajuda</string>
   <string name="pref_about">Sobre</string>
   <string name="pref_donations">Doações</string>
@@ -159,19 +163,21 @@
   <string name="pref_category_supl">AGPS SUPL</string>
   <string name="pref_category_c2k">AGPS C2K</string>
   <string name="pref_category_carrier">Operador AGPS</string>
-  <string name="pref_category_other">Outro</string>
-  <string name="DEBUG_LEVEL">Debug Levels: 0=none, 1=Error, 2=Warning, 3=Info, 4=Debug, 5=Verbose\n</string>
-  <string name="INTERMEDIATE_POS">Reportar posição intermediária: 1=Ativar, 0=Desativar</string>
-  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Relatório localização como posição: 1=ativar, 0=desativar</string>
-  <string name="ENABLE_WIPER">Wiper (posicionamento wifi): 1=ativar, 0=desativar</string>
+  <string name="pref_category_other">Outros</string>
+  <string name="DEBUG_LEVEL">Nível de depuração: 0=nenhum, 1=Erro, 2=Aviso, 3=Info, 4=Depuração, 5=Detalhado</string>
+  <string name="INTERMEDIATE_POS">Relatório de posição intermédia: 1=Ativo, 0=Inativo</string>
+  <string name="ACCURACY_THRES">Limite de precisão para posições intermédias. Posições menos precisas serão ignoradas.
+0 para utilizar todas as posições.</string>
+  <string name="REPORT_POSITION_USE_SUPL_REFLOC">Relatório localização ref supl como posição: 1=Ativo, 0=Inativo</string>
+  <string name="ENABLE_WIPER">Wiper (posicionamento wifi): 1=Ativo, 0=Inativo</string>
   <string name="SUPL_HOST"></string>
   <string name="SUPL_PORT"></string>
   <string name="SUPL_NO_SECURE_PORT"></string>
   <string name="SUPL_SECURE_PORT"></string>
   <string name="C2K_HOST"></string>
   <string name="C2K_PORT"></string>
-  <string name="CURRENT_CARRIER">valores possíveis: comuns</string>
-  <string name="DEFAULT_AGPS_ENABLE">possíveis valores: VERDADEIRO/FALSO</string>
-  <string name="DEFAULT_SSL_ENABLE">possível valor: VERDADEIRO/FALSO</string>
-  <string name="DEFAULT_USER_PLANE">VERDADEIRO para \"Plano do Usuário\", ou FALSO para \"Plano de Controle\"</string>
+  <string name="CURRENT_CARRIER">valores possíveis: common</string>
+  <string name="DEFAULT_AGPS_ENABLE">valores possíveis: TRUE/FALSE</string>
+  <string name="DEFAULT_SSL_ENABLE">valores possíveis: TRUE/FALSE</string>
+  <string name="DEFAULT_USER_PLANE">TRUE para \"Plano de utilizador\", FALSE para \"Plano de controlo\"</string>
 </resources>

@@ -22,7 +22,6 @@
   <string name="button_yes">确认</string>
   <string name="button_no">取消</string>
   <!--Dialogs-->
-  <string name="no_root_description">没有发现su文件或你没有允许FasterGPS的root权限\n当你的设备没有root时这将有可能发生\n你可以在www.cyanogenmod.com 或者其他Android网站找到关于如何root你的设备的信息</string>
   <string name="no_root_title">需要root权限</string>
   <string name="revert_dialog_title">恢复？</string>
   <string name="revert_dialog">想要恢复到旧的gps.conf？</string>

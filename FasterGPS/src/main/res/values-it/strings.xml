@@ -22,7 +22,6 @@
   <string name="button_yes">Sì</string>
   <string name="button_no">No</string>
   <!--Dialogs-->
-  <string name="no_root_description">Non è stato trovato il programma SU oppure non si è concesso il permesso di root a\nFasterGPS.\n\nQuesto può succedere quando il dispositivo non è rootato.\nPuoi trovare informazioni su come eseguire il root su\nwww.cyanogenmod.com o altri siti Android.</string>
   <string name="no_root_title">Richiede Android con root</string>
   <string name="revert_dialog_title">Ripristinare?</string>
   <string name="revert_dialog">Vuoi ripristinare il vecchio gps.conf?</string>
@@ -166,7 +165,8 @@
   <string name="pref_category_other">Altro</string>
   <string name="DEBUG_LEVEL">Livelli debug: 0=nessuno, 1=errore, 2=avvertimento, 3=informazioni, 4=debug, 5=dettagliato</string>
   <string name="INTERMEDIATE_POS">Riferisci posizioni intermedie: 1=abilita, 0=disabilita</string>
-  <string name="ACCURACY_THRES">Soglia di accuratezza per le posizioni intermedie. Posizioni meno accurate sono ignorate: 0\nper accettare tutte le posizioni</string>
+  <string name="ACCURACY_THRES">Soglia di accuratezza per le posizioni intermedie. Posizioni meno accurate sono ignorate: 0
+per accettare tutte le posizioni</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Riferisci località supl ref come posizione: 1=abilita, 0=disabilita</string>
   <string name="ENABLE_WIPER">Wiper (posizione wifi): 1=abilita, 0=disabilita</string>
   <string name="SUPL_HOST"></string>

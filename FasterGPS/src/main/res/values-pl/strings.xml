@@ -22,14 +22,18 @@
   <string name="button_yes">Tak</string>
   <string name="button_no">Nie</string>
   <!--Dialogs-->
-  <string name="no_root_description">Żadna z bibliotek su nie może zostać znaleziona lub nie masz uprawnień roota dla⏎\nFasterGPS.⏎\n⏎\nTak się dzieje, gdy Twoje urządzenie nie jest zrootowane.⏎\nInformacje dotyczące rootowania twojego urządzenia⏎\nznajdziesz na www.cyanogenmod.com lub innych stronach o Androidzie.⏎</string>
+  <string name="no_root_description">Albo nie można znaleźć pliku su albo nie przyznałeś pozwoleń root dla
+FasterGPS\n\nTo może się wydarzyć, gdy Twoje urządzenie jest zrootowane.\nMożesz znaleźć informacje o dostępie root 
+dla Twojego telefonu na www.cyanogenmod.com albo innych stronach o tematyce Android.
+</string>
   <string name="no_root_title">Wymagany Root</string>
   <string name="revert_dialog_title">Przywrócić? </string>
   <string name="revert_dialog">Czy chcesz przywrócić stary plik gps.conf? </string>
   <string name="applying_successful">gps.conf został zapisany pomyślnie!</string>
   <!--Preferences-->
   <string name="pref_introduction">Co zrobić?</string>
-  <string name="pref_introduction_summary">Proszę wybrać serwer NTP, które jest najbliżej Twojej akutalnej pozycji.⏎\nIm bliżej on jest, tym szybciej złapiesz fix GPS. FasterGPS niezwłocznie zapisze Twoje ustawienia.⏎</string>
+  <string name="pref_introduction_summary">Proszę wybrać serwer NTP, które jest najbliżej Twojej akutalnej pozycji.⏎
+Im bliżej on jest, tym szybciej złapiesz fix GPS. FasterGPS niezwłocznie zapisze Twoje ustawienia.⏎</string>
   <string name="pref_ntp_current">Aktualny serwer:</string>
   <string name="pref_revert">Przywróć stary gps.conf</string>
   <string name="pref_revert_summary">Podczas pierwszego włączenia FasterGPS zostaje zrobiona kopia zapasowa obecnego pliku gps.conf.⏎Używająć przywracania możesz użyć własnie jej.⏎</string>
@@ -166,7 +170,8 @@
   <string name="pref_category_other">Inne</string>
   <string name="DEBUG_LEVEL">Poziomy debugowania: 0=brak, 1=Błędy, 2=Ostrzeżenia, 3=Info, 4=Debug, 5=Rozległy</string>
   <string name="INTERMEDIATE_POS">Raportowanie niedokładnej pozycji: 1=włączony, 0=wyłączony</string>
-  <string name="ACCURACY_THRES">Próg dokładności dla pozycji pośrednich, mniejsza dokładność będzie ignorowana: 0⏎\noznacza uwzględnienie wszystkich pozycji⏎</string>
+  <string name="ACCURACY_THRES">Próg dokładności dla pozycji pośrednich, mniejsza dokładność będzie ignorowana: 0⏎
+oznacza uwzględnienie wszystkich pozycji⏎</string>
   <string name="REPORT_POSITION_USE_SUPL_REFLOC">Raportuj lokalizację supl ref jako pozycję: 1=włączony, 0=wyłączony</string>
   <string name="ENABLE_WIPER">Wiem (pozycjonowanie przez wifi): 1=włączony, 0=wyłączony</string>
   <string name="SUPL_HOST"></string>

@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+  <!--Activities-->
+  <string name="activity_advanced_settings">Ezarpen Aurreratuak</string>
+  <string name="activity_help">Laguntza</string>
+  <!--Help-->
+  <string name="help_help">Laguntza</string>
+  <string name="help_donations">Dirulaguntzak</string>
+  <string name="help_about_version">Bertsioa:</string>
+  <string name="help_donation_paypal_item">FasterGPS Dirulaguntza</string>
+  <string-array name="help_donation_google_catalog_values">
+    <item>1 Euro</item>
+    <item>2 Euros</item>
+    <item>3 Euro</item>
+    <item>5 Euro</item>
+    <item>8 Euro</item>
+    <item>13 Euro</item>
+  </string-array>
+  <!--Buttons-->
+  <string name="button_close">Itxi</string>
+  <string name="button_exit">Irten</string>
+  <string name="button_yes">Bai</string>
+  <string name="button_no">Ez</string>
+  <!--Dialogs-->
+  <string name="no_root_title">Android errotua beharrezkoa</string>
+  <string name="revert_dialog_title">Leheneratu?</string>
+  <string name="revert_dialog">Zure gps.conf zaharrera leheneratzea nahi duzu?</string>
+  <string name="applying_successful">gps.conf ongi idatzi da!</string>
+  <!--Preferences-->
+  <string name="pref_introduction">Zer dago egiteko?</string>
+  <string name="pref_ntp_current">Oraingo zerbitzaria:</string>
+  <string name="pref_further_options">Beste aukerak</string>
+  <string name="pref_ntp">NTP Zerbitzaria</string>
+  <string name="pref_ntp_continent">Kontinentea</string>
+  <string name="pref_ntp_continent_summary">Hautatu zure kontinentea</string>
+  <string-array name="pref_ntp_continent_entries">
+    <item>- Ezer ez hautaturik -</item>
+    <item>- Norbere Zerbitzaria -</item>
+    <item>Europa</item>
+    <item>Ozeania</item>
+    <item>Asia</item>
+    <item>Ipar Amerika</item>
+    <item>Hego Amerika</item>
+    <item>Afrika</item>
+  </string-array>
+  <string name="pref_ntp_region">Eskualdea</string>
+  <string name="pref_ntp_region_summary">Hautatu hurbil duzun eskualde bat!</string>
+  <string-array name="pref_ntp_region_entries_europe">
+    <item>- Ezer ez hautaturik -</item>
+    <item>Austria</item>
+    <item>Suitza</item>
+    <item>Alemania</item>
+    <item>Danimarka</item>
+    <item>Espainia</item>
+    <item>Frantzia</item>
+    <item>Italia</item>
+    <item>Luxenburgo</item>
+    <item>Herbehereak</item>
+    <item>Norbegia</item>
+    <item>Polonia</item>
+    <item>Suedia</item>
+    <item>Eslobenia</item>
+    <item>Erresuma Batua</item>
+    <item>Finlandia</item>
+    <item>Irlanda</item>
+    <item>Errusiar Federazioa</item>
+    <item>Belgika</item>
+    <item>Portugal</item>
+    <item>Grezia</item>
+    <item>Hungaria</item>
+    <item>Bulgaria</item>
+    <item>Errumania</item>
+    <item>Txekiar Herkalderria</item>
+    <item>Yugoslavia</item>
+    <item>Estonia</item>
+    <item>Belaerrusia</item>
+    <item>Eslobakia</item>
+    <item>Ukrainia</item>
+    <item>Lituania</item>
+    <item>Mazedonia</item>
+    <item>Moldavia</item>
+    <item>Letonia</item>
+    <item>Kroazia</item>
+    <item>Serbiako Herkalderria</item>
+    <item>Bosnia eta Herzegovina</item>
+    <item>Armenia</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_asia">
+    <item>- Ezer ez hautaturik -</item>
+    <item>Filipinak</item>
+    <item>Malaisia</item>
+    <item>Turkia</item>
+    <item>Singapur</item>
+    <item>India</item>
+    <item>Hong Kong</item>
+    <item>Arabiar Emirrerri Batua</item>
+    <item>Japonia</item>
+    <item>Bangladesh</item>
+    <item>Israel</item>
+    <item>Korea</item>
+    <item>Thailandia</item>
+    <item>Iran</item>
+    <item>Taiwan</item>
+    <item>Txina</item>
+    <item>Indonesia</item>
+    <item>Vietnam</item>
+    <item>Pakistan</item>
+    <item>Oman</item>
+    <item>Uzbekistan</item>
+    <item>Sri Lanka</item>
+    <item>Kirgizstan</item>
+    <item>Kambodia</item>
+    <item>Qatar</item>
+    <item>Saudi Arabia</item>
+    <item>Irak</item>
+    <item>Kazakhstan</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_oceania">
+    <item>- Ezer ez hautaturik -</item>
+    <item>Australia</item>
+    <item>Zealanda Berria</item>
+    <item>Kaledonia Berria</item>
+  </string-array>
+  <string-array name="pref_ntp_region_entries_north_america">
+    <item>- Ezer ez hautaturik -</item>
+    <item>Kanada</item>
+    <item>Estatu Batuak</item>
+    <item>Mexiko</item>
+    <item>Guatemala</item>
+    <item>Panama</item>
+    <item>Bahamas</item>
+    <item>Costa Rica</item>
+    <item>El Salvador</item>
+  </string-array>
+  <string name="pref_ntp_custom">Norberea</string>
+  <string name="pref_advanced_settings">Joan ezarpen aurreratuetara</string>
+  <string name="pref_help">Laguntza</string>
+  <string name="pref_about">Honi buruz</string>
+  <string name="pref_donations">Dirulaguntzak</string>
+  <string name="pref_current_value">Balioa:</string>
+  <string name="pref_category_general">Orokorra</string>
+  <string name="pref_category_xtra">XTRA Zerbitzaria</string>
+  <string name="pref_category_supl">AGPS SUPL</string>
+  <string name="pref_category_c2k">AGPS C2K</string>
+  <string name="pref_category_carrier">AGPS Carrier</string>
+  <string name="pref_category_other">Beste bat</string>
+  <string name="DEBUG_LEVEL">Garbiketa Mailak: 0=ezer ez, 1=Akatsa, 2=Kontuz, 3=Argibideak, 4=Garbiketa, 5=Berritsua</string>
+  <string name="SUPL_HOST"></string>
+  <string name="SUPL_PORT"></string>
+  <string name="SUPL_NO_SECURE_PORT"></string>
+  <string name="SUPL_SECURE_PORT"></string>
+  <string name="C2K_HOST"></string>
+  <string name="C2K_PORT"></string>
+  <string name="CURRENT_CARRIER">ahalezko balioak: arrunta</string>
+  <string name="DEFAULT_AGPS_ENABLE">ahalezko balioak: BAI/EZ</string>
+  <string name="DEFAULT_SSL_ENABLE">ahalezko balioa: BAI/EZ</string>
+</resources>

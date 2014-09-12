@@ -4,6 +4,18 @@
   <string name="activity_advanced_settings">Geavanceerde instellingen</string>
   <string name="activity_help">Help</string>
   <!--Help-->
+  <string name="help_help">Hulp</string>
+  <string name="help_donations">Donaties:</string>
+  <string name="help_about_version">Versie:</string>
+  <string name="help_donation_paypal_item">FasterGPS Donatie:</string>
+  <string-array name="help_donation_google_catalog_values">
+    <item>1 Euro</item>
+    <item>2 Euro\'s</item>
+    <item>3 Euro\'s</item>
+    <item>5 Euro\'s</item>
+    <item>8 Euro\'s</item>
+    <item>13 Euro\'s</item>
+  </string-array>
   <!--Buttons-->
   <string name="button_close">Sluiten</string>
   <string name="button_exit">Afsluiten</string>
@@ -13,16 +25,71 @@
   <string name="no_root_title">Geroote Android vereist</string>
   <string name="revert_dialog_title">Terugzetten?</string>
   <string name="revert_dialog">Wilt u de oude gps.conf terugzetten?</string>
+  <string name="applying_successful">gps.conf is succesvol ingeschreven!</string>
   <!--Preferences-->
   <string name="pref_introduction">Wat wilt u doen?</string>
+  <string name="pref_introduction_summary">Kies een NTP Server die dichtbij uw huidige locatie is. Hoe 
+dichter de locatie, hoe sneller heeft u een GPS fix. FasterGPS zal meteen uw instellingen configureren.</string>
   <string name="pref_ntp_current">Huidige server:</string>
   <string name="pref_revert">Oude gps.conf terugzetten</string>
+  <string name="pref_revert_summary">Wanneer FasterGPS voor het eerst is gestart, zal hij een backup maken van uw huidige gps.conf. Door 
+optie terugzetten te gebruiken, kunt uw alles naar originele staat zetten.</string>
   <string name="pref_further_options">Meer opties</string>
   <string name="pref_ntp">NTP Server</string>
   <string name="pref_ntp_continent">Continent</string>
   <string name="pref_ntp_continent_summary">Selecteer uw continent!</string>
+  <string-array name="pref_ntp_continent_entries">
+    <item>- Niets geselecteerd-</item>
+    <item>- Persoonlijke Server -</item>
+    <item>Europa</item>
+    <item>Oceanie</item>
+    <item>Azie</item>
+    <item>Noord Amerika</item>
+    <item>Zuid Amerika</item>
+    <item>Africa</item>
+  </string-array>
   <string name="pref_ntp_region">Gebied</string>
   <string name="pref_ntp_region_summary">Selecteer een gebied bij u in de buurt!</string>
+  <string-array name="pref_ntp_region_entries_europe">
+    <item>- Niets geselecteerd -</item>
+    <item>Oostenrijk</item>
+    <item>Zwitserland</item>
+    <item>Duitsland</item>
+    <item>Denmark</item>
+    <item>Spanje</item>
+    <item>Frankrijk</item>
+    <item>Italië</item>
+    <item>Luxemburg</item>
+    <item>Nederland</item>
+    <item>Norwegen</item>
+    <item>Polen</item>
+    <item>Zweden</item>
+    <item>Slovenië</item>
+    <item>Verenigde Koninkrijk</item>
+    <item>Finland</item>
+    <item>Ireland</item>
+    <item>Rusland</item>
+    <item>België</item>
+    <item>Portugal</item>
+    <item>Griekenland</item>
+    <item>Hongarije</item>
+    <item>Bulgarije</item>
+    <item>Roemenië</item>
+    <item>Tsjechië</item>
+    <item>Joegoslavië</item>
+    <item>Estland</item>
+    <item>Wit Rusland</item>
+    <item>Slovakije</item>
+    <item>Ukraine</item>
+    <item>Litouwen</item>
+    <item>Macedonie</item>
+    <item>Moldavie</item>
+    <item>Latvia</item>
+    <item>Kroatië</item>
+    <item>Servië</item>
+    <item>Bosnië en Herzegovina</item>
+    <item>Armenië</item>
+  </string-array>
   <string-array name="pref_ntp_region_entries_asia">
     <item>- Nothing selected -</item>
     <item>Filipijnen</item>
@@ -86,6 +153,7 @@
     <item>Uganda</item>
   </string-array>
   <string name="pref_ntp_custom">Aangepast</string>
+  <string name="pref_ntp_custom_summary">Indien persoonlijke server is geselecteerd, kunt u hier een persoonlijk gekozen NTP Server beschrijven</string>
   <string name="pref_advanced_settings">Ga naar de geavanceerde instellingen</string>
   <string name="pref_help">Help</string>
   <string name="pref_about">Over</string>
@@ -93,11 +161,18 @@
   <string name="pref_current_value">Waarde:</string>
   <string name="pref_category_general">Algemeen</string>
   <string name="pref_category_xtra">XTRA Server</string>
+  <string name="pref_category_supl">AGPS SUPL</string>
+  <string name="pref_category_c2k">AGPS C2K</string>
+  <string name="pref_category_carrier">AGPS provider</string>
   <string name="pref_category_other">Ander</string>
+  <string name="ENABLE_WIPER">Wiper (wifi positionering): 1=aanzetten, 0=uitzetten </string>
   <string name="SUPL_HOST"></string>
   <string name="SUPL_PORT"></string>
   <string name="SUPL_NO_SECURE_PORT"></string>
   <string name="SUPL_SECURE_PORT"></string>
   <string name="C2K_HOST"></string>
   <string name="C2K_PORT"></string>
+  <string name="CURRENT_CARRIER">mogelijke waarden: algemeen</string>
+  <string name="DEFAULT_AGPS_ENABLE">mogelijke waarden: WAAR/ONWAAR</string>
+  <string name="DEFAULT_SSL_ENABLE">mogelijke waarde: WAAR/ONWAAR</string>
 </resources>
