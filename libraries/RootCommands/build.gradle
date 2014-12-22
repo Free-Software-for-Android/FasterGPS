@@ -1,24 +1,16 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:0.6.+'
-    }
-}
-
 apply plugin: 'android-library'
 
-dependencies {
-}
-
 android {
-    compileSdkVersion 17
-    buildToolsVersion "19"
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
-        minSdkVersion 7
-        targetSdkVersion 17
+        minSdkVersion 16
+        targetSdkVersion 21
+    }
+    
+    // Do not abort build if lint finds errors
+    lintOptions {
+        abortOnError false
     }
 }
-
