@@ -1,19 +1,19 @@
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 dependencies {
-    compile 'com.android.support:support-v4:19.0.+'
+    compile 'com.android.support:support-v4:21.0.3'
     compile project(':libraries:Donations')
     compile project(':libraries:HtmlTextView')
     compile project(':libraries:RootCommands')
 }
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "19"
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
-        minSdkVersion 7
-        targetSdkVersion 19
+        minSdkVersion 16
+        targetSdkVersion 21
     }
 
     /*
@@ -29,7 +29,7 @@ android {
             project.hasProperty('signingKeyAlias') &&
             project.hasProperty('signingKeyPassword')) {
         println "Found sign properties in gradle.properties! Signing build…"
-        
+
         signingConfigs {
             release {
                 storeFile file(signingStoreLocation)
@@ -44,12 +44,17 @@ android {
         buildTypes.release.signingConfig = null
     }
 
+    // Do not abort build if lint finds errors
+    lintOptions {
+        abortOnError false
+    }
+
     productFlavors {
         google {
-            buildConfig "public final static boolean DONATIONS_GOOGLE = true;"
+            buildConfigField "boolean", "DONATIONS_GOOGLE", "true"
         }
         fdroid {
-            buildConfig "public final static boolean DONATIONS_GOOGLE = false;"
-        }
+            buildConfigField "boolean", "DONATIONS_GOOGLE", "false"
+         }
     }
 }
