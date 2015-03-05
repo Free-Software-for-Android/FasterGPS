@@ -1,3 +1,7 @@
+# No longer in active development
+
+**FasterGPS is no longer in active development. If you like to take over the maintaining, simply fork it and implement fixes. I will only do basic maintenance like merging pull requests and releasing new versions.**
+
 # FasterGPS
 
 With FasterGPS you can select a NTP Server matching your region to speed up the process of getting a GPS fix.
