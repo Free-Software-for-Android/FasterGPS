@@ -2,14 +2,14 @@ apply plugin: 'com.android.application'
 
 dependencies {
     compile 'com.android.support:support-v4:21.0.3'
-    compile project(':libraries:Donations')
-    compile project(':libraries:HtmlTextView')
+    compile 'org.sufficientlysecure:donations:2.4'
+    compile 'org.sufficientlysecure:html-textview:2.0'
     compile project(':libraries:RootCommands')
 }
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    buildToolsVersion "25.0.0"
 
     defaultConfig {
         minSdkVersion 16
